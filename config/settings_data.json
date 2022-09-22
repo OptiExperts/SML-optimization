@@ -1,1 +1,2688 @@
-{"presets":{},"current":{"logo_use_image":true,"logo_max_height":"95","logo_mob_height":"40","favicon_enable":true,"preloader_enable":false,"top_to_btm":false,"layout":"wide","base_font":"Google+Questrial","type_base_size":"14px","body_weight_size":"normal","text_spacing":"0","header_font":"Google+Questrial","type_weight_size":"normal","type_uppercase":false,"heading_spacing":"1","type_header_base_size":"48px","type_header_base_size_2":"44px","type_header_base_size_3":"34px","type_header_base_size_4":"22px","type_header_base_size_5":"20px","type_header_base_size_6":"16px","other_font":"Google+Liu+Jian+Mao+Cao","color_body_bg":"#ffffff","overlay_bg":"#000000","color_borders":"#dcdcdc","black_borders":"#2b2b2b","color_primary":"#ff186e","color_button_primary_text":"#ffffff","primary_hover_btn":"#000000","primary_hover_btn_text":"#ff186e","color_sold":"#ff186e","color_sold_text":"#ffffff","sale_bg":"#ff186e","sale_button_text":"#ffffff","new_bg":"#ff186e","new_button_text":"#ffffff","offer_bg":"#ff186e","offer_button_text":"#ffffff","color_body_text":"#1e1e1e","link_color":"#1e1e1e","color_primary_color":"#ff186e","color_heading_type1_color":"#fc5095","color_heading_color":"#000000","input_bg_clr":"rgba(0,0,0,0)","input_border_clr":"#dcdcdc","input_placeholder_clr":"#c3c3c3","input_txt_clr":"#1e1e1e","input_txt_focusclr":"#1e1e1e","secondary_image_use":true,"show_img_height":false,"products_img_height":"200","products_img_height_tab":"","product_row_mob":"double","overlay_use":false,"gradient_pri_clr":"#ff186e","gradient_Sec_clr":"#1e1e1e","products_icon_bg":"#1e1e1e","products_icon_clr":"#ffffff","products_icon_hover_bg":"#ffb6c1","products_icon_hover_clr":"#ffffff","products_gutter":"15","products_border_radius":"0","products_border_full":false,"products_full_border_width":"1","products_full_border":"#ffffff","products_full_hover_border":"#cbba9c","products_border_use":false,"products_border_width":"2","products_border":"rgba(0,0,0,0)","products_border_2":"#ff186e","products_det_bg":"rgba(0,0,0,0)","product_title_bg_color":"rgba(0,0,0,0)","product_title_color":"#1e1e1e","product_title_hover_color":"#ff186e","product_price":"#ff186e","product_cmp_price":"#727272","product_vendor":"#1e1e1e","product_label_color":"#000000","sidebar_bg":"#ff186e","sidebar_secondary_bg":"#ff186e","sidebar_text":"#fff","use_breadcrumb":true,"breadcrumb_bg_image":true,"breadcrumb_bg_color":"#727272","breadcrumb_text_color":"#ffffff","breadcrumb_text_hover_color":"#ff186e","enable_quick_view":true,"show_prt_quickview_desc":true,"display_quick_availability":true,"display_quick_subtotal":true,"small_img_bg_clr":"#fff","animae_enable":true,"collections_show_sold_out_circle":true,"collections_show_new_circle":true,"sale_label_as":"offer_label","display_vendor":true,"display_subtotal":true,"enable_add_cart":true,"enable_compare":true,"enable_wishlist":true,"display_color_variant":true,"display_item_size":false,"display_short_desc":true,"product_review":true,"enable_sidebar_multiple_choice":true,"collection_infinite_scrolling":false,"collection_sidebar_use":"left_sidebar","collection_sidebar_mobile":true,"product_page_sidebar":"left_sidebar","product_sidebar_mobile":true,"blog_page_sidebar":"full_width","use_custom_list_collection":true,"list-collections":"","collection_btn_text":"View All","product_image_featured":true,"show_list_desc":false,"show_item_count":true,"display_availability":true,"enable_color_swatch":true,"color_swatch_style":"normal","enable_linked_option":true,"enable_zoom_option":true,"product_related_enable":true,"related_prds_heading":"Related Products","heading_image_need":false,"related_prds_title":"From this Collection","cart_notes_enable":true,"use_ajax_cart":true,"cart_title_bg":"#ff186e","cart_title_clr":"#ffffff","search_grid":"4","search_results_per_page":"12","show_search_prt":true,"display_popup_newsletter":false,"pop_up_newsletter_img_show":false,"popup_newsletter_bg":"#ffffff","popup_newsletter_title":"Stay Up To Date On Our Sassy Offers","popup_newsletter_message":"Subscribe and get notified at first on the latest update and offers!","popup_newsletter_text":"#000000","popup_newsletter_title_clr":"#ff186e","popup_newsletter_form":"#fff","popup_newsletter_form_txt":"#ff186e","popup_news_close":"#ff186e","form_note":"We Do Not Spam","count_down_enable":true,"count_down_home":true,"count_down_collections":true,"count_down_prodetails":true,"prodetail_deal_label":true,"prodetail_deal_heading":"Hurry, Only few item(s) left!","home_productdeal_time":"1280413696047@10\/24\/2019_00:00:00\n1903944761410@11\/24\/2019_00:00:00","dealbtn":"#2b2b2b","dealbtn_text":"#ffffff","dealbtn_label":"#fff","social_twitter_link":"https:\/\/twitter.com\/sassymamaling","social_facebook_link":"https:\/\/www.facebook.com\/sassymamaplus\/","social_pinterest_link":"","social_google_plus_link":"","social_instagram_link":"https:\/\/www.instagram.com\/sassymamalingerieusa\/","social_tumblr_link":"","social_youtube_link":"","social_vimeo_link":"","social_fancy_link":"","social_rss_link":"","social_sharing_blog":true,"share_facebook":true,"share_twitter":true,"share_pinterest":true,"share_google":true,"social_sharing_style":"normal","display_currency":true,"currency_1_unit":"USD","currency_2_unit":"EUR","currency_3_unit":"GBP","currency_4_unit":"AUD","currency_5_unit":"INR","currency_6_unit":"JPY","currency_7_unit":"CAD","currency_8_unit":"CNY","currency_9_unit":"AED","currency_10_unit":"RUB","show_shipping_calculator":true,"shipping_calculator_heading":"Get shipping estimates","shipping_calculator_default_country":"United States","password_bg_img":true,"password_logo":true,"logo_txt_color":"#891616","pwd_header":"Opening Soon","pwd_header_color":"#d97373","theme_boxshadow_clr":"#000000","pwd_show_share_buttons":true,"pwd_social_message":"Spread the word","pwd_newsletter_enable":true,"pwd_newsletter_form_heading":"Be the first to know when we launch.","pwd_newsletter_form_heading_clr":"#2ccc5c","pwd_newsletter_inpt_bg":"#a62323","pwd_newsletter_btn_bg":"#1ee19d","pwd_newsletter_btn_txt":"#ffffff","pwd_newsletter_btn_hoverbg":"#c25454","pwd_newsletter_btn_hovertxt":"#c6cf22","pwd_placeholder_txt":"#54e325","pwd_newsletter_placeholder":"Email address","pwd_newsletter_button_text":"Notify me","social_title_clr":"#b46666","social_icon_clr":"#c6cf22","social__icon_hoverclr":"#dc1dd0","checkout_header_image":"","checkout_use_storefront_logo":true,"checkout_logo_image":"","checkout_logo_position":"center","checkout_logo_size":"large","checkout_body_background_image":"","checkout_body_background_color":"#ffb8da","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#080808","checkout_button_color":"#ff176e","checkout_error_color":"#5700ff","show_button_radius":"false","single_product_layout_type":"layout_style_1","btn_border_radius":"0","title_border":"#f56c28","heading_secondary_clr":"#e71407","collections_show_sale_circle":true,"offer_price_enable":true,"social_sharing_count":true,"curve_image_slider":true,"curve_image":true,"product_overlay":"#ffffff","homepage_sidebar":"false","homepage_sidebar_mobile":"true","header_style_1":"style_2","use_sticky_header":true,"footer_style_1":"style_1","sub_header_font":"Google+Poppins","color_primary_border":"#f59207","breadcrumb_overlaybg_color":"rgba(0,0,0,0)","new_products_period":"100","show_ex_tax":true,"ex_tax":"Ex of Sale Tax","shipping_calculator":"Enabled","shipping_calculator_submit_button_label":"Calculate shipping","shipping_calculator_submit_button_label_disabled":"Calculating...","enable_gmap":true,"contact_iframe_code":"<iframe width=\"960\" height=\"578\" style=\"border:0;overflow:hidden;\" src=\"https:\/\/maps.google.co.in\/?ie=UTF8&t=m&ll=-37.823006,144.977388&spn=0.02034,0.042915&z=14&output=embed\"><\/iframe>","enable_contact_section":true,"contact_bg_img":true,"contact_bg_color":"#ffffff","contact_module_contact_phonetitle":"Talk to us","contact_phone1":"<b>Toll-Free: <\/b> 0803 - 080 - 3081","contact_phone2":"<b>Fax: <\/b> 0803 - 080 - 3082","contact_module_contact_title":"Contact Us","contact_module_email":true,"contact_module_email_1":"buddhathemes@somemail.com","contact_module_email2":"support@somemail.com","contact_phone":true,"enable_contact_address":true,"contact_module_address":true,"contact_module_address_title":"Location","contact_module_address1":"No: 58 A, East Madison Street,","contact_module_address2":"Baltimore, MD, USA\r\n4508","pop_up_newsletter_bg":"#ffffff","newsletter_form_action":"","collection_suggest":"","display_index":false,"display_product":true,"display_collection":true,"display_article":true,"display_blog":true,"display_cart":true,"interval_time":"15000","show_close_suggest":true,"only_home_preloader_enable":false,"color_cart":"#204a80","color_button_cart_text":"#ffffff","cart_hover_btn":"#ff003a","cart_hover_btn_text":"#fff","cart_size":"14px 28px","cart_font_size":"34","small_cart_size":"14px 28px","small_cart_font_size":"34","enable_filters":true,"filter_height":"200","display_slideshow":true,"slideshow_speed":"8000","slideshow_transition":"slide","display_slideshow_1":"image","video_1":"","image_1_link":"","image_1_alt":"Lorem a Cosmo","slide-heading_1":"Lorem a Cosmo","slide_heading_color_1":"#ffffff","slide_heading_size_1":"40","slide-text_1":"Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.","slide_text_color_1":"#ffffff","slide_text_size_1":"12","button-text_1":"Shop The Collection","button-color_text_1":"#e4e4e4","button-bg_text_1":"#e4e4e4","button-hover-bg_text_1":"#e4e4e4","button-hover-text_1":"#e4e4e4","text_align_slide_1":"left","display_slideshow_2":"image","video_2":"","image_2_link":"","image_2_alt":"Up to 30%* Off","slide-heading_2":"Up to 30%* Off","slide_heading_color_2":"#fff","slide_heading_size_2":"40","slide-text_2":"Praesent dapibus eleifend eu a justomos de milancelos","slide_text_color_2":"#fff","slide_text_size_2":"12","button-text_2":"Shop Now","button-color_text_2":"#e4e4e4","button-bg_text_2":"#e4e4e4","button-hover-bg_text_2":"#e4e4e4","button-hover-text_2":"#e4e4e4","text_align_slide_2":"left","display_slideshow_3":"image","video_3":"","image_3_link":"","image_3_alt":"Loremous","slide-heading_3":"Loremous","slide_heading_color_3":"#ffffff","slide_heading_size_3":"40","slide-text_3":"Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.","slide_text_color_3":"#ffffff","slide_text_size_3":"12","button-text_3":"Shop The Collection","button-color_text_3":"#e4e4e4","button-bg_text_3":"#e4e4e4","button-hover-bg_text_3":"#e4e4e4","button-hover-text_3":"#e4e4e4","text_align_slide_3":"left","display_slideshow_4":"none","video_4":"","image_4_link":"","image_4_alt":"","slide-heading_4":"","slide_heading_color_4":"#fff","slide_heading_size_4":"40","slide-text_4":"","slide_text_color_4":"#fff","slide_text_size_4":"12","button-text_4":"","button-color_text_4":"#e4e4e4","button-bg_text_4":"#e4e4e4","button-hover-bg_text_4":"#e4e4e4","button-hover-text_4":"#e4e4e4","text_align_slide_4":"center","pwd_logo_max_width":"700","show_blog_4_content":true,"show_blog_4_img":true,"show_blog_4_author":true,"show_blog_4_btn":true,"show_blog_4_date":true,"show_blog_4_tag":true,"blog_design_4_title":"#000000","blog_design_4_titlehover":"#cbba9c","blog_design_4_datecolor":"#000000","blog_design_4_authorcolor":"#000000","blog_design_commentcolor":"#000","blog_design_4_tag":"#000000","blog_design_4_taghover":"#cbba9c","blog_btn_sec_bg":"rgba(0,0,0,0)","show_blog_sidebar":true,"show_recent_articles":true,"show_recent_articles_img":true,"blog_article_limit":"3","show_blog_tags":true,"show_blog_instagram":true,"show_featured_products":true,"show_footer_tweets":true,"tweet_heading":"Latest Tweets","tweet_embcode":"<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/iamdesigning\" data-widget-id=\"425498722839957505\" data-border-color=\"#fff\" data-tweet-limit=\"3\" data-chrome=\"nofooter noheader\">Tweets by @iamdesigning<\/a>\r\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script>","display_quickview_subtotal":true,"social_sharing_products":true,"links_style_1":"style_8","display_product_type":true,"display_vendor_type":"name","color_tooltip":true,"product_quantity_enable":true,"payment_button":true,"short_desc":true,"product_tab1":true,"product_tab1_heading":"Description","product_tab2":true,"product_tab2_heading":"Reviews","product_tab3":true,"product_tab3_heading":"Shipping details","product_tab3_page":"","display_recently_viewed_products":true,"recently_viewed_products_title":"Recently Viewed Products","number_of_recently_viewed_products":"8","button_style_1":"style_2","product_style_1":"style_1","images_style_1":"style_1","show_collection_image":true,"collections_sort_enable":true,"collections_items_enable":true,"collections_view_enable":true,"display_flavour":false,"flavour_txt":"Flavour","flavour_bg":"#000","flavour_color":"#fff","collection_grid":"4","collection_results_per_page":"12","logo_max_width":"450","blog_design_4_describg":"#ffffff","blog_design_4_desboxshawdow":"#f4f4f4","blog_design_4_bgcolor":"#000","blog_btn_bg":"rgba(0,0,0,0)","blog_btn_text":"#685f52","blog_btn_hover_bg":"#000","blog_hover_btn_text":"#000","show_currency_1":false,"show_currency_2":false,"show_currency_3":false,"show_currency_4":false,"show_currency_5":false,"show_currency_6":false,"show_currency_7":false,"show_currency_8":false,"show_currency_9":false,"show_currency_10":false,"enable_multiple_currencies":true,"sections":{"sidebar-category":{"type":"sidebar-category","settings":{"enable_sidecategory":false,"linkedlist":"sidebar-menu","linkedlist_title":"Category"}},"sidebar-bestsellers":{"type":"sidebar-bestsellers","settings":{"show_best_products":false,"title":"Best Sellers","bestseller":"lingerie","limit":"4"}},"sidebar-promoimage":{"type":"sidebar-promoimage","blocks":{"1477474976957":{"type":"content","settings":{"promo_link":"","promo_title":"Promo Text"}},"1477475002420":{"type":"content","settings":{"promo_link":"","promo_title":"Promo Text"}}},"block_order":["1477474976957","1477475002420"],"settings":{}},"sidebar-colors":{"type":"sidebar-colors","blocks":{"1558395599652":{"type":"image","settings":{"title":"Red"}},"1565442990491":{"type":"image","settings":{"title":"Pink"}},"1597116746408":{"type":"image","settings":{"title":"White"}},"1597116315660":{"type":"image","settings":{"title":"Teal"}},"1597116331053":{"type":"image","settings":{"title":"Blue"}},"1597116343517":{"type":"image","settings":{"title":"Sky Blue"}},"1597116364897":{"type":"image","settings":{"title":"Purple"}},"1477476891997":{"type":"image","settings":{"title":"Black"}},"1597116396956":{"type":"image","settings":{"title":"Midnight Blue"}},"1597116410004":{"type":"image","settings":{"title":"Coral"}},"1597116422200":{"type":"image","settings":{"title":"Multi Color"}},"1597116435176":{"type":"image","settings":{"title":"Silver"}}},"block_order":["1558395599652","1565442990491","1597116746408","1597116315660","1597116331053","1597116343517","1597116364897","1477476891997","1597116396956","1597116410004","1597116422200","1597116435176"],"settings":{"enable_shop_by_tags_1":true,"shop_by_tags_1_title":"Shop By Color"}},"sidebar-tag-filters":{"type":"sidebar-tag-filters","blocks":{"1477477078599":{"type":"text","settings":{"enable_shop_by_tags":true,"shop_by_tags_title":"Shop By Price","shop_by_tags_list":"Under $25, $25 - $50, $51 - $75, $76 - $99, $100+"}}},"block_order":["1477477078599"],"settings":{}},"faqs":{"type":"faqs","blocks":{"1483333359453":{"type":"text","settings":{"title":"What age can I begin training my dog?","description":"Answer :<br>\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}},"1483333363494":{"type":"text","settings":{"title":"What shots does my puppy need?","description":"Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}},"1483333365467":{"type":"text","settings":{"title":"Can I make an order over the phone?","description":"Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}},"1483333367109":{"type":"text","settings":{"title":"What if I need to return an item?","description":"Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}},"1483333368739":{"type":"text","settings":{"title":"Can I ship to a different location?","description":"Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}},"1483333369796":{"type":"text","settings":{"title":"What if an item is out of stock?","description":"Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}},"1483333371707":{"type":"text","settings":{"title":"What if I'm not home when my order arrives?","description":"Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."}}},"block_order":["1483333359453","1483333363494","1483333365467","1483333367109","1483333368739","1483333369796","1483333371707"],"settings":{}},"brands":{"type":"brands","settings":{}},"product-sidebar-deals":{"type":"product-sidebar-deals","settings":{"show_best_products":false,"title":"Hot Deals","dealitems":"frontpage","dealbtn":"#000000","dealbtn_text":"#ffffff","limit":"0"}},"product-sidebar-bestsellers":{"type":"product-sidebar-bestsellers","settings":{"show_best_products":false,"title":"Best Sellers","bestseller":"frontpage","limit":"4"}},"sidebar-banner":{"type":"sidebar-banner","settings":{}},"collection-template":{"type":"collection-template","settings":{"show_collection_image":true,"collections_sort_enable":true,"collections_view_enable":true,"collection_grid":"4","collection_results_per_page":"16"}},"navigation":{"type":"navigation","blocks":{"1571999688158":{"type":"style_6","settings":{"title":"Menu - Style 6","megamenu_items_6":"Lingerie","link_banner_first_style_6":"","main_linklist_6":"lingerie"}},"1597106024203":{"type":"style_6","settings":{"title":"Menu - Style 6","megamenu_items_6":"Sexy Mama Costumes","link_banner_first_style_6":"","main_linklist_6":"sexy-mama-costumes"}}},"block_order":["1571999688158","1597106024203"],"settings":{"choose_menu":"main-menu","display_megamenu":false}},"blog-sidebar-article":{"type":"blog-sidebar-article","settings":{"show_recent_articles":true,"show_recent_articles_img":true,"blog_article_limit":"3"}},"blog-sidebar-tags":{"type":"blog-sidebar-tags","settings":{"show_blog_tags":true}},"blog-sidebar-deals":{"type":"blog-sidebar-deals","settings":{"show_best_products":true,"sidebar_bg_color":"rgba(0,0,0,0)","title":"Hot Deals","dealitems":"frontpage","dealbtn_border":"#000","dealbtn":"#000000","dealbtn_text":"#ffffff","limit":"4"}},"blog":{"type":"blog","settings":{"blog_bg":"#000","blog_results_per_page":"8","blog_grid":"2","show_blog_4_content":true,"show_blog_4_img":true,"show_blog_4_author":true,"show_blog_4_btn":true,"show_blog_4_date":true,"show_blog_4_tag":false,"blog_design_4_title":"#ff186e","blog_design_4_titlehover":"#0096ff","blog_design_4_datecolor":"#ff186e","blog_design_4_authorcolor":"#1e1e1e","blog_design_commentcolor":"#1e1e1e","blog_design_4_tag":"#1e1e1e","blog_design_4_taghover":"#0096ff"}},"product-template":{"type":"product-template","blocks":{"1540372711989":{"type":"text","settings":{"class":"fas fa-money-check","class_color":"#ffffff","icon_bg_color":"#000000","title":"Special offer 1 + 1 = 3","title_color":"#000000","sub_title":"Get a gift","sub_title_color":"#000000","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua","desc_color":"#000000","link":"collections\/all"}},"1540372716313":{"type":"text","settings":{"class":"fas fa-gift","class_color":"#ffffff","icon_bg_color":"#000000","title":"Free reward card","title_color":"#000000","sub_title":"Worth $10, $50, $100","sub_title_color":"#000000","desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua","desc_color":"#000000","link":""}},"1540372724609":{"type":"text","settings":{"class":"fas fa-truck","class_color":"#ffffff","icon_bg_color":"#000000","title":"Free shipping","title_color":"#000000","sub_title":"On orders over $100","sub_title_color":"#000000","desc":"Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.","desc_color":"#000000","link":"\/collections\/all"}},"1540379760524":{"type":"text","settings":{"class":"fas fa-undo","class_color":"#ffffff","icon_bg_color":"#000000","title":"Order return","title_color":"#000000","sub_title":"Returns within 5 days","sub_title_color":"#000000","desc":"Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.","desc_color":"#000000","link":"\/collections"}}},"block_order":["1540372711989","1540372716313","1540372724609","1540379760524"],"settings":{"display_product_thumb_img":true,"display_product_sku":false,"display_product_type":false,"display_vendor_type":false,"color_tooltip":true,"product_quantity_enable":true,"enable_size_chart":true,"enable_video":false,"enable_wishlist":false,"enable_cart":true,"color_cart":"#000000","color_button_cart_text":"#ffffff","cart_hover_btn":"#727272","cart_hover_btn_text":"#000000","use_cart_width":true,"cart_size":"13px  56px","cart_font_size":"16","small_cart_size":"14px 28px","small_cart_font_size":"16","payment_button":true,"short_desc":false,"social_sharing_products":false,"secure_pay_enable":false,"display_back_in_stock":true,"text":"Thanks! We will notify you when this product becomes available!","text1":"Click Here","text2":"to be notified by email when","text3":"becomes available","error":"Please provide a valid email address.","product_tab1":false,"product_tab1_heading":"Description","product_tab2":true,"product_tab2_heading":"Customer Reviews","product_tab3":false,"product_tab3_heading":"Custom Tab","product_tab3_page":"","product_related_enable":true,"related_prds_heading":"<span>Related<\/span> Products","heading_image_need":false,"related_prds_title":"Like what you see here?","display_recently_viewed_products":true,"recently_viewed_products_title":"<span>Recently <\/span>Viewed Products","recently_viewed_products_subtitle":"Here’s What Other Sassy Shoppers Have Looked At","heading_image_need_recently":false,"number_of_recently_viewed_products":"8","custom_text_block":true}},"social-links-menu":{"type":"social-links-menu","settings":{"social_icon_border_clr":"#34b3d3","social_icon_clr":"#35b8f4","social_hovericon_clr":"#ffffff","social_1_iconclr":"#34b3d3","social_2_iconclr":"#35538f","social_3_iconclr":"#35b8f4","social_4_iconclr":"#d53e2b","social_5_iconclr":"#35b8f4","social_6_iconclr":"#314359","social_7_iconclr":"#35b8f4","social_8_iconclr":"#35b8f4","social_9_iconclr":"#35b8f4"}},"order-form":{"type":"order-form","settings":{"collection":""}},"GDPR-modal":{"type":"GDPR-modal","settings":{"display_gdpr":true,"show_gdp":"right","bg_color":"#000000","text_color":"#ffffff","privacy_policy_color":"#818181","content":"The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. Please click Accept Cookies to continue to use the site.","privacy_policy_text":"Privacy Policy","privacy_policy_link":"https:\/\/sassy-mama-lingerie-dev.myshopify.com\/pages\/privacy-policy","accept_cookies_text":"Accept"}},"someone-purchased":{"type":"someone-purchased","blocks":{"e13080bd-f83a-46b0-ba84-659c809b4ea3":{"type":"image","settings":{"product":"gothic-garden-plus-size-teddy","from_ago":"fromLubbock TX, US","time_ago":"20 minutes ago"}},"6613202c-2fd6-4963-807b-e333a05057d5":{"type":"image","settings":{"product":"captain-usa-available-mid-late-september","from_ago":"from Weston WI, US","time_ago":"4 hours 20 minutes ago"}},"b5a6fce9-c165-40aa-9a8f-6167072f23e6":{"type":"image","settings":{"product":"bodacious-plus-size-navy-blue-bra-set","from_ago":"from Lubbock TX, US","time_ago":"55 minutes ago"}},"1565890174880":{"type":"image","settings":{"product":"discipline-me-one-size-fits-most-curves","from_ago":"from Lakewood CA, US","time_ago":"30 minutes ago"}},"6d23c497-fd2a-409b-b27b-0576040dc542":{"type":"image","settings":{"product":"empowered-plus-size-black-teddy","from_ago":"from Elmont NY, US","time_ago":"4 hours ago"}},"1555932188446":{"type":"image","settings":{"product":"a-play-shaker-rechargeable-silicone-anal-plug-with-remote","from_ago":"from Springfield AR, US","time_ago":"17 minutes ago"}},"7aaa55e3-f3e6-4d98-b377-2b30733a92f2":{"type":"image","settings":{"product":"does-the-trick-open-cup-crotchless-wet-look-teddy","from_ago":"from Los Angeles CA, US","time_ago":"1 hour ago"}},"1555932203743":{"type":"image","settings":{"product":"creepin-it-real-2pc-strappy-mesh-bralette-panty-set","from_ago":"from New Chicago IL, US","time_ago":"14 minutes ago"}},"242c9d94-1030-42d4-b501-fe3b529caef8":{"type":"image","settings":{"product":"chillin-by-the-pool-plus-size-cover-dress","from_ago":"from Miami Fl, US","time_ago":"1 hour 30 minutes ago"}},"5b9b2a1a-b43a-4d06-a86f-fd216f392c61":{"type":"image","settings":{"product":"all-about-kitty-fantasy-for-her-her-thrusting-silicone-rabbit","from_ago":"from Escondido CA, US","time_ago":"3 hours ago"}},"adeebf0a-21db-43ad-8b09-90654c58cd26":{"type":"image","settings":{"product":"a-e-eves-clit-loving-thumper-vibe","from_ago":"from Banning CA, US","time_ago":"1 Hour 15 minutes ago"}},"b59929be-6aa0-49d0-96a9-df9f97bccfbd":{"type":"image","settings":{"product":"at-the-club-like-one-size-fits-most-plus","from_ago":"from Virginia Beach VA, US","time_ago":"40 minutes ago"}},"010cce93-1de8-41e4-ad66-e9b59ca49cd0":{"type":"image","settings":{"product":"cant-tame-this-kitty-plus-size-satin-leopard-robe","from_ago":"from Tickfaw LA, US","time_ago":"3 hours ago"}},"4d5c53df-504e-4dad-bc54-5b8a030a938b":{"type":"image","settings":{"product":"cheeky-bedtime-booty-plus-size-sleepwear","from_ago":"from Sydney, Australia","time_ago":"2 hours 10 minutes ago"}},"e02ed28d-1f86-4646-acb8-abbd6230d973":{"type":"image","settings":{"product":"control-my-fun-vibrating-panties","from_ago":"from Fresno CA, US","time_ago":"10 hours ago"}},"81ebe598-bf3c-422b-a574-5cb1c2edbec0":{"type":"image","settings":{"product":"bianca-baby-plus-size-babydoll","from_ago":"from Camp Springs MD, US","time_ago":"35 minutes ago"}},"71bdfdd4-3d69-4d91-b6d2-79ae7db7e19b":{"type":"image","settings":{"product":"ocean-goddess-sizes-x-large-to-curvy-2x","from_ago":"from Leicester NC, US","time_ago":"2 hours 20 minutes ago"}},"d468cf93-a795-450d-8754-bd74b454ced5":{"type":"image","settings":{"product":"the-devine-miss-jakemia-plus-size-lingerie","from_ago":"from Brooklyn Park MD, US","time_ago":"4 hours ago"}},"62ae4f7b-f2d1-4ac8-b759-5038f7aa7c52":{"type":"image","settings":{"product":"too-fine-for-your-ass-size-one-size-fits-most-plus","from_ago":"from Hickory NC, US","time_ago":"6 hours ago"}},"e3cc6b23-5d76-401c-95cb-8f2d3142919d":{"type":"image","settings":{"product":"berry-bodacious-plus-size-babydoll","from_ago":"from Houston, TX US","time_ago":"37 minutes ago"}},"a429fb76-3b7c-448f-993e-d335623ac718":{"type":"image","settings":{"product":"all-that-glimmers-le-wand-all-that-glimmers-set-pink","from_ago":"from Saint Paul MN, US","time_ago":"5 hours ago"}},"c152ddac-142f-4bd9-9446-65b7e06adae0":{"type":"image","settings":{"product":"sweet-as-candy-corn-witch-available-mid-late-september","from_ago":"from Pembroke Pines FL, US","time_ago":"2 hours ago"}},"51edde04-1213-429a-97b9-7965d0ffe8dc":{"type":"image","settings":{"product":"hell-bent-cheerleader-eta-late-july","from_ago":"from Tulsa, OK, US","time_ago":"5 hours ago"}},"eeafffc6-573f-419b-94b9-7dbdc2c6ee8c":{"type":"image","settings":{"product":"at-midnight-plus-size-black-teddy","from_ago":"from Boulder, CO, US","time_ago":"6 hours ago"}},"c2477187-2a06-4fc1-a00a-5e516a98ccd9":{"type":"image","settings":{"product":"a-bad-mama-jama","from_ago":"from Fremont NC, US","time_ago":"4 hours 25 minutes ago"}},"564d6137-efec-4885-adc5-ea4da36defc3":{"type":"image","settings":{"product":"girl-please-blue-plus-size-bra-set","from_ago":"from Bratenahl OH, US","time_ago":"5hours 15 minutes ago"}},"762f35ba-2e5f-4259-bc34-af68e9222049":{"type":"image","settings":{"product":"get-it-gurl-plus-size-fishnet-teddy","from_ago":"from Glendale AZ, US","time_ago":"9 hours ago"}},"bb3c31f2-1abe-4055-a594-4ec5d4b75076":{"type":"image","settings":{"product":"sexy-beach-dress-avail-in-black-or-coral","from_ago":"from Laporte IN, US","time_ago":"3 hours 55 minutes ago"}},"40e93376-ac17-4028-b401-1a9f51ee5368":{"type":"image","settings":{"product":"going-fishing-fishnet-faux-leather-garter-dress-w-g-string","from_ago":"from Scranton PA, US","time_ago":"7 hours 10 minutes ago"}},"3a229b85-201b-4b29-8852-eabc4f3e51cb":{"type":"image","settings":{"product":"ballet-babe-ballet-style-thigh-high-stockings","from_ago":"from Norwich NY, US","time_ago":"5 hours 35 minutes ago"}}},"block_order":["e13080bd-f83a-46b0-ba84-659c809b4ea3","6613202c-2fd6-4963-807b-e333a05057d5","b5a6fce9-c165-40aa-9a8f-6167072f23e6","1565890174880","6d23c497-fd2a-409b-b27b-0576040dc542","1555932188446","7aaa55e3-f3e6-4d98-b377-2b30733a92f2","1555932203743","242c9d94-1030-42d4-b501-fe3b529caef8","5b9b2a1a-b43a-4d06-a86f-fd216f392c61","adeebf0a-21db-43ad-8b09-90654c58cd26","b59929be-6aa0-49d0-96a9-df9f97bccfbd","010cce93-1de8-41e4-ad66-e9b59ca49cd0","4d5c53df-504e-4dad-bc54-5b8a030a938b","e02ed28d-1f86-4646-acb8-abbd6230d973","81ebe598-bf3c-422b-a574-5cb1c2edbec0","71bdfdd4-3d69-4d91-b6d2-79ae7db7e19b","d468cf93-a795-450d-8754-bd74b454ced5","62ae4f7b-f2d1-4ac8-b759-5038f7aa7c52","e3cc6b23-5d76-401c-95cb-8f2d3142919d","a429fb76-3b7c-448f-993e-d335623ac718","c152ddac-142f-4bd9-9446-65b7e06adae0","51edde04-1213-429a-97b9-7965d0ffe8dc","eeafffc6-573f-419b-94b9-7dbdc2c6ee8c","c2477187-2a06-4fc1-a00a-5e516a98ccd9","564d6137-efec-4885-adc5-ea4da36defc3","762f35ba-2e5f-4259-bc34-af68e9222049","bb3c31f2-1abe-4055-a594-4ec5d4b75076","40e93376-ac17-4028-b401-1a9f51ee5368","3a229b85-201b-4b29-8852-eabc4f3e51cb"],"settings":{"display_someone-purchased":true,"display_someone-purchased_mb":true,"show_someone-purchased":"right","someone_speed":"10000","text":"Someone bought"}},"custom-text-type-1":{"type":"custom-text-type-1","settings":{"bg_color":"#000000","title":"","class_color":"#1e1e1e","icon_bg_color":"#1e1e1e","title_color":"#ff186e","sub_title_color":"#ffffff","desc_color":"#1e1e1e"}},"article":{"type":"article","settings":{"show_blog_4_author":true,"show_blog_4_date":true,"show_blog_4_tag":true,"blog_design_4_title":"#ff186e","blog_design_4_titlehover":"#ff186e","blog_design_4_datecolor":"#ff186e","blog_design_4_authorcolor":"#1e1e1e","blog_design_commentcolor":"#1e1e1e","blog_design_4_tag":"#1e1e1e","blog_design_4_taghover":"#ff186e"}},"contact":{"type":"contact","settings":{"bg_color":"#ff186e","title":"<strong>Contact Us: <\/strong>","title_clr":"#060002","small_title":"","text_clr":"#040303","enable_gmap":false,"contact_iframe_code":"<iframe width=\"960\" height=\"578\" style=\"border:0;overflow:hidden;\" src=\"https:\/\/maps.google.co.in\/?ie=UTF8&t=m&ll=-37.823006,144.977388&spn=0.02034,0.042915&z=14&output=embed\"><\/iframe>","enable_contact_section":true,"icontactheading_color":"#060002","contactblock_bg_color":"#fbf9f9","contacticon_bg_color":"#ff186e","contacticon_text_color":"#000000","contacticon_color":"#0a0a0a","contactborder_color":"#ff186e","contacthoverborder_color":"#060002","contact_phone":true,"contact_module_contact_phonetitle":"Phone","contact_icon_1":"fa fa-phone","contact_phone1":"1 800 242 6652","contact_phone2":"OFFICE\/PHONE HOURS:   Monday thru Friday  9:00 AM EST TO 6:00 PM EST","contact_module_email":true,"contact_module_contact_title":"Mail","contact_icon_2":"fa fa-envelope","contact_module_email_1":"info@sassymamalingerie.com","contact_module_email2":"YOU CAN EMAIL US AT ANYTIME AND SOMEONE WILL GET BACK TO YOU WITHIN 24 HOURS","enable_contact_address":true,"contact_icon_3":"fa fa-location-arrow","contact_module_address":true,"contact_module_address_title":"Address","contact_module_address1":"PO BOX 7284 Seminole,","contact_module_address2":"Florida 33775 USA","border_clr":"#dcdcdc","border_hover_clr":"#dcdcdc","contactpage_bg_color":"#ffffff"}},"about-us":{"type":"about-us","blocks":{"1562839670567":{"type":"Image","settings":{"team_bg_color":"#000","team_1_img":"","team_1_imgheading":"#","team_1_title":"Christine Johanson","team_1_title_clr":"#000000","team_1_designation":"Manager","team_1_designation_clr":"#727272"}},"1562839789486":{"type":"Image","settings":{"team_bg_color":"#e71407","team_1_img":"","team_1_imgheading":"#","team_1_title":"Lana Tailor","team_1_title_clr":"#000000","team_1_designation":"Manager","team_1_designation_clr":"#727272"}},"1562839830427":{"type":"Image","settings":{"team_bg_color":"#000","team_1_img":"","team_1_imgheading":"#","team_1_title":"Joana Smith","team_1_title_clr":"#000000","team_1_designation":"Manager","team_1_designation_clr":"#727272"}},"1564241504081":{"type":"Image","settings":{"team_bg_color":"#000","team_1_img":"","team_1_imgheading":"#","team_1_title":"Lana Tailor","team_1_title_clr":"#000000","team_1_designation":"Beauty","team_1_designation_clr":"#727272"}}},"block_order":["1562839670567","1562839789486","1562839830427","1564241504081"],"settings":{"gradient_pri_clr":"#ff186e","gradient_Sec_clr":"#ff186e","showvedaone_2_section":true,"abtone_image_2":"","abtone_image_2_heading":"","abtone_2_title":"Enjoy the Difference","abtone_2_maintilte":"#ff186e","abtone_2_des":"From the calypso music of the carribeans The styles or genre of music that exists across  the world is mind boggling to say the least.  Starting from the Calypso styles of the Afro Caribbean to the Brazilian Zumba styles of dance music, the western classical styles, the Indian genres and the Sufi styles besides the Arabic offer amazing variety .","abtone_2_desc":"#727272","show_6_section":true,"gallery_headingcolor":"#ffffff","gallery_2_img":"","gallery_2_img_link":"shopify:\/\/collections","gallery_2_imgheading":"img1","gallery_2_subheading":"Suspense Bodysuit","section_3_detailone":"<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Phasellus viverranulla ut metus&nbsp;<\/p>","gallery_3_img":"","gallery_3_imgheading":"img2","gallery_3_img_link":"shopify:\/\/collections","gallery_3_subheading":"Lace Romper","section_3_detailtwo":"<p>Phasellus viverranulla ut metus lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.&nbsp;<\/p>","gallery_4_img":"","gallery_4_img_link":"shopify:\/\/collections","gallery_4_imgheading":"img3","gallery_4_subheading":"Aria Teddy","section_3_detailthree":"<p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Phasellus viverranulla ut metus&nbsp;lorem ipsum dolor sit amet, consectetuer&nbsp;<\/p>","show_4_section":true,"image_3":"","background_color_3":"#ebebeb","background_overlay_bg":"#000000","title_1":"<span>What <\/span> They Say","title_1_clr":"#1e1e1e","small_1_title":"Donec vitae sapien ut libero venenatis","text_1_clr":"#575757","heading_image_1":"","section_4_quotetxt":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.","aboutvedafivetestcolor":"#1e1e1e","test_author_img":"","test_border_clr":"#ff186e","testauthor_name":"Henry Moses","testauthor_wrk":"Business","test_authorcolor":"#1e1e1e","title":"<span>Our<\/span> Happy Team","title_clr":"#000000","heading_image":"","small_title":"Donec vitae sapien ut libero venenatis faucibus","text_clr":"#575757","team_hovertext_color":"#ff186e","show_social_icon":true}},"header-01":{"type":"header-01","settings":{"logo_text":"#ffffff","logo_hover_text":"#ff186e","border_between_bars":"rgba(0,0,0,0)","display_search":true,"search_icon":"#ffffff","search_icon_hover":"#ff186e","search_text":"#888a8b","search_link_hover":"#1e1e1e","search_bg":"#ffffff","dropdown_icon":"#ffffff","dropdown_icon_hover":"#ff186e","dropdown_bg":"#ffffff","dropdown_link":"#1e1e1e","dropdown_hover_link":"#ff186e","display_minicart":true,"minicart_icon":"#ff186e","minicart_icon_hover":"#ff186e","minicart_count":"#ffffff","minicart_count_bg":"#ff186e","minicart_count_hover_bg":"#ff186e","minicart_count_hover_text":"#ffffff","minicart_bg":"#ffffff","minicart_text":"#1e1e1e","minicart_link":"#1e1e1e","minicart_link_hover":"#ff186e","minicart_btn_bg":"#ff186e","minicart_btn_hover_bg":"#ff186e","minicart_btn_text":"#ffffff","minicart_btn_hover_text":"#ffffff","minicart_total":"#1e1e1e","display_wishlist":true,"currency_icon":"#ffffff","currency_icon_hover":"#ff186e","currency_bg":"#ffffff","currency_link":"#1e1e1e","menubar_bg":"#000000","menubar_links":"#ffffff","menubar_links_hover":"#ff186e","menu_active":"#ff186e","menubar_dropdown_bg":"#ffffff","menubar_dropdown_caption":"#ff186e","menubar_dropdown_caption_hover":"#ff186e","menubar_dropdown_links":"#1e1e1e","menubar_dropdown_links_hover":"#ff186e","megamenu_border_clr":"#dcdcdc","choose_menu":"main-menu","display_megamenu":true}},"footer-01":{"type":"footer-01","settings":{"footer_bg_img":false,"footer_overlaybg_clr":"#000000","footer_bg_clr":"#000000","footer_heading_clr":"#ffffff","footer_txt_clr":"#ffffff","footer_link_clr":"#ffffff","footer_link_hover_clr":"#ff186e","show_footer_text":true,"footer_menu_1":"customer-care","footer_menu_1_title":"CUSTOMER CARE","footer_menu_2":"shop","footer_menu_2_title":"SHOP","footer_menu_3":"","footer_menu_3_title":"","show_contact":true,"footer_menu_4_title":"Contact SML","footer_address":"","footer_contact_no":"<a href=\"tel:8002426652\">800.242.6652<\/a>","office_hours":"Monday - Friday: 8AM to 6PM EST","footer_contact_id":"info@sassymamalingerie.com","footer_contact_link":"info@sassymamalingerie.com","footer_social_enable":true,"footer_menu":false,"footer":"footer","footer_show_methods_of_payment":true,"payment_icon_1":"shopify:\/\/shop_images\/Group_140_2x_7135d4b0-b5a8-45c7-afcd-e910a3f0d6b5.png","payment_icon_2":"shopify:\/\/shop_images\/Visa_Electron_2x_795e2407-11b3-4d04-b0e3-10ef0657ef34.png","payment_icon_3":"shopify:\/\/shop_images\/kisspng-american-express-logo-credit-card-payment-seo-for-the-finance-industry-experience-and-solu-5b62e8845e9914.5428316515332087083875_2x_11bea495-d9ab-41d0-a2db-128394cd143b.png","payment_icon_4":"shopify:\/\/shop_images\/PayPal-Logo-2014-present_2x_d3e6ff9c-bcd7-40bd-aa1f-bf72c3ebbbf7.png","payment_icon_5":"shopify:\/\/shop_images\/23afterpay1_2x_2637bd50-6557-4e8c-a7d7-b87c0009c4e2.png","payment_icon_6":"shopify:\/\/shop_images\/sezzle4755_2x_3b3fcd04-1f12-411b-9b7d-e7f84d6539ea.png","payment_icon_7":"shopify:\/\/shop_images\/klarna-og_2x_5ba9d4d3-cc68-46ec-8f03-146ccadac9c8.png","copyright_clr":"#ffffff","copyright_link":"#ffffff","copyright_link_hover":"#ff186e","show_powered_by":false,"copyright":"Copyright","footer_border":"#000000","footer_menu_clr":"#ffffff"}},"1561997079024":{"type":"home-customer-support","blocks":{"1561997079024-0":{"type":"text","settings":{"img_class":"shopify:\/\/shop_images\/Icon_awesome-globe.jpg","icon_clr":"#fc5095","title":"Worldwide Delivery","title_color":"#1e1e1e","desc":"Delivery to most countries","desc_color":"#1a1919","link":"#"}},"1561997079024-1":{"type":"text","settings":{"img_class":"shopify:\/\/shop_images\/Icon_awesome-phone-alt.jpg","icon_clr":"#fc5095","title":"Best Services","title_color":"#1e1e1e","desc":"Just a phone call away","desc_color":"#151414","link":""}},"1561997079024-2":{"type":"text","settings":{"img_class":"shopify:\/\/shop_images\/Icon_awesome-shipping-fast.jpg","icon_clr":"#fc5095","title":"Fast Delivery","title_color":"#1e1e1e","desc":"We endaevor to get your order  shipped within 1-2 business days","desc_color":"#120101","link":""}},"7702755c-3e8a-44e6-895b-f67f7aeac107":{"type":"text","settings":{"img_class":"shopify:\/\/shop_images\/Icon_ionic-md-people.jpg","icon_clr":"#000000","title":"USA  Female Owned & Operated","title_color":"#000000","desc":"USA female owned business with Plus Size Lingerie for Women","desc_color":"#000000","link":""}}},"block_order":["1561997079024-0","1561997079024-1","1561997079024-2","7702755c-3e8a-44e6-895b-f67f7aeac107"],"settings":{"bg_color":"#ffffff","show_overlay_bg_clr":false,"overlay_bg_clr":"rgba(0,0,0,0)","iconhovertext_color":"#ff186e"}},"1562030841260":{"type":"slideshow","blocks":{"9e02f54d-0288-4d25-bfce-6e7bbba7d5f0":{"type":"style_1","settings":{"image":"shopify:\/\/shop_images\/Edito-2637X_2.jpg","mobile_image":"shopify:\/\/shop_images\/Edito-2637X_2.jpg","show_mobile_bg_overlay":false,"mobile_bg_clr":"#000000","subheading":"","subheading_color":"#000000","subheading_size":"12","title":"","heading_color":"#000000","heading_size":"40","title_2":"","title_2_clr":"#000000","sub_vertical_size":"12","button":"","link":"shopify:\/\/collections\/brand-spanking-new"}},"ca078d76-9d54-44f9-9e3b-69e35da1a8cd":{"type":"style_1","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/UUUUUSSSSSEEEEE.jpg","mobile_image":"shopify:\/\/shop_images\/UUUUUSSSSSEEEEE.jpg","show_mobile_bg_overlay":false,"mobile_bg_clr":"#000000","subheading":"","subheading_color":"#000000","subheading_size":"12","title":"","heading_color":"#000000","heading_size":"40","title_2":"","title_2_clr":"#000000","sub_vertical_size":"12","button":"","link":""}}},"block_order":["9e02f54d-0288-4d25-bfce-6e7bbba7d5f0","ca078d76-9d54-44f9-9e3b-69e35da1a8cd"],"settings":{"slideshow_speed":"3000","slideshow_transition":"false","navigation_color":"#ff176e"}},"1562045263017":{"type":"space-divider","settings":{"divider_spacing":30,"divider_border":false}},"app-instagram":{"type":"app-instagram","settings":{"title":"","title_clr":"#000","heading_image":"","small_title":"","text_clr":"#000","button":"","link":""}},"brands-about":{"type":"brands-about","blocks":{"1564378399051":{"type":"Image","settings":{"client_img":"","client_heading":"","client_link":""}},"1564378410564":{"type":"Image","settings":{"client_img":"","client_heading":"","client_link":""}},"1564378416940":{"type":"Image","settings":{"client_img":"","client_heading":"","client_link":""}},"1564378421676":{"type":"Image","settings":{"client_img":"","client_heading":"","client_link":""}},"1564378428443":{"type":"Image","settings":{"client_img":"","client_heading":"","client_link":""}},"1566549749560":{"type":"Image","settings":{"client_img":"","client_heading":"","client_link":""}}},"block_order":["1564378399051","1564378410564","1564378416940","1564378421676","1564378428443","1566549749560"],"settings":{"title":"","client_bg_clr":""}},"gallery":{"type":"gallery","blocks":{"1565421185306":{"type":"Image","settings":{"image":"","title":"Collection Name","gallery_title":"","category":"","gallery_link":"shopify:\/\/collections\/all"}},"1565421216929":{"type":"Image","settings":{"image":"","title":"Collection Name","gallery_title":"","category":"","gallery_link":"shopify:\/\/collections\/all"}},"1565421231532":{"type":"Image","settings":{"image":"","title":"Collection Name","gallery_title":"","category":"","gallery_link":""}},"1565421236120":{"type":"Image","settings":{"image":"","title":"Collection Name","gallery_title":"","category":"","gallery_link":""}},"1565421238326":{"type":"Image","settings":{"image":"","title":"Collection Name","gallery_title":"","category":"","gallery_link":""}},"1565421243422":{"type":"Image","settings":{"image":"","title":"Collection Name","gallery_title":"","category":"","gallery_link":""}}},"block_order":["1565421185306","1565421216929","1565421231532","1565421236120","1565421238326","1565421243422"],"settings":{"title":"<span>Portfolio<\/span> Style","title_clr":"#ffffff","heading_image":"","small_title":"Short description","text_clr":"#727272","use_overlay":true,"img_overlay":"#e71407","img_overlay_title":"#ffffff","img_overlay_catgry":"#727272","use_overlay_icons":true,"img_overlay_icon":"#e71407","img_overlay_icon_txt":"#ffffff","img_overlay_icon_bg":"#ff0f00","img_overlay_icon_hover_txt":"#ffffff","texthover_bg_color":"#000000","texthover_txt_color":"#ffffff"}},"lookbook":{"type":"lookbook","blocks":{"1568027968305":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"","title":"Add a title or tagline","text":"<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>","button_label":"","button_link":"","title_clr":"#ff186e","text_clr":"#727272","text_content_bg":"#e2e2e2"}},"1568027975391":{"type":"text_block","settings":{"align_text":"right","enable_image":true,"image":"","title":"Add a title or tagline","text":"<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>","button_label":"","button_link":"","title_clr":"#ff186e","text_clr":"#727272","text_content_bg":"#e2e2e2"}},"1568027987939":{"type":"text_block","settings":{"align_text":"left","enable_image":true,"image":"","title":"Add a title or tagline","text":"<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>","button_label":"","button_link":"","title_clr":"#ff186e","text_clr":"#727272","text_content_bg":"#e2e2e2"}}},"block_order":["1568027968305","1568027975391","1568027987939"],"settings":{"title":"<span>Our Lingerie <\/span> Models","title_clr":"#000000","heading_image":"","small_title":"Donec vitae sapien ut libero venenatis faucibus","text_clr":"#575757"}},"1573708181964":{"type":"newsletter-block","settings":{"background_color":"#ff156e","overlay_background_color":"#ff176e","title":"Newsletter","title_color":"#ffffff","text":"Feeling Sassy??? Sign Up For the Sassy Mama Lingerie\nNewsletter To Receive Updates And Exclusive Offers for sexy plus size lingerie","text_color":"#ffffff","button":"Subscribe","btn_bg_color":"#000000","btn_text_color":"#ffffff","btn_bg_hover_color":"#727272","btn_hover_text_color":"#000000","input_box_border":"#ffffff","input_text_clr":"#000000","input_box_place":"#6a6a6a"}},"slideshow":{"type":"slideshow","blocks":{"1597784420930":{"type":"style_1","settings":{"image":"shopify:\/\/shop_images\/slide1.jpg","mobile_image":"","show_mobile_bg_overlay":false,"mobile_bg_clr":"#000","subheading":"Special Offer In Store & Online","subheading_color":"#ffc0cb","subheading_size":"26","title":"Beautiful Lingerie Wear","heading_color":"#ffb6c1","heading_size":"60","title_2":"Sale 25% Off","title_2_clr":"#ffc0cb","sub_vertical_size":"12","button":"Shop Now","link":"shopify:\/\/collections"}}},"block_order":["1597784420930"],"settings":{"slideshow_speed":"5000","slideshow_transition":"true","navigation_color":"#fff"}},"space-divider":{"type":"space-divider","settings":{"divider_spacing":40,"divider_border":false}},"home-boxed-images":{"type":"home-boxed-images","settings":{"gradient_pri_clr":"#ff186e","gradient_Sec_clr":"#0096ff","image_5":"shopify:\/\/shop_images\/Lingerie_767_x_1044.png","title_5":"LINGERIE","title_5_color":"#0096ff","text_5":"Collections","text_5_color":"#ffffff","button_5":"Show Now","link_5":"shopify:\/\/collections\/lingerie","image_1":"shopify:\/\/shop_images\/Accessories_767_x_740.png","title_1":"ACCESSORIES","title_1_color":"#ffff00","text_1":"Collections","text_1_color":"#ffffff","button_1":"Show Now","link_1":"shopify:\/\/collections\/accessories","image_3":"shopify:\/\/shop_images\/Bra_Sets_767_540.png","title_3":"BRA SETS","title_3_color":"#e6e085","text_3":"Collections","text_3_color":"#ffffff","button_3":"Shop Now","link_3":"shopify:\/\/collections\/bra-sets","image_4":"shopify:\/\/shop_images\/Sexy_Mama_Costumes_767_x_865.png","desc_bg_color":"#000","title_4":"Sexy Mama Costumes","title_4_color":"#db5762","text_4":"","text_4_color":"#ffffff","button_4":"","link_4":"shopify:\/\/collections\/sexy-mama-costumes","image_6":"shopify:\/\/shop_images\/Stockings_Thigh_Highs_767_x_865.png","title_6":"Stockings & Thigh Highs","title_6_color":"#e9c2a3","text_6":"","text_6_color":"#000","button_6":"Shop Now","link_6":"shopify:\/\/collections\/stockings-thigh-highs","image_2":"shopify:\/\/shop_images\/Panties_767_x_422.png","title_2":"Panties & Garter Belts","title_2_color":"#000","text_2":"Collections","text_2_color":"#000","button_2":"Shop Now","link_2":"shopify:\/\/collections\/panties-garter-belts"}},"space-divider2":{"type":"space-divider2","settings":{"divider_spacing":40,"divider_border":false}},"home-featured-products":{"type":"home-featured-products","settings":{"title":"<span>Brand<\/span> Spanking New","title_clr":"#ffffff","heading_image":"","small_title":"Donec vitae sapien ut libero venenatis faucibus","text_clr":"#ffffff","collection":"brand-spanking-new","grid":"4","rows":"1"}},"space-divider3":{"type":"space-divider3","settings":{"divider_spacing":40,"divider_border":false}},"ver2-home-featured-products":{"type":"ver2-home-featured-products","settings":{"title":"<span>Bedroom<\/span> Costumes","title_clr":"#ffffff","heading_image":"","small_title":"","text_clr":"#ffffff","collection":"sexy-mama-costumes","grid":"4","rows":"1"}},"home-banner-with-text":{"type":"home-banner-with-text","settings":{"image_1":"","background_color":"#ff186e","image_5":"shopify:\/\/shop_images\/Home_4.png","link_5":"","title_1":"Designer Lingeries","title_color":"#ffffff","text_1":"Exclusive Different Style","text_color":"#ffffff","title_2":"Sale 65% Off","title_2_color":"#ffffff","deal_desc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium","deal_desc_color":"#ffffff","button_1":"Shop Now","link_1":"","btn_bg_color":"#000","btn_text_color":"#fff","btn_bg_hover_color":"#0096ff","btn_hover_text_color":"#fff"}},"space-divider4":{"type":"space-divider4","settings":{"divider_spacing":40,"divider_border":false}},"home-featured-products-carousel":{"type":"home-featured-products-carousel","settings":{"title":"<span>Popular<\/span> Items","title_clr":"#ffffff","small_title":"Donec vitae sapien ut libero venenatis faucibus","text_clr":"#ffffff","heading_image":"","image_1":"shopify:\/\/shop_images\/Home_E.png","overlay_bgcolor":"#fe7ead","alignment":"left","title_1":"Buy 2 Get One Free","title_1_clr":"#ffffff","btn_txt":"Shop Now","link_1":"shopify:\/\/collections\/all","collection":"panties-garter-belts","content_overlay_bgcolor":"#000"}},"ver2-home-featured-products-carousel":{"type":"ver2-home-featured-products-carousel","settings":{"title":"","title_clr":"#000","small_title":"","text_clr":"#000","heading_image":"","image_1":"shopify:\/\/shop_images\/Home_G.png","overlay_bgcolor":"#fe7ead","alignment":"right","title_1":"World’s Biggest Brands","title_1_clr":"#ffffff","btn_txt":"Shop Now","link_1":"shopify:\/\/collections\/all","collection":"sexy-mama-costumes","content_overlay_bgcolor":"#000"}},"space-divider5":{"type":"space-divider5","settings":{"divider_spacing":20,"divider_border":false}},"newsletter-block":{"type":"newsletter-block","settings":{"image_1":"","background_color":"#000","overlay_background_color":"#ff186e","title":"Newsletter","title_color":"#ffffff","text":"Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros","text_color":"#ffffff","button":"Subscribe","btn_bg_color":"#000","btn_text_color":"#fff","btn_bg_hover_color":"#0096ff","btn_hover_text_color":"#fff","input_box_border":"#ffffff","input_text_clr":"#000","input_box_place":"#000"}},"home-customer-support":{"type":"home-customer-support","blocks":{"1597857226328":{"type":"text","settings":{"icon_clr":"#ff186e","title":"Worldwide Delivery","title_color":"#1e1e1e","desc":"Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros","desc_color":"#727272","link":"#"}},"1597857339174":{"type":"text","settings":{"icon_clr":"#ff186e","title":"Best Services","title_color":"#1e1e1e","desc":"Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros","desc_color":"#727272","link":""}},"1597857400473":{"type":"text","settings":{"icon_clr":"#ff186e","title":"Fast Delivery","title_color":"#1e1e1e","desc":"Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros","desc_color":"#727272","link":""}},"1597857462807":{"type":"text","settings":{"icon_clr":"#ff186e","title":"Made With Love","title_color":"#1e1e1e","desc":"Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros","desc_color":"#727272","link":""}}},"block_order":["1597857226328","1597857339174","1597857400473","1597857462807"],"settings":{"image_1":"","bg_color":"#ffffff","show_overlay_bg_clr":true,"overlay_bg_clr":"rgba(0,0,0,0)","iconhovertext_color":"#ff186e"}},"space-divider6":{"type":"space-divider6","settings":{"divider_spacing":40,"divider_border":false}},"home-banner-with-text-1":{"type":"home-banner-with-text-1","settings":{"image_1":"","background_color":"#ff186e","overlay_color":"#000","title_1":"LITTLE LUXURIES","title_color":"#ffffff","title_2":"OUR RANGE OF PREMIUM BRAS","title_2_color":"#ffffff","deal_desc":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium","deal_desc_color":"#ffffff","button_1":"Read More","link_1":"shopify:\/\/collections","btn_bg_color":"#000","btn_text_color":"#fff","btn_bg_hover_color":"#0096ff","btn_hover_text_color":"#fff","image_5":"shopify:\/\/shop_images\/Home_5.png","title_5_color":"#000","image_text_1":"STRAPLESS <br> CONVERTIBLE BRA","image_clr_1":"#ff186e","subimage_text_1":"Unde omnis iste natus","subimage_clr_1":"#ffffff","image_btn_1":"Read More","link_5":"shopify:\/\/collections","image_6":"shopify:\/\/shop_images\/Home_3.png","title_6_color":"#000","image_text_2":"CROTCHLESS <br> LACE TEDDY","image_clr_2":"#ff186e","subimage_text_2":"Unde omnis iste natus","subimage_clr_2":"#ffffff","image_btn_2":"Read More","link_6":"shopify:\/\/collections"}},"space-divider7":{"type":"space-divider7","settings":{"divider_spacing":40,"divider_border":false}},"password-header":{"type":"password-header","settings":{}},"password-content":{"type":"password-content","settings":{}},"password-footer":{"type":"password-footer","settings":{}},"1600901514307":{"type":"home-banner-with-text","disabled":true,"settings":{"background_color":"#ff186e","image_5":"shopify:\/\/shop_images\/banner_2x_dc110744-27ac-4dfa-88e0-8878443c55e2.jpg","link_5":"","top_image":"shopify:\/\/shop_images\/banner_with_text1_logo_200x_ac5f0c4a-a036-40c7-86a9-e992a3c31777.png","title_1":"Sassy Mama Lingerie","title_color":"#ffffff","text_1":"Sizes up to Curvy 6X","text_color":"#ffffff","title_2":"USA Owned & FEMALE Operated","title_2_color":"#ffffff","deal_desc":"Authentic Brands & NEVER any Fakes","deal_desc_color":"#ffffff","button_1":"","link_1":"","btn_bg_color":"#000000","btn_text_color":"#ffffff","btn_bg_hover_color":"#dc1d24","btn_hover_text_color":"#ffffff"}},"1602553959377":{"type":"home-featured-products","settings":{"title":"Trending this week","title_clr":"#ffffff","links":"shopify:\/\/collections\/trending-this-week","small_title":"","text_clr":"#000000","collection":"trending-this-week","grid":"4","rows":"2"}},"navigation-sticky":{"type":"navigation-sticky","settings":{"choose_sticky_menu":"sticky-menu","display_search":true,"display_minicart":true,"display_wishlist":true}},"1642602324cbd1c582":{"type":"home-banner-with-text","settings":{"background_color":"#ffffff","image_5":"shopify:\/\/shop_images\/colourful-shopping-packets.jpg","link_5":"","top_image":"shopify:\/\/shop_images\/Group_156.png","title_1":"LOVE THE WAY YOU PAY <a href=\"#\">BOOK NOW<\/a>","title_color":"#000000","text_1":"","text_color":"#000000","title_2":"","title_2_color":"#000000","deal_desc":"Pay later.<br>\nAlways interest-free.","deal_desc_color":"#ff186e","button_1":"","link_1":"#","btn_bg_color":"#000000","btn_text_color":"#ffffff","btn_bg_hover_color":"#dc1d24","btn_hover_text_color":"#ffffff"}},"1645673801c93643d2":{"type":"home-product-tab","disabled":true,"blocks":{"1645673801c93643d2-0":{"type":"text_block","settings":{"title":"$25 DOLLA SALE","collection":"25-dolla-make-you-holla-sale"}},"20ea4637-11c4-47a7-8ddd-e8b939eed97c":{"type":"text_block","settings":{"title":"BOGO 1\/2 PRICE","collection":"bogo-1-2-price"}},"e03e3086-c293-4e0a-8e4d-3cc473ac894b":{"type":"text_block","settings":{"title":"Wet Look Lingerie","collection":"wet-look-lingerie"}},"45fbf0e0-1ada-47d2-97b2-714371880fdf":{"type":"text_block","settings":{"title":"Bedroom Costumes","collection":"bedroom-costumes"}}},"block_order":["1645673801c93643d2-0","20ea4637-11c4-47a7-8ddd-e8b939eed97c","e03e3086-c293-4e0a-8e4d-3cc473ac894b","45fbf0e0-1ada-47d2-97b2-714371880fdf"],"settings":{"title_1":"featured <span> collection <span><\/span><\/span>","title_1_clr":"#ff186e","tag_clr":"#707070","tag_hover_clr":"#ff186e","tag_border_clr":"#ff186e"}},"1645674139ff29180c":{"type":"featured-product-slide","settings":{"title":"Brand  Spanking New Lingerie","link":"shopify:\/\/collections\/brand-spanking-new","linktext":"View all","collection":"brand-spanking-new"}},"1645692362ec5530b3":{"type":"brands","disabled":true,"blocks":{"1645692362ec5530b3-1":{"type":"Image","settings":{"client_img":"shopify:\/\/shop_images\/1646902935842.jpg","client_heading":"","client_link":"shopify:\/\/collections\/teddies"}},"1645692362ec5530b3-2":{"type":"Image","settings":{"client_img":"shopify:\/\/shop_images\/1646903012148.jpg","client_heading":"","client_link":"shopify:\/\/collections\/bodystockings"}},"1645692362ec5530b3-3":{"type":"Image","settings":{"client_img":"shopify:\/\/shop_images\/1646903056135.jpg","client_heading":"","client_link":"shopify:\/\/collections\/wet-look-lingerie"}}},"block_order":["1645692362ec5530b3-1","1645692362ec5530b3-2","1645692362ec5530b3-3"],"settings":{}},"164577224304dc9fb9":{"type":"space-divider","settings":{"divider_spacing":30,"divider_border":false}},"164601363993c16444":{"type":"home-banner-custom-text","settings":{"text":"<span class=\"color-tile\">EVERY<\/span> order is now covered under,<br>\nRoute Package Protection in the event of <span class=\"color-tile\">ANY<\/span> lost, <br>\ndamaged or stolen packages- <span class=\"color-tile\">FREE!<\/span>"}},"1646030900a44b054d":{"type":"home-featured-collection-slide","disabled":true,"blocks":{"b2e25727-2246-42ab-8073-0157c30f5a16":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/media_1000x-977296_grande_545046c9-2e1c-4e8b-812b-e74fef8be794.jpg","links":"shopify:\/\/collections","title_1":"lingerie"}},"04eecf9b-e00e-472f-8060-0fa6db1bd51e":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/FL2901-Plus-ProductImages-web-961604.jpg","links":"shopify:\/\/collections\/20-dolla-unda-sale","title_1":"$20 DOLLA  & UNDER  SALE"}},"2116aed6-94a2-40ab-ab5f-40b6412be2f6":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/thumbnail_IMG_6280_grande_39d9cbd1-2e58-49ae-953a-08532ea941ee.jpg","links":"shopify:\/\/collections\/39-under","title_1":"$39 & UNDER"}}},"block_order":["b2e25727-2246-42ab-8073-0157c30f5a16","04eecf9b-e00e-472f-8060-0fa6db1bd51e","2116aed6-94a2-40ab-ab5f-40b6412be2f6"],"settings":{"title":"FEATURED <span>COLLECTION<\/span>"}},"1646932764e2d26aa8":{"type":"space-divider2","settings":{"divider_spacing":20,"divider_border":false}},"16469327892cac7d40":{"type":"space-divider2","settings":{"divider_spacing":20,"divider_border":false}},"164851927374149d31":{"type":"featured-custom","blocks":{"847f3460-f1b7-42fd-9b6b-00fef3579156":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/PK447XL.jpg","links":"shopify:\/\/collections\/trick-treat","title_1":"HALLOWEEN"}},"0a88dbc4-e8b3-42f8-b340-c15cf690f91d":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/2631X-Black-Front_500x749_4e37f973-1c93-4666-ad16-3caceaf32780.jpg","links":"shopify:\/\/collections\/bra-sets","title_1":"BRA SETS"}},"7486423f-d102-4c77-91a2-16a3fd1f217a":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/8705X-BlackPrint-Front_1.jpg","links":"shopify:\/\/collections\/teddies","title_1":"TEDDIES"}},"e4e7874c-c2f2-4553-89c3-1f23d6bd83bb":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/P649-ProductImages01-web.jpg","links":"shopify:\/\/collections\/wet-look-lingerie","title_1":"WET LOOK"}},"875eb7ba-4bd8-41cd-97df-db07affcc8f7":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/7447X-Black-Front_1.jpg","links":"shopify:\/\/collections\/loungewear","title_1":"LOUNGEWEAR"}},"79a0a843-3762-4b10-bd33-81fdb8bac9ac":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/8258X-BLUEa.jpg","links":"shopify:\/\/collections\/babydolls","title_1":"BABYDOLLS"}},"29658277-42ba-4865-8e99-53beebc97e55":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/818JT300Q_BLK_l.jpg","links":"shopify:\/\/collections\/25-dolla-make-you-holla-sale","title_1":"$25 DOLLA MAKE YOU HOLLA"}},"b45946a4-aec9-404e-9003-122b5bf2c337":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/PL2201-plus-ProductImages01-web_5fa935ef-4461-46bd-b92e-8600776e119d.jpg","links":"shopify:\/\/collections\/bedroom-costumes","title_1":"BEDROOM COSTUMES"}}},"block_order":["847f3460-f1b7-42fd-9b6b-00fef3579156","0a88dbc4-e8b3-42f8-b340-c15cf690f91d","7486423f-d102-4c77-91a2-16a3fd1f217a","e4e7874c-c2f2-4553-89c3-1f23d6bd83bb","875eb7ba-4bd8-41cd-97df-db07affcc8f7","79a0a843-3762-4b10-bd33-81fdb8bac9ac","29658277-42ba-4865-8e99-53beebc97e55","b45946a4-aec9-404e-9003-122b5bf2c337"],"settings":{"title":"FEATURED  Styles <span><\/span>"}},"1648729268f9b0846c":{"type":"slideshow","blocks":{"8df1f673-9ec9-429a-8af6-084fcac2b8ee":{"type":"style_1","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/2560x1440-rose-solid-color-background_1.jpg","mobile_image":"shopify:\/\/shop_images\/2560x1440-rose-solid-color-background_1.jpg","show_mobile_bg_overlay":false,"mobile_bg_clr":"#000000","subheading":"","subheading_color":"#000000","subheading_size":"12","title":"","heading_color":"#000000","heading_size":"40","title_2":"","title_2_clr":"#000000","sub_vertical_size":"12","button":"","link":"shopify:\/\/collections\/swimwear-2022"}},"34666daa-89e4-4483-a9aa-03f119b35bc0":{"type":"style_1","settings":{"image":"shopify:\/\/shop_images\/images_2.jpg","mobile_image":"shopify:\/\/shop_images\/images_3_44.jpg","show_mobile_bg_overlay":false,"mobile_bg_clr":"#000000","subheading":"","subheading_color":"#000000","subheading_size":"12","title":"","heading_color":"#000000","heading_size":"40","title_2":"","title_2_clr":"#000000","sub_vertical_size":"12","button":"","link":"shopify:\/\/collections\/bodystockings"}}},"block_order":["8df1f673-9ec9-429a-8af6-084fcac2b8ee","34666daa-89e4-4483-a9aa-03f119b35bc0"],"settings":{"slideshow_speed":"5000","slideshow_transition":"true","navigation_color":"#ffffff"}},"16487294170b09e672":{"type":"space-divider","settings":{"divider_spacing":30,"divider_border":false}},"164873091102c1538b":{"type":"space-divider","settings":{"divider_spacing":20,"divider_border":false}},"1652464910be35b479":{"type":"space-divider","settings":{"divider_spacing":20,"divider_border":false}}},"content_for_index":["1562030841260","1562045263017","1645674139ff29180c","1645673801c93643d2","164851927374149d31","1646030900a44b054d","1645692362ec5530b3","16469327892cac7d40","1600901514307","164577224304dc9fb9","1648729268f9b0846c","164873091102c1538b","16487294170b09e672","1602553959377","164601363993c16444","1642602324cbd1c582","1646932764e2d26aa8","1573708181964","1652464910be35b479","1561997079024"],"blocks":{"1744347199190486471":{"type":"shopify:\/\/apps\/advanced-wishlist\/blocks\/app\/330d9272-08ea-4193-b3e0-475a69fa65fa","disabled":false,"settings":{}},"7420477900589326039":{"type":"shopify:\/\/apps\/youpay-multiplayer-shopping\/blocks\/youpay-product-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7","disabled":false,"settings":{"product-callout-status":false,"product-button-status":false,"button-text-long":"Get it paid for you with","button-text-medium":"Get it paid for with","button-text-short":"Get it paid","theme":"blue","button-colour":"#000000","button-background-colour":"rgba(0,0,0,0)","button-height":37,"border-radius":0,"margin-top":10,"margin-bottom":10,"width":100,"alignment":"left","callout-theme":"blue","modal-theme":"dark","modal-icon":"shirt"}},"10576504925779971753":{"type":"shopify:\/\/apps\/youpay-multiplayer-shopping\/blocks\/youpay-cart-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7","disabled":false,"settings":{"cart-button-status":true,"cart-position":"after-checkout-button","button-text-long":"Get it paid for you with","button-text-medium":"Get it paid for with","button-text-short":"Get it paid","theme":"blue","button-colour":"#000000","button-background-colour":"rgba(0,0,0,0)","button-height":36,"border-radius":30,"margin-top":0,"margin-bottom":10,"width":100,"alignment":"center"}},"6593136046357153830":{"type":"shopify:\/\/apps\/youpay-multiplayer-shopping\/blocks\/youpay-flyout-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7","disabled":false,"settings":{"flyout-button-status":false,"flyout-position":"after-checkout-button","button-text-long":"Get it paid for you with","button-text-medium":"Get it paid for with","button-text-short":"Get it paid","theme":"blue","button-colour":"#000000","button-background-colour":"rgba(0,0,0,0)","button-height":36,"border-radius":30,"margin-top":10,"margin-bottom":10,"width":70,"alignment":"center"}}}}}
+{
+  "presets": {
+  },
+  "current": {
+    "logo_use_image": true,
+    "logo_max_height": "95",
+    "logo_mob_height": "40",
+    "favicon_enable": true,
+    "preloader_enable": false,
+    "top_to_btm": false,
+    "layout": "wide",
+    "base_font": "Google+Questrial",
+    "type_base_size": "14px",
+    "body_weight_size": "normal",
+    "text_spacing": "0",
+    "header_font": "Google+Questrial",
+    "type_weight_size": "normal",
+    "type_uppercase": false,
+    "heading_spacing": "1",
+    "type_header_base_size": "48px",
+    "type_header_base_size_2": "44px",
+    "type_header_base_size_3": "34px",
+    "type_header_base_size_4": "22px",
+    "type_header_base_size_5": "20px",
+    "type_header_base_size_6": "16px",
+    "other_font": "Google+Liu+Jian+Mao+Cao",
+    "color_body_bg": "#ffffff",
+    "overlay_bg": "#000000",
+    "color_borders": "#dcdcdc",
+    "black_borders": "#2b2b2b",
+    "color_primary": "#ff186e",
+    "color_button_primary_text": "#ffffff",
+    "primary_hover_btn": "#000000",
+    "primary_hover_btn_text": "#ff186e",
+    "color_sold": "#ff186e",
+    "color_sold_text": "#ffffff",
+    "sale_bg": "#ff186e",
+    "sale_button_text": "#ffffff",
+    "new_bg": "#ff186e",
+    "new_button_text": "#ffffff",
+    "offer_bg": "#ff186e",
+    "offer_button_text": "#ffffff",
+    "color_body_text": "#1e1e1e",
+    "link_color": "#1e1e1e",
+    "color_primary_color": "#ff186e",
+    "color_heading_type1_color": "#fc5095",
+    "color_heading_color": "#000000",
+    "input_bg_clr": "rgba(0,0,0,0)",
+    "input_border_clr": "#dcdcdc",
+    "input_placeholder_clr": "#c3c3c3",
+    "input_txt_clr": "#1e1e1e",
+    "input_txt_focusclr": "#1e1e1e",
+    "secondary_image_use": true,
+    "show_img_height": false,
+    "products_img_height": "200",
+    "products_img_height_tab": "",
+    "product_row_mob": "double",
+    "overlay_use": false,
+    "gradient_pri_clr": "#ff186e",
+    "gradient_Sec_clr": "#1e1e1e",
+    "products_icon_bg": "#1e1e1e",
+    "products_icon_clr": "#ffffff",
+    "products_icon_hover_bg": "#ffb6c1",
+    "products_icon_hover_clr": "#ffffff",
+    "products_gutter": "15",
+    "products_border_radius": "0",
+    "products_border_full": false,
+    "products_full_border_width": "1",
+    "products_full_border": "#ffffff",
+    "products_full_hover_border": "#cbba9c",
+    "products_border_use": false,
+    "products_border_width": "2",
+    "products_border": "rgba(0,0,0,0)",
+    "products_border_2": "#ff186e",
+    "products_det_bg": "rgba(0,0,0,0)",
+    "product_title_bg_color": "rgba(0,0,0,0)",
+    "product_title_color": "#1e1e1e",
+    "product_title_hover_color": "#ff186e",
+    "product_price": "#ff186e",
+    "product_cmp_price": "#727272",
+    "product_vendor": "#1e1e1e",
+    "product_label_color": "#000000",
+    "sidebar_bg": "#ff186e",
+    "sidebar_secondary_bg": "#ff186e",
+    "sidebar_text": "#fff",
+    "use_breadcrumb": true,
+    "breadcrumb_bg_image": true,
+    "breadcrumb_bg_color": "#727272",
+    "breadcrumb_text_color": "#ffffff",
+    "breadcrumb_text_hover_color": "#ff186e",
+    "enable_quick_view": true,
+    "show_prt_quickview_desc": true,
+    "display_quick_availability": true,
+    "display_quick_subtotal": true,
+    "small_img_bg_clr": "#fff",
+    "animae_enable": true,
+    "collections_show_sold_out_circle": true,
+    "collections_show_new_circle": true,
+    "sale_label_as": "offer_label",
+    "display_vendor": true,
+    "display_subtotal": true,
+    "enable_add_cart": true,
+    "enable_compare": true,
+    "enable_wishlist": false,
+    "display_color_variant": true,
+    "display_item_size": false,
+    "display_short_desc": true,
+    "product_review": true,
+    "enable_sidebar_multiple_choice": true,
+    "collection_infinite_scrolling": false,
+    "collection_sidebar_use": "left_sidebar",
+    "collection_sidebar_mobile": true,
+    "product_page_sidebar": "left_sidebar",
+    "product_sidebar_mobile": true,
+    "blog_page_sidebar": "full_width",
+    "use_custom_list_collection": true,
+    "list-collections": "",
+    "collection_btn_text": "View All",
+    "product_image_featured": true,
+    "show_list_desc": false,
+    "show_item_count": true,
+    "display_availability": true,
+    "enable_color_swatch": true,
+    "color_swatch_style": "normal",
+    "enable_linked_option": true,
+    "enable_zoom_option": true,
+    "product_related_enable": true,
+    "related_prds_heading": "Related Products",
+    "heading_image_need": false,
+    "related_prds_title": "From this Collection",
+    "cart_notes_enable": true,
+    "use_ajax_cart": true,
+    "cart_title_bg": "#ff186e",
+    "cart_title_clr": "#ffffff",
+    "search_grid": "4",
+    "search_results_per_page": "12",
+    "show_search_prt": true,
+    "display_popup_newsletter": false,
+    "pop_up_newsletter_img_show": false,
+    "popup_newsletter_bg": "#ffffff",
+    "popup_newsletter_title": "Stay Up To Date On Our Sassy Offers",
+    "popup_newsletter_message": "Subscribe and get notified at first on the latest update and offers!",
+    "popup_newsletter_text": "#000000",
+    "popup_newsletter_title_clr": "#ff186e",
+    "popup_newsletter_form": "#fff",
+    "popup_newsletter_form_txt": "#ff186e",
+    "popup_news_close": "#ff186e",
+    "form_note": "We Do Not Spam",
+    "count_down_enable": true,
+    "count_down_home": true,
+    "count_down_collections": true,
+    "count_down_prodetails": true,
+    "prodetail_deal_label": true,
+    "prodetail_deal_heading": "Hurry, Only few item(s) left!",
+    "home_productdeal_time": "1280413696047@10\/24\/2019_00:00:00\n1903944761410@11\/24\/2019_00:00:00",
+    "dealbtn": "#2b2b2b",
+    "dealbtn_text": "#ffffff",
+    "dealbtn_label": "#fff",
+    "social_twitter_link": "https:\/\/twitter.com\/sassymamaling",
+    "social_facebook_link": "https:\/\/www.facebook.com\/sassymamaplus\/",
+    "social_pinterest_link": "",
+    "social_google_plus_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/sassymamalingerieusa\/",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "social_rss_link": "",
+    "social_sharing_blog": true,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "share_google": true,
+    "social_sharing_style": "normal",
+    "display_currency": true,
+    "currency_1_unit": "USD",
+    "currency_2_unit": "EUR",
+    "currency_3_unit": "GBP",
+    "currency_4_unit": "AUD",
+    "currency_5_unit": "INR",
+    "currency_6_unit": "JPY",
+    "currency_7_unit": "CAD",
+    "currency_8_unit": "CNY",
+    "currency_9_unit": "AED",
+    "currency_10_unit": "RUB",
+    "show_shipping_calculator": true,
+    "shipping_calculator_heading": "Get shipping estimates",
+    "shipping_calculator_default_country": "United States",
+    "password_bg_img": true,
+    "password_logo": true,
+    "logo_txt_color": "#891616",
+    "pwd_header": "Opening Soon",
+    "pwd_header_color": "#d97373",
+    "theme_boxshadow_clr": "#000000",
+    "pwd_show_share_buttons": true,
+    "pwd_social_message": "Spread the word",
+    "pwd_newsletter_enable": true,
+    "pwd_newsletter_form_heading": "Be the first to know when we launch.",
+    "pwd_newsletter_form_heading_clr": "#2ccc5c",
+    "pwd_newsletter_inpt_bg": "#a62323",
+    "pwd_newsletter_btn_bg": "#1ee19d",
+    "pwd_newsletter_btn_txt": "#ffffff",
+    "pwd_newsletter_btn_hoverbg": "#c25454",
+    "pwd_newsletter_btn_hovertxt": "#c6cf22",
+    "pwd_placeholder_txt": "#54e325",
+    "pwd_newsletter_placeholder": "Email address",
+    "pwd_newsletter_button_text": "Notify me",
+    "social_title_clr": "#b46666",
+    "social_icon_clr": "#c6cf22",
+    "social__icon_hoverclr": "#dc1dd0",
+    "checkout_header_image": "",
+    "checkout_use_storefront_logo": true,
+    "checkout_logo_image": "",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffb8da",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#080808",
+    "checkout_button_color": "#ff176e",
+    "checkout_error_color": "#5700ff",
+    "show_button_radius": "false",
+    "single_product_layout_type": "layout_style_1",
+    "btn_border_radius": "0",
+    "title_border": "#f56c28",
+    "heading_secondary_clr": "#e71407",
+    "collections_show_sale_circle": true,
+    "offer_price_enable": true,
+    "social_sharing_count": true,
+    "curve_image_slider": true,
+    "curve_image": true,
+    "product_overlay": "#ffffff",
+    "homepage_sidebar": "false",
+    "homepage_sidebar_mobile": "true",
+    "header_style_1": "style_2",
+    "use_sticky_header": true,
+    "footer_style_1": "style_1",
+    "sub_header_font": "Google+Poppins",
+    "color_primary_border": "#f59207",
+    "breadcrumb_overlaybg_color": "rgba(0,0,0,0)",
+    "new_products_period": "100",
+    "show_ex_tax": true,
+    "ex_tax": "Ex of Sale Tax",
+    "shipping_calculator": "Enabled",
+    "shipping_calculator_submit_button_label": "Calculate shipping",
+    "shipping_calculator_submit_button_label_disabled": "Calculating...",
+    "enable_gmap": true,
+    "contact_iframe_code": "<iframe width=\"960\" height=\"578\" style=\"border:0;overflow:hidden;\" src=\"https:\/\/maps.google.co.in\/?ie=UTF8&t=m&ll=-37.823006,144.977388&spn=0.02034,0.042915&z=14&output=embed\"><\/iframe>",
+    "enable_contact_section": true,
+    "contact_bg_img": true,
+    "contact_bg_color": "#ffffff",
+    "contact_module_contact_phonetitle": "Talk to us",
+    "contact_phone1": "<b>Toll-Free: <\/b> 0803 - 080 - 3081",
+    "contact_phone2": "<b>Fax: <\/b> 0803 - 080 - 3082",
+    "contact_module_contact_title": "Contact Us",
+    "contact_module_email": true,
+    "contact_module_email_1": "buddhathemes@somemail.com",
+    "contact_module_email2": "support@somemail.com",
+    "contact_phone": true,
+    "enable_contact_address": true,
+    "contact_module_address": true,
+    "contact_module_address_title": "Location",
+    "contact_module_address1": "No: 58 A, East Madison Street,",
+    "contact_module_address2": "Baltimore, MD, USA\r\n4508",
+    "pop_up_newsletter_bg": "#ffffff",
+    "newsletter_form_action": "",
+    "collection_suggest": "",
+    "display_index": false,
+    "display_product": true,
+    "display_collection": true,
+    "display_article": true,
+    "display_blog": true,
+    "display_cart": true,
+    "interval_time": "15000",
+    "show_close_suggest": true,
+    "only_home_preloader_enable": false,
+    "color_cart": "#204a80",
+    "color_button_cart_text": "#ffffff",
+    "cart_hover_btn": "#ff003a",
+    "cart_hover_btn_text": "#fff",
+    "cart_size": "14px 28px",
+    "cart_font_size": "34",
+    "small_cart_size": "14px 28px",
+    "small_cart_font_size": "34",
+    "enable_filters": true,
+    "filter_height": "200",
+    "display_slideshow": true,
+    "slideshow_speed": "8000",
+    "slideshow_transition": "slide",
+    "display_slideshow_1": "image",
+    "video_1": "",
+    "image_1_link": "",
+    "image_1_alt": "Lorem a Cosmo",
+    "slide-heading_1": "Lorem a Cosmo",
+    "slide_heading_color_1": "#ffffff",
+    "slide_heading_size_1": "40",
+    "slide-text_1": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+    "slide_text_color_1": "#ffffff",
+    "slide_text_size_1": "12",
+    "button-text_1": "Shop The Collection",
+    "button-color_text_1": "#e4e4e4",
+    "button-bg_text_1": "#e4e4e4",
+    "button-hover-bg_text_1": "#e4e4e4",
+    "button-hover-text_1": "#e4e4e4",
+    "text_align_slide_1": "left",
+    "display_slideshow_2": "image",
+    "video_2": "",
+    "image_2_link": "",
+    "image_2_alt": "Up to 30%* Off",
+    "slide-heading_2": "Up to 30%* Off",
+    "slide_heading_color_2": "#fff",
+    "slide_heading_size_2": "40",
+    "slide-text_2": "Praesent dapibus eleifend eu a justomos de milancelos",
+    "slide_text_color_2": "#fff",
+    "slide_text_size_2": "12",
+    "button-text_2": "Shop Now",
+    "button-color_text_2": "#e4e4e4",
+    "button-bg_text_2": "#e4e4e4",
+    "button-hover-bg_text_2": "#e4e4e4",
+    "button-hover-text_2": "#e4e4e4",
+    "text_align_slide_2": "left",
+    "display_slideshow_3": "image",
+    "video_3": "",
+    "image_3_link": "",
+    "image_3_alt": "Loremous",
+    "slide-heading_3": "Loremous",
+    "slide_heading_color_3": "#ffffff",
+    "slide_heading_size_3": "40",
+    "slide-text_3": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+    "slide_text_color_3": "#ffffff",
+    "slide_text_size_3": "12",
+    "button-text_3": "Shop The Collection",
+    "button-color_text_3": "#e4e4e4",
+    "button-bg_text_3": "#e4e4e4",
+    "button-hover-bg_text_3": "#e4e4e4",
+    "button-hover-text_3": "#e4e4e4",
+    "text_align_slide_3": "left",
+    "display_slideshow_4": "none",
+    "video_4": "",
+    "image_4_link": "",
+    "image_4_alt": "",
+    "slide-heading_4": "",
+    "slide_heading_color_4": "#fff",
+    "slide_heading_size_4": "40",
+    "slide-text_4": "",
+    "slide_text_color_4": "#fff",
+    "slide_text_size_4": "12",
+    "button-text_4": "",
+    "button-color_text_4": "#e4e4e4",
+    "button-bg_text_4": "#e4e4e4",
+    "button-hover-bg_text_4": "#e4e4e4",
+    "button-hover-text_4": "#e4e4e4",
+    "text_align_slide_4": "center",
+    "pwd_logo_max_width": "700",
+    "show_blog_4_content": true,
+    "show_blog_4_img": true,
+    "show_blog_4_author": true,
+    "show_blog_4_btn": true,
+    "show_blog_4_date": true,
+    "show_blog_4_tag": true,
+    "blog_design_4_title": "#000000",
+    "blog_design_4_titlehover": "#cbba9c",
+    "blog_design_4_datecolor": "#000000",
+    "blog_design_4_authorcolor": "#000000",
+    "blog_design_commentcolor": "#000",
+    "blog_design_4_tag": "#000000",
+    "blog_design_4_taghover": "#cbba9c",
+    "blog_btn_sec_bg": "rgba(0,0,0,0)",
+    "show_blog_sidebar": true,
+    "show_recent_articles": true,
+    "show_recent_articles_img": true,
+    "blog_article_limit": "3",
+    "show_blog_tags": true,
+    "show_blog_instagram": true,
+    "show_featured_products": true,
+    "show_footer_tweets": true,
+    "tweet_heading": "Latest Tweets",
+    "tweet_embcode": "<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/iamdesigning\" data-widget-id=\"425498722839957505\" data-border-color=\"#fff\" data-tweet-limit=\"3\" data-chrome=\"nofooter noheader\">Tweets by @iamdesigning<\/a>\r\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script>",
+    "display_quickview_subtotal": true,
+    "social_sharing_products": true,
+    "links_style_1": "style_8",
+    "display_product_type": true,
+    "display_vendor_type": "name",
+    "color_tooltip": true,
+    "product_quantity_enable": true,
+    "payment_button": true,
+    "short_desc": true,
+    "product_tab1": true,
+    "product_tab1_heading": "Description",
+    "product_tab2": true,
+    "product_tab2_heading": "Reviews",
+    "product_tab3": true,
+    "product_tab3_heading": "Shipping details",
+    "product_tab3_page": "",
+    "display_recently_viewed_products": true,
+    "recently_viewed_products_title": "Recently Viewed Products",
+    "number_of_recently_viewed_products": "8",
+    "button_style_1": "style_2",
+    "product_style_1": "style_1",
+    "images_style_1": "style_1",
+    "show_collection_image": true,
+    "collections_sort_enable": true,
+    "collections_items_enable": true,
+    "collections_view_enable": true,
+    "display_flavour": false,
+    "flavour_txt": "Flavour",
+    "flavour_bg": "#000",
+    "flavour_color": "#fff",
+    "collection_grid": "4",
+    "collection_results_per_page": "12",
+    "logo_max_width": "450",
+    "blog_design_4_describg": "#ffffff",
+    "blog_design_4_desboxshawdow": "#f4f4f4",
+    "blog_design_4_bgcolor": "#000",
+    "blog_btn_bg": "rgba(0,0,0,0)",
+    "blog_btn_text": "#685f52",
+    "blog_btn_hover_bg": "#000",
+    "blog_hover_btn_text": "#000",
+    "show_currency_1": false,
+    "show_currency_2": false,
+    "show_currency_3": false,
+    "show_currency_4": false,
+    "show_currency_5": false,
+    "show_currency_6": false,
+    "show_currency_7": false,
+    "show_currency_8": false,
+    "show_currency_9": false,
+    "show_currency_10": false,
+    "enable_multiple_currencies": true,
+    "sections": {
+      "sidebar-category": {
+        "type": "sidebar-category",
+        "settings": {
+          "enable_sidecategory": false,
+          "linkedlist": "sidebar-menu",
+          "linkedlist_title": "Category"
+        }
+      },
+      "sidebar-bestsellers": {
+        "type": "sidebar-bestsellers",
+        "settings": {
+          "show_best_products": false,
+          "title": "Best Sellers",
+          "bestseller": "lingerie",
+          "limit": "4"
+        }
+      },
+      "sidebar-promoimage": {
+        "type": "sidebar-promoimage",
+        "blocks": {
+          "1477474976957": {
+            "type": "content",
+            "settings": {
+              "promo_link": "",
+              "promo_title": "Promo Text"
+            }
+          },
+          "1477475002420": {
+            "type": "content",
+            "settings": {
+              "promo_link": "",
+              "promo_title": "Promo Text"
+            }
+          }
+        },
+        "block_order": [
+          "1477474976957",
+          "1477475002420"
+        ],
+        "settings": {
+        }
+      },
+      "sidebar-colors": {
+        "type": "sidebar-colors",
+        "blocks": {
+          "1558395599652": {
+            "type": "image",
+            "settings": {
+              "title": "Red"
+            }
+          },
+          "1565442990491": {
+            "type": "image",
+            "settings": {
+              "title": "Pink"
+            }
+          },
+          "1597116746408": {
+            "type": "image",
+            "settings": {
+              "title": "White"
+            }
+          },
+          "1597116315660": {
+            "type": "image",
+            "settings": {
+              "title": "Teal"
+            }
+          },
+          "1597116331053": {
+            "type": "image",
+            "settings": {
+              "title": "Blue"
+            }
+          },
+          "1597116343517": {
+            "type": "image",
+            "settings": {
+              "title": "Sky Blue"
+            }
+          },
+          "1597116364897": {
+            "type": "image",
+            "settings": {
+              "title": "Purple"
+            }
+          },
+          "1477476891997": {
+            "type": "image",
+            "settings": {
+              "title": "Black"
+            }
+          },
+          "1597116396956": {
+            "type": "image",
+            "settings": {
+              "title": "Midnight Blue"
+            }
+          },
+          "1597116410004": {
+            "type": "image",
+            "settings": {
+              "title": "Coral"
+            }
+          },
+          "1597116422200": {
+            "type": "image",
+            "settings": {
+              "title": "Multi Color"
+            }
+          },
+          "1597116435176": {
+            "type": "image",
+            "settings": {
+              "title": "Silver"
+            }
+          }
+        },
+        "block_order": [
+          "1558395599652",
+          "1565442990491",
+          "1597116746408",
+          "1597116315660",
+          "1597116331053",
+          "1597116343517",
+          "1597116364897",
+          "1477476891997",
+          "1597116396956",
+          "1597116410004",
+          "1597116422200",
+          "1597116435176"
+        ],
+        "settings": {
+          "enable_shop_by_tags_1": true,
+          "shop_by_tags_1_title": "Shop By Color"
+        }
+      },
+      "sidebar-tag-filters": {
+        "type": "sidebar-tag-filters",
+        "blocks": {
+          "1477477078599": {
+            "type": "text",
+            "settings": {
+              "enable_shop_by_tags": true,
+              "shop_by_tags_title": "Shop By Price",
+              "shop_by_tags_list": "Under $25, $25 - $50, $51 - $75, $76 - $99, $100+"
+            }
+          }
+        },
+        "block_order": [
+          "1477477078599"
+        ],
+        "settings": {
+        }
+      },
+      "faqs": {
+        "type": "faqs",
+        "blocks": {
+          "1483333359453": {
+            "type": "text",
+            "settings": {
+              "title": "What age can I begin training my dog?",
+              "description": "Answer :<br>\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          },
+          "1483333363494": {
+            "type": "text",
+            "settings": {
+              "title": "What shots does my puppy need?",
+              "description": "Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          },
+          "1483333365467": {
+            "type": "text",
+            "settings": {
+              "title": "Can I make an order over the phone?",
+              "description": "Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          },
+          "1483333367109": {
+            "type": "text",
+            "settings": {
+              "title": "What if I need to return an item?",
+              "description": "Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          },
+          "1483333368739": {
+            "type": "text",
+            "settings": {
+              "title": "Can I ship to a different location?",
+              "description": "Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          },
+          "1483333369796": {
+            "type": "text",
+            "settings": {
+              "title": "What if an item is out of stock?",
+              "description": "Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          },
+          "1483333371707": {
+            "type": "text",
+            "settings": {
+              "title": "What if I'm not home when my order arrives?",
+              "description": "Answer :<br>\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official."
+            }
+          }
+        },
+        "block_order": [
+          "1483333359453",
+          "1483333363494",
+          "1483333365467",
+          "1483333367109",
+          "1483333368739",
+          "1483333369796",
+          "1483333371707"
+        ],
+        "settings": {
+        }
+      },
+      "brands": {
+        "type": "brands",
+        "settings": {
+        }
+      },
+      "product-sidebar-deals": {
+        "type": "product-sidebar-deals",
+        "settings": {
+          "show_best_products": false,
+          "title": "Hot Deals",
+          "dealitems": "frontpage",
+          "dealbtn": "#000000",
+          "dealbtn_text": "#ffffff",
+          "limit": "0"
+        }
+      },
+      "product-sidebar-bestsellers": {
+        "type": "product-sidebar-bestsellers",
+        "settings": {
+          "show_best_products": false,
+          "title": "Best Sellers",
+          "bestseller": "frontpage",
+          "limit": "4"
+        }
+      },
+      "sidebar-banner": {
+        "type": "sidebar-banner",
+        "settings": {
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": true,
+          "collections_sort_enable": true,
+          "collections_view_enable": true,
+          "collection_grid": "4",
+          "collection_results_per_page": "16"
+        }
+      },
+      "navigation": {
+        "type": "navigation",
+        "blocks": {
+          "1571999688158": {
+            "type": "style_6",
+            "settings": {
+              "title": "Menu - Style 6",
+              "megamenu_items_6": "Lingerie",
+              "link_banner_first_style_6": "",
+              "main_linklist_6": "lingerie"
+            }
+          },
+          "1597106024203": {
+            "type": "style_6",
+            "settings": {
+              "title": "Menu - Style 6",
+              "megamenu_items_6": "Sexy Mama Costumes",
+              "link_banner_first_style_6": "",
+              "main_linklist_6": "sexy-mama-costumes"
+            }
+          }
+        },
+        "block_order": [
+          "1571999688158",
+          "1597106024203"
+        ],
+        "settings": {
+          "choose_menu": "main-menu",
+          "display_megamenu": false
+        }
+      },
+      "blog-sidebar-article": {
+        "type": "blog-sidebar-article",
+        "settings": {
+          "show_recent_articles": true,
+          "show_recent_articles_img": true,
+          "blog_article_limit": "3"
+        }
+      },
+      "blog-sidebar-tags": {
+        "type": "blog-sidebar-tags",
+        "settings": {
+          "show_blog_tags": true
+        }
+      },
+      "blog-sidebar-deals": {
+        "type": "blog-sidebar-deals",
+        "settings": {
+          "show_best_products": true,
+          "sidebar_bg_color": "rgba(0,0,0,0)",
+          "title": "Hot Deals",
+          "dealitems": "frontpage",
+          "dealbtn_border": "#000",
+          "dealbtn": "#000000",
+          "dealbtn_text": "#ffffff",
+          "limit": "4"
+        }
+      },
+      "blog": {
+        "type": "blog",
+        "settings": {
+          "blog_bg": "#000",
+          "blog_results_per_page": "8",
+          "blog_grid": "2",
+          "show_blog_4_content": true,
+          "show_blog_4_img": true,
+          "show_blog_4_author": true,
+          "show_blog_4_btn": true,
+          "show_blog_4_date": true,
+          "show_blog_4_tag": false,
+          "blog_design_4_title": "#ff186e",
+          "blog_design_4_titlehover": "#0096ff",
+          "blog_design_4_datecolor": "#ff186e",
+          "blog_design_4_authorcolor": "#1e1e1e",
+          "blog_design_commentcolor": "#1e1e1e",
+          "blog_design_4_tag": "#1e1e1e",
+          "blog_design_4_taghover": "#0096ff"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "1540372711989": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-money-check",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Special offer 1 + 1 = 3",
+              "title_color": "#000000",
+              "sub_title": "Get a gift",
+              "sub_title_color": "#000000",
+              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "desc_color": "#000000",
+              "link": "collections\/all"
+            }
+          },
+          "1540372716313": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-gift",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Free reward card",
+              "title_color": "#000000",
+              "sub_title": "Worth $10, $50, $100",
+              "sub_title_color": "#000000",
+              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "desc_color": "#000000",
+              "link": ""
+            }
+          },
+          "1540372724609": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-truck",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Free shipping",
+              "title_color": "#000000",
+              "sub_title": "On orders over $100",
+              "sub_title_color": "#000000",
+              "desc": "Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+              "desc_color": "#000000",
+              "link": "\/collections\/all"
+            }
+          },
+          "1540379760524": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-undo",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Order return",
+              "title_color": "#000000",
+              "sub_title": "Returns within 5 days",
+              "sub_title_color": "#000000",
+              "desc": "Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+              "desc_color": "#000000",
+              "link": "\/collections"
+            }
+          }
+        },
+        "block_order": [
+          "1540372711989",
+          "1540372716313",
+          "1540372724609",
+          "1540379760524"
+        ],
+        "settings": {
+          "display_product_thumb_img": true,
+          "display_product_sku": false,
+          "display_product_type": false,
+          "display_vendor_type": false,
+          "color_tooltip": true,
+          "product_quantity_enable": true,
+          "enable_size_chart": true,
+          "enable_video": false,
+          "enable_wishlist": false,
+          "enable_cart": true,
+          "color_cart": "#000000",
+          "color_button_cart_text": "#ffffff",
+          "cart_hover_btn": "#727272",
+          "cart_hover_btn_text": "#000000",
+          "use_cart_width": true,
+          "cart_size": "13px  56px",
+          "cart_font_size": "16",
+          "small_cart_size": "14px 28px",
+          "small_cart_font_size": "16",
+          "payment_button": true,
+          "short_desc": false,
+          "social_sharing_products": false,
+          "secure_pay_enable": false,
+          "display_back_in_stock": true,
+          "text": "Thanks! We will notify you when this product becomes available!",
+          "text1": "Click Here",
+          "text2": "to be notified by email when",
+          "text3": "becomes available",
+          "error": "Please provide a valid email address.",
+          "product_tab1": false,
+          "product_tab1_heading": "Description",
+          "product_tab2": true,
+          "product_tab2_heading": "Customer Reviews",
+          "product_tab3": false,
+          "product_tab3_heading": "Custom Tab",
+          "product_tab3_page": "",
+          "product_related_enable": true,
+          "related_prds_heading": "<span>Related<\/span> Products",
+          "heading_image_need": false,
+          "related_prds_title": "Like what you see here?",
+          "display_recently_viewed_products": true,
+          "recently_viewed_products_title": "<span>Recently <\/span>Viewed Products",
+          "recently_viewed_products_subtitle": "Here’s What Other Sassy Shoppers Have Looked At",
+          "heading_image_need_recently": false,
+          "number_of_recently_viewed_products": "8",
+          "custom_text_block": true
+        }
+      },
+      "social-links-menu": {
+        "type": "social-links-menu",
+        "settings": {
+          "social_icon_border_clr": "#34b3d3",
+          "social_icon_clr": "#35b8f4",
+          "social_hovericon_clr": "#ffffff",
+          "social_1_iconclr": "#34b3d3",
+          "social_2_iconclr": "#35538f",
+          "social_3_iconclr": "#35b8f4",
+          "social_4_iconclr": "#d53e2b",
+          "social_5_iconclr": "#35b8f4",
+          "social_6_iconclr": "#314359",
+          "social_7_iconclr": "#35b8f4",
+          "social_8_iconclr": "#35b8f4",
+          "social_9_iconclr": "#35b8f4"
+        }
+      },
+      "order-form": {
+        "type": "order-form",
+        "settings": {
+          "collection": ""
+        }
+      },
+      "GDPR-modal": {
+        "type": "GDPR-modal",
+        "settings": {
+          "display_gdpr": true,
+          "show_gdp": "right",
+          "bg_color": "#000000",
+          "text_color": "#ffffff",
+          "privacy_policy_color": "#818181",
+          "content": "The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. Please click Accept Cookies to continue to use the site.",
+          "privacy_policy_text": "Privacy Policy",
+          "privacy_policy_link": "https:\/\/sassy-mama-lingerie-dev.myshopify.com\/pages\/privacy-policy",
+          "accept_cookies_text": "Accept"
+        }
+      },
+      "someone-purchased": {
+        "type": "someone-purchased",
+        "blocks": {
+          "e13080bd-f83a-46b0-ba84-659c809b4ea3": {
+            "type": "image",
+            "settings": {
+              "product": "gothic-garden-plus-size-teddy",
+              "from_ago": "fromLubbock TX, US",
+              "time_ago": "20 minutes ago"
+            }
+          },
+          "6613202c-2fd6-4963-807b-e333a05057d5": {
+            "type": "image",
+            "settings": {
+              "product": "captain-usa-available-mid-late-september",
+              "from_ago": "from Weston WI, US",
+              "time_ago": "4 hours 20 minutes ago"
+            }
+          },
+          "b5a6fce9-c165-40aa-9a8f-6167072f23e6": {
+            "type": "image",
+            "settings": {
+              "product": "bodacious-plus-size-navy-blue-bra-set",
+              "from_ago": "from Lubbock TX, US",
+              "time_ago": "55 minutes ago"
+            }
+          },
+          "1565890174880": {
+            "type": "image",
+            "settings": {
+              "product": "discipline-me-one-size-fits-most-curves",
+              "from_ago": "from Lakewood CA, US",
+              "time_ago": "30 minutes ago"
+            }
+          },
+          "6d23c497-fd2a-409b-b27b-0576040dc542": {
+            "type": "image",
+            "settings": {
+              "product": "empowered-plus-size-black-teddy",
+              "from_ago": "from Elmont NY, US",
+              "time_ago": "4 hours ago"
+            }
+          },
+          "1555932188446": {
+            "type": "image",
+            "settings": {
+              "product": "a-play-shaker-rechargeable-silicone-anal-plug-with-remote",
+              "from_ago": "from Springfield AR, US",
+              "time_ago": "17 minutes ago"
+            }
+          },
+          "7aaa55e3-f3e6-4d98-b377-2b30733a92f2": {
+            "type": "image",
+            "settings": {
+              "product": "does-the-trick-open-cup-crotchless-wet-look-teddy",
+              "from_ago": "from Los Angeles CA, US",
+              "time_ago": "1 hour ago"
+            }
+          },
+          "1555932203743": {
+            "type": "image",
+            "settings": {
+              "product": "creepin-it-real-2pc-strappy-mesh-bralette-panty-set",
+              "from_ago": "from New Chicago IL, US",
+              "time_ago": "14 minutes ago"
+            }
+          },
+          "242c9d94-1030-42d4-b501-fe3b529caef8": {
+            "type": "image",
+            "settings": {
+              "product": "chillin-by-the-pool-plus-size-cover-dress",
+              "from_ago": "from Miami Fl, US",
+              "time_ago": "1 hour 30 minutes ago"
+            }
+          },
+          "5b9b2a1a-b43a-4d06-a86f-fd216f392c61": {
+            "type": "image",
+            "settings": {
+              "product": "all-about-kitty-fantasy-for-her-her-thrusting-silicone-rabbit",
+              "from_ago": "from Escondido CA, US",
+              "time_ago": "3 hours ago"
+            }
+          },
+          "adeebf0a-21db-43ad-8b09-90654c58cd26": {
+            "type": "image",
+            "settings": {
+              "product": "a-e-eves-clit-loving-thumper-vibe",
+              "from_ago": "from Banning CA, US",
+              "time_ago": "1 Hour 15 minutes ago"
+            }
+          },
+          "b59929be-6aa0-49d0-96a9-df9f97bccfbd": {
+            "type": "image",
+            "settings": {
+              "product": "at-the-club-like-one-size-fits-most-plus",
+              "from_ago": "from Virginia Beach VA, US",
+              "time_ago": "40 minutes ago"
+            }
+          },
+          "010cce93-1de8-41e4-ad66-e9b59ca49cd0": {
+            "type": "image",
+            "settings": {
+              "product": "cant-tame-this-kitty-plus-size-satin-leopard-robe",
+              "from_ago": "from Tickfaw LA, US",
+              "time_ago": "3 hours ago"
+            }
+          },
+          "4d5c53df-504e-4dad-bc54-5b8a030a938b": {
+            "type": "image",
+            "settings": {
+              "product": "cheeky-bedtime-booty-plus-size-sleepwear",
+              "from_ago": "from Sydney, Australia",
+              "time_ago": "2 hours 10 minutes ago"
+            }
+          },
+          "e02ed28d-1f86-4646-acb8-abbd6230d973": {
+            "type": "image",
+            "settings": {
+              "product": "control-my-fun-vibrating-panties",
+              "from_ago": "from Fresno CA, US",
+              "time_ago": "10 hours ago"
+            }
+          },
+          "81ebe598-bf3c-422b-a574-5cb1c2edbec0": {
+            "type": "image",
+            "settings": {
+              "product": "bianca-baby-plus-size-babydoll",
+              "from_ago": "from Camp Springs MD, US",
+              "time_ago": "35 minutes ago"
+            }
+          },
+          "71bdfdd4-3d69-4d91-b6d2-79ae7db7e19b": {
+            "type": "image",
+            "settings": {
+              "product": "ocean-goddess-sizes-x-large-to-curvy-2x",
+              "from_ago": "from Leicester NC, US",
+              "time_ago": "2 hours 20 minutes ago"
+            }
+          },
+          "d468cf93-a795-450d-8754-bd74b454ced5": {
+            "type": "image",
+            "settings": {
+              "product": "the-devine-miss-jakemia-plus-size-lingerie",
+              "from_ago": "from Brooklyn Park MD, US",
+              "time_ago": "4 hours ago"
+            }
+          },
+          "62ae4f7b-f2d1-4ac8-b759-5038f7aa7c52": {
+            "type": "image",
+            "settings": {
+              "product": "too-fine-for-your-ass-size-one-size-fits-most-plus",
+              "from_ago": "from Hickory NC, US",
+              "time_ago": "6 hours ago"
+            }
+          },
+          "e3cc6b23-5d76-401c-95cb-8f2d3142919d": {
+            "type": "image",
+            "settings": {
+              "product": "berry-bodacious-plus-size-babydoll",
+              "from_ago": "from Houston, TX US",
+              "time_ago": "37 minutes ago"
+            }
+          },
+          "a429fb76-3b7c-448f-993e-d335623ac718": {
+            "type": "image",
+            "settings": {
+              "product": "all-that-glimmers-le-wand-all-that-glimmers-set-pink",
+              "from_ago": "from Saint Paul MN, US",
+              "time_ago": "5 hours ago"
+            }
+          },
+          "c152ddac-142f-4bd9-9446-65b7e06adae0": {
+            "type": "image",
+            "settings": {
+              "product": "sweet-as-candy-corn-witch-available-mid-late-september",
+              "from_ago": "from Pembroke Pines FL, US",
+              "time_ago": "2 hours ago"
+            }
+          },
+          "51edde04-1213-429a-97b9-7965d0ffe8dc": {
+            "type": "image",
+            "settings": {
+              "product": "hell-bent-cheerleader-eta-late-july",
+              "from_ago": "from Tulsa, OK, US",
+              "time_ago": "5 hours ago"
+            }
+          },
+          "eeafffc6-573f-419b-94b9-7dbdc2c6ee8c": {
+            "type": "image",
+            "settings": {
+              "product": "at-midnight-plus-size-black-teddy",
+              "from_ago": "from Boulder, CO, US",
+              "time_ago": "6 hours ago"
+            }
+          },
+          "c2477187-2a06-4fc1-a00a-5e516a98ccd9": {
+            "type": "image",
+            "settings": {
+              "product": "a-bad-mama-jama",
+              "from_ago": "from Fremont NC, US",
+              "time_ago": "4 hours 25 minutes ago"
+            }
+          },
+          "564d6137-efec-4885-adc5-ea4da36defc3": {
+            "type": "image",
+            "settings": {
+              "product": "girl-please-blue-plus-size-bra-set",
+              "from_ago": "from Bratenahl OH, US",
+              "time_ago": "5hours 15 minutes ago"
+            }
+          },
+          "762f35ba-2e5f-4259-bc34-af68e9222049": {
+            "type": "image",
+            "settings": {
+              "product": "get-it-gurl-plus-size-fishnet-teddy",
+              "from_ago": "from Glendale AZ, US",
+              "time_ago": "9 hours ago"
+            }
+          },
+          "bb3c31f2-1abe-4055-a594-4ec5d4b75076": {
+            "type": "image",
+            "settings": {
+              "product": "sexy-beach-dress-avail-in-black-or-coral",
+              "from_ago": "from Laporte IN, US",
+              "time_ago": "3 hours 55 minutes ago"
+            }
+          },
+          "40e93376-ac17-4028-b401-1a9f51ee5368": {
+            "type": "image",
+            "settings": {
+              "product": "going-fishing-fishnet-faux-leather-garter-dress-w-g-string",
+              "from_ago": "from Scranton PA, US",
+              "time_ago": "7 hours 10 minutes ago"
+            }
+          },
+          "3a229b85-201b-4b29-8852-eabc4f3e51cb": {
+            "type": "image",
+            "settings": {
+              "product": "ballet-babe-ballet-style-thigh-high-stockings",
+              "from_ago": "from Norwich NY, US",
+              "time_ago": "5 hours 35 minutes ago"
+            }
+          }
+        },
+        "block_order": [
+          "e13080bd-f83a-46b0-ba84-659c809b4ea3",
+          "6613202c-2fd6-4963-807b-e333a05057d5",
+          "b5a6fce9-c165-40aa-9a8f-6167072f23e6",
+          "1565890174880",
+          "6d23c497-fd2a-409b-b27b-0576040dc542",
+          "1555932188446",
+          "7aaa55e3-f3e6-4d98-b377-2b30733a92f2",
+          "1555932203743",
+          "242c9d94-1030-42d4-b501-fe3b529caef8",
+          "5b9b2a1a-b43a-4d06-a86f-fd216f392c61",
+          "adeebf0a-21db-43ad-8b09-90654c58cd26",
+          "b59929be-6aa0-49d0-96a9-df9f97bccfbd",
+          "010cce93-1de8-41e4-ad66-e9b59ca49cd0",
+          "4d5c53df-504e-4dad-bc54-5b8a030a938b",
+          "e02ed28d-1f86-4646-acb8-abbd6230d973",
+          "81ebe598-bf3c-422b-a574-5cb1c2edbec0",
+          "71bdfdd4-3d69-4d91-b6d2-79ae7db7e19b",
+          "d468cf93-a795-450d-8754-bd74b454ced5",
+          "62ae4f7b-f2d1-4ac8-b759-5038f7aa7c52",
+          "e3cc6b23-5d76-401c-95cb-8f2d3142919d",
+          "a429fb76-3b7c-448f-993e-d335623ac718",
+          "c152ddac-142f-4bd9-9446-65b7e06adae0",
+          "51edde04-1213-429a-97b9-7965d0ffe8dc",
+          "eeafffc6-573f-419b-94b9-7dbdc2c6ee8c",
+          "c2477187-2a06-4fc1-a00a-5e516a98ccd9",
+          "564d6137-efec-4885-adc5-ea4da36defc3",
+          "762f35ba-2e5f-4259-bc34-af68e9222049",
+          "bb3c31f2-1abe-4055-a594-4ec5d4b75076",
+          "40e93376-ac17-4028-b401-1a9f51ee5368",
+          "3a229b85-201b-4b29-8852-eabc4f3e51cb"
+        ],
+        "settings": {
+          "display_someone-purchased": true,
+          "display_someone-purchased_mb": true,
+          "show_someone-purchased": "right",
+          "someone_speed": "10000",
+          "text": "Someone bought"
+        }
+      },
+      "custom-text-type-1": {
+        "type": "custom-text-type-1",
+        "settings": {
+          "bg_color": "#000000",
+          "title": "",
+          "class_color": "#1e1e1e",
+          "icon_bg_color": "#1e1e1e",
+          "title_color": "#ff186e",
+          "sub_title_color": "#ffffff",
+          "desc_color": "#1e1e1e"
+        }
+      },
+      "article": {
+        "type": "article",
+        "settings": {
+          "show_blog_4_author": true,
+          "show_blog_4_date": true,
+          "show_blog_4_tag": true,
+          "blog_design_4_title": "#ff186e",
+          "blog_design_4_titlehover": "#ff186e",
+          "blog_design_4_datecolor": "#ff186e",
+          "blog_design_4_authorcolor": "#1e1e1e",
+          "blog_design_commentcolor": "#1e1e1e",
+          "blog_design_4_tag": "#1e1e1e",
+          "blog_design_4_taghover": "#ff186e"
+        }
+      },
+      "contact": {
+        "type": "contact",
+        "settings": {
+          "bg_color": "#ff186e",
+          "title": "<strong>Contact Us: <\/strong>",
+          "title_clr": "#060002",
+          "small_title": "",
+          "text_clr": "#040303",
+          "enable_gmap": false,
+          "contact_iframe_code": "<iframe width=\"960\" height=\"578\" style=\"border:0;overflow:hidden;\" src=\"https:\/\/maps.google.co.in\/?ie=UTF8&t=m&ll=-37.823006,144.977388&spn=0.02034,0.042915&z=14&output=embed\"><\/iframe>",
+          "enable_contact_section": true,
+          "icontactheading_color": "#060002",
+          "contactblock_bg_color": "#fbf9f9",
+          "contacticon_bg_color": "#ff186e",
+          "contacticon_text_color": "#000000",
+          "contacticon_color": "#0a0a0a",
+          "contactborder_color": "#ff186e",
+          "contacthoverborder_color": "#060002",
+          "contact_phone": true,
+          "contact_module_contact_phonetitle": "Phone",
+          "contact_icon_1": "fa fa-phone",
+          "contact_phone1": "1 800 242 6652",
+          "contact_phone2": "OFFICE\/PHONE HOURS:   Monday thru Friday  9:00 AM EST TO 6:00 PM EST",
+          "contact_module_email": true,
+          "contact_module_contact_title": "Mail",
+          "contact_icon_2": "fa fa-envelope",
+          "contact_module_email_1": "info@sassymamalingerie.com",
+          "contact_module_email2": "YOU CAN EMAIL US AT ANYTIME AND SOMEONE WILL GET BACK TO YOU WITHIN 24 HOURS",
+          "enable_contact_address": true,
+          "contact_icon_3": "fa fa-location-arrow",
+          "contact_module_address": true,
+          "contact_module_address_title": "Address",
+          "contact_module_address1": "PO BOX 7284 Seminole,",
+          "contact_module_address2": "Florida 33775 USA",
+          "border_clr": "#dcdcdc",
+          "border_hover_clr": "#dcdcdc",
+          "contactpage_bg_color": "#ffffff"
+        }
+      },
+      "about-us": {
+        "type": "about-us",
+        "blocks": {
+          "1562839670567": {
+            "type": "Image",
+            "settings": {
+              "team_bg_color": "#000",
+              "team_1_img": "",
+              "team_1_imgheading": "#",
+              "team_1_title": "Christine Johanson",
+              "team_1_title_clr": "#000000",
+              "team_1_designation": "Manager",
+              "team_1_designation_clr": "#727272"
+            }
+          },
+          "1562839789486": {
+            "type": "Image",
+            "settings": {
+              "team_bg_color": "#e71407",
+              "team_1_img": "",
+              "team_1_imgheading": "#",
+              "team_1_title": "Lana Tailor",
+              "team_1_title_clr": "#000000",
+              "team_1_designation": "Manager",
+              "team_1_designation_clr": "#727272"
+            }
+          },
+          "1562839830427": {
+            "type": "Image",
+            "settings": {
+              "team_bg_color": "#000",
+              "team_1_img": "",
+              "team_1_imgheading": "#",
+              "team_1_title": "Joana Smith",
+              "team_1_title_clr": "#000000",
+              "team_1_designation": "Manager",
+              "team_1_designation_clr": "#727272"
+            }
+          },
+          "1564241504081": {
+            "type": "Image",
+            "settings": {
+              "team_bg_color": "#000",
+              "team_1_img": "",
+              "team_1_imgheading": "#",
+              "team_1_title": "Lana Tailor",
+              "team_1_title_clr": "#000000",
+              "team_1_designation": "Beauty",
+              "team_1_designation_clr": "#727272"
+            }
+          }
+        },
+        "block_order": [
+          "1562839670567",
+          "1562839789486",
+          "1562839830427",
+          "1564241504081"
+        ],
+        "settings": {
+          "gradient_pri_clr": "#ff186e",
+          "gradient_Sec_clr": "#ff186e",
+          "showvedaone_2_section": true,
+          "abtone_image_2": "",
+          "abtone_image_2_heading": "",
+          "abtone_2_title": "Enjoy the Difference",
+          "abtone_2_maintilte": "#ff186e",
+          "abtone_2_des": "From the calypso music of the carribeans The styles or genre of music that exists across  the world is mind boggling to say the least.  Starting from the Calypso styles of the Afro Caribbean to the Brazilian Zumba styles of dance music, the western classical styles, the Indian genres and the Sufi styles besides the Arabic offer amazing variety .",
+          "abtone_2_desc": "#727272",
+          "show_6_section": true,
+          "gallery_headingcolor": "#ffffff",
+          "gallery_2_img": "",
+          "gallery_2_img_link": "shopify:\/\/collections",
+          "gallery_2_imgheading": "img1",
+          "gallery_2_subheading": "Suspense Bodysuit",
+          "section_3_detailone": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Phasellus viverranulla ut metus&nbsp;<\/p>",
+          "gallery_3_img": "",
+          "gallery_3_imgheading": "img2",
+          "gallery_3_img_link": "shopify:\/\/collections",
+          "gallery_3_subheading": "Lace Romper",
+          "section_3_detailtwo": "<p>Phasellus viverranulla ut metus lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.&nbsp;<\/p>",
+          "gallery_4_img": "",
+          "gallery_4_img_link": "shopify:\/\/collections",
+          "gallery_4_imgheading": "img3",
+          "gallery_4_subheading": "Aria Teddy",
+          "section_3_detailthree": "<p>Adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Phasellus viverranulla ut metus&nbsp;lorem ipsum dolor sit amet, consectetuer&nbsp;<\/p>",
+          "show_4_section": true,
+          "image_3": "",
+          "background_color_3": "#ebebeb",
+          "background_overlay_bg": "#000000",
+          "title_1": "<span>What <\/span> They Say",
+          "title_1_clr": "#1e1e1e",
+          "small_1_title": "Donec vitae sapien ut libero venenatis",
+          "text_1_clr": "#575757",
+          "heading_image_1": "",
+          "section_4_quotetxt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
+          "aboutvedafivetestcolor": "#1e1e1e",
+          "test_author_img": "",
+          "test_border_clr": "#ff186e",
+          "testauthor_name": "Henry Moses",
+          "testauthor_wrk": "Business",
+          "test_authorcolor": "#1e1e1e",
+          "title": "<span>Our<\/span> Happy Team",
+          "title_clr": "#000000",
+          "heading_image": "",
+          "small_title": "Donec vitae sapien ut libero venenatis faucibus",
+          "text_clr": "#575757",
+          "team_hovertext_color": "#ff186e",
+          "show_social_icon": true
+        }
+      },
+      "header-01": {
+        "type": "header-01",
+        "settings": {
+          "logo_text": "#ffffff",
+          "logo_hover_text": "#ff186e",
+          "border_between_bars": "rgba(0,0,0,0)",
+          "display_search": true,
+          "search_icon": "#ffffff",
+          "search_icon_hover": "#ff186e",
+          "search_text": "#888a8b",
+          "search_link_hover": "#1e1e1e",
+          "search_bg": "#ffffff",
+          "dropdown_icon": "#ffffff",
+          "dropdown_icon_hover": "#ff186e",
+          "dropdown_bg": "#ffffff",
+          "dropdown_link": "#1e1e1e",
+          "dropdown_hover_link": "#ff186e",
+          "display_minicart": true,
+          "minicart_icon": "#ff186e",
+          "minicart_icon_hover": "#ff186e",
+          "minicart_count": "#ffffff",
+          "minicart_count_bg": "#ff186e",
+          "minicart_count_hover_bg": "#ff186e",
+          "minicart_count_hover_text": "#ffffff",
+          "minicart_bg": "#ffffff",
+          "minicart_text": "#1e1e1e",
+          "minicart_link": "#1e1e1e",
+          "minicart_link_hover": "#ff186e",
+          "minicart_btn_bg": "#ff186e",
+          "minicart_btn_hover_bg": "#ff186e",
+          "minicart_btn_text": "#ffffff",
+          "minicart_btn_hover_text": "#ffffff",
+          "minicart_total": "#1e1e1e",
+          "display_wishlist": true,
+          "currency_icon": "#ffffff",
+          "currency_icon_hover": "#ff186e",
+          "currency_bg": "#ffffff",
+          "currency_link": "#1e1e1e",
+          "menubar_bg": "#000000",
+          "menubar_links": "#ffffff",
+          "menubar_links_hover": "#ff186e",
+          "menu_active": "#ff186e",
+          "menubar_dropdown_bg": "#ffffff",
+          "menubar_dropdown_caption": "#ff186e",
+          "menubar_dropdown_caption_hover": "#ff186e",
+          "menubar_dropdown_links": "#1e1e1e",
+          "menubar_dropdown_links_hover": "#ff186e",
+          "megamenu_border_clr": "#dcdcdc",
+          "choose_menu": "main-menu",
+          "display_megamenu": true
+        }
+      },
+      "footer-01": {
+        "type": "footer-01",
+        "settings": {
+          "footer_bg_img": false,
+          "footer_overlaybg_clr": "#000000",
+          "footer_bg_clr": "#000000",
+          "footer_heading_clr": "#ffffff",
+          "footer_txt_clr": "#ffffff",
+          "footer_link_clr": "#ffffff",
+          "footer_link_hover_clr": "#ff186e",
+          "show_footer_text": true,
+          "footer_menu_1": "customer-care",
+          "footer_menu_1_title": "CUSTOMER CARE",
+          "footer_menu_2": "shop",
+          "footer_menu_2_title": "SHOP",
+          "footer_menu_3": "",
+          "footer_menu_3_title": "",
+          "show_contact": true,
+          "footer_menu_4_title": "Contact SML",
+          "footer_address": "",
+          "footer_contact_no": "<a href=\"tel:8002426652\">800.242.6652<\/a>",
+          "office_hours": "Monday - Friday: 8AM to 6PM EST",
+          "footer_contact_id": "info@sassymamalingerie.com",
+          "footer_contact_link": "info@sassymamalingerie.com",
+          "footer_social_enable": true,
+          "footer_menu": false,
+          "footer": "footer",
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "shopify:\/\/shop_images\/Group_140_2x_7135d4b0-b5a8-45c7-afcd-e910a3f0d6b5.png",
+          "payment_icon_2": "shopify:\/\/shop_images\/Visa_Electron_2x_795e2407-11b3-4d04-b0e3-10ef0657ef34.png",
+          "payment_icon_3": "shopify:\/\/shop_images\/kisspng-american-express-logo-credit-card-payment-seo-for-the-finance-industry-experience-and-solu-5b62e8845e9914.5428316515332087083875_2x_11bea495-d9ab-41d0-a2db-128394cd143b.png",
+          "payment_icon_4": "shopify:\/\/shop_images\/PayPal-Logo-2014-present_2x_d3e6ff9c-bcd7-40bd-aa1f-bf72c3ebbbf7.png",
+          "payment_icon_5": "shopify:\/\/shop_images\/23afterpay1_2x_2637bd50-6557-4e8c-a7d7-b87c0009c4e2.png",
+          "payment_icon_6": "shopify:\/\/shop_images\/sezzle4755_2x_3b3fcd04-1f12-411b-9b7d-e7f84d6539ea.png",
+          "payment_icon_7": "shopify:\/\/shop_images\/klarna-og_2x_5ba9d4d3-cc68-46ec-8f03-146ccadac9c8.png",
+          "copyright_clr": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover": "#ff186e",
+          "show_powered_by": false,
+          "copyright": "Copyright",
+          "footer_border": "#000000",
+          "footer_menu_clr": "#ffffff"
+        }
+      },
+      "1561997079024": {
+        "type": "home-customer-support",
+        "blocks": {
+          "1561997079024-0": {
+            "type": "text",
+            "settings": {
+              "img_class": "shopify:\/\/shop_images\/Icon_awesome-globe.jpg",
+              "icon_clr": "#fc5095",
+              "title": "Worldwide Delivery",
+              "title_color": "#1e1e1e",
+              "desc": "Delivery to most countries",
+              "desc_color": "#1a1919",
+              "link": "#"
+            }
+          },
+          "1561997079024-1": {
+            "type": "text",
+            "settings": {
+              "img_class": "shopify:\/\/shop_images\/Icon_awesome-phone-alt.jpg",
+              "icon_clr": "#fc5095",
+              "title": "Best Services",
+              "title_color": "#1e1e1e",
+              "desc": "Just a phone call away",
+              "desc_color": "#151414",
+              "link": ""
+            }
+          },
+          "1561997079024-2": {
+            "type": "text",
+            "settings": {
+              "img_class": "shopify:\/\/shop_images\/Icon_awesome-shipping-fast.jpg",
+              "icon_clr": "#fc5095",
+              "title": "Fast Delivery",
+              "title_color": "#1e1e1e",
+              "desc": "We endaevor to get your order  shipped within 1-2 business days",
+              "desc_color": "#120101",
+              "link": ""
+            }
+          },
+          "7702755c-3e8a-44e6-895b-f67f7aeac107": {
+            "type": "text",
+            "settings": {
+              "img_class": "shopify:\/\/shop_images\/Icon_ionic-md-people.jpg",
+              "icon_clr": "#000000",
+              "title": "USA  Female Owned & Operated",
+              "title_color": "#000000",
+              "desc": "USA female owned business with Plus Size Lingerie for Women",
+              "desc_color": "#000000",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1561997079024-0",
+          "1561997079024-1",
+          "1561997079024-2",
+          "7702755c-3e8a-44e6-895b-f67f7aeac107"
+        ],
+        "settings": {
+          "bg_color": "#ffffff",
+          "show_overlay_bg_clr": false,
+          "overlay_bg_clr": "rgba(0,0,0,0)",
+          "iconhovertext_color": "#ff186e"
+        }
+      },
+      "1562030841260": {
+        "type": "slideshow",
+        "blocks": {
+          "9e02f54d-0288-4d25-bfce-6e7bbba7d5f0": {
+            "type": "style_1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Edito-2637X_2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Edito-2637X_2.jpg",
+              "show_mobile_bg_overlay": false,
+              "mobile_bg_clr": "#000000",
+              "subheading": "",
+              "subheading_color": "#000000",
+              "subheading_size": "12",
+              "title": "",
+              "heading_color": "#000000",
+              "heading_size": "40",
+              "title_2": "",
+              "title_2_clr": "#000000",
+              "sub_vertical_size": "12",
+              "button": "",
+              "link": "shopify:\/\/collections\/brand-spanking-new"
+            }
+          },
+          "ca078d76-9d54-44f9-9e3b-69e35da1a8cd": {
+            "type": "style_1",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UUUUUSSSSSEEEEE.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/UUUUUSSSSSEEEEE.jpg",
+              "show_mobile_bg_overlay": false,
+              "mobile_bg_clr": "#000000",
+              "subheading": "",
+              "subheading_color": "#000000",
+              "subheading_size": "12",
+              "title": "",
+              "heading_color": "#000000",
+              "heading_size": "40",
+              "title_2": "",
+              "title_2_clr": "#000000",
+              "sub_vertical_size": "12",
+              "button": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "9e02f54d-0288-4d25-bfce-6e7bbba7d5f0",
+          "ca078d76-9d54-44f9-9e3b-69e35da1a8cd"
+        ],
+        "settings": {
+          "slideshow_speed": "3000",
+          "slideshow_transition": "false",
+          "navigation_color": "#ff176e"
+        }
+      },
+      "1562045263017": {
+        "type": "space-divider",
+        "settings": {
+          "divider_spacing": 30,
+          "divider_border": false
+        }
+      },
+      "app-instagram": {
+        "type": "app-instagram",
+        "settings": {
+          "title": "",
+          "title_clr": "#000",
+          "heading_image": "",
+          "small_title": "",
+          "text_clr": "#000",
+          "button": "",
+          "link": ""
+        }
+      },
+      "brands-about": {
+        "type": "brands-about",
+        "blocks": {
+          "1564378399051": {
+            "type": "Image",
+            "settings": {
+              "client_img": "",
+              "client_heading": "",
+              "client_link": ""
+            }
+          },
+          "1564378410564": {
+            "type": "Image",
+            "settings": {
+              "client_img": "",
+              "client_heading": "",
+              "client_link": ""
+            }
+          },
+          "1564378416940": {
+            "type": "Image",
+            "settings": {
+              "client_img": "",
+              "client_heading": "",
+              "client_link": ""
+            }
+          },
+          "1564378421676": {
+            "type": "Image",
+            "settings": {
+              "client_img": "",
+              "client_heading": "",
+              "client_link": ""
+            }
+          },
+          "1564378428443": {
+            "type": "Image",
+            "settings": {
+              "client_img": "",
+              "client_heading": "",
+              "client_link": ""
+            }
+          },
+          "1566549749560": {
+            "type": "Image",
+            "settings": {
+              "client_img": "",
+              "client_heading": "",
+              "client_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1564378399051",
+          "1564378410564",
+          "1564378416940",
+          "1564378421676",
+          "1564378428443",
+          "1566549749560"
+        ],
+        "settings": {
+          "title": "",
+          "client_bg_clr": ""
+        }
+      },
+      "gallery": {
+        "type": "gallery",
+        "blocks": {
+          "1565421185306": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "",
+              "category": "",
+              "gallery_link": "shopify:\/\/collections\/all"
+            }
+          },
+          "1565421216929": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "",
+              "category": "",
+              "gallery_link": "shopify:\/\/collections\/all"
+            }
+          },
+          "1565421231532": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1565421236120": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1565421238326": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1565421243422": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "",
+              "category": "",
+              "gallery_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1565421185306",
+          "1565421216929",
+          "1565421231532",
+          "1565421236120",
+          "1565421238326",
+          "1565421243422"
+        ],
+        "settings": {
+          "title": "<span>Portfolio<\/span> Style",
+          "title_clr": "#ffffff",
+          "heading_image": "",
+          "small_title": "Short description",
+          "text_clr": "#727272",
+          "use_overlay": true,
+          "img_overlay": "#e71407",
+          "img_overlay_title": "#ffffff",
+          "img_overlay_catgry": "#727272",
+          "use_overlay_icons": true,
+          "img_overlay_icon": "#e71407",
+          "img_overlay_icon_txt": "#ffffff",
+          "img_overlay_icon_bg": "#ff0f00",
+          "img_overlay_icon_hover_txt": "#ffffff",
+          "texthover_bg_color": "#000000",
+          "texthover_txt_color": "#ffffff"
+        }
+      },
+      "lookbook": {
+        "type": "lookbook",
+        "blocks": {
+          "1568027968305": {
+            "type": "text_block",
+            "settings": {
+              "align_text": "left",
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "title_clr": "#ff186e",
+              "text_clr": "#727272",
+              "text_content_bg": "#e2e2e2"
+            }
+          },
+          "1568027975391": {
+            "type": "text_block",
+            "settings": {
+              "align_text": "right",
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "title_clr": "#ff186e",
+              "text_clr": "#727272",
+              "text_content_bg": "#e2e2e2"
+            }
+          },
+          "1568027987939": {
+            "type": "text_block",
+            "settings": {
+              "align_text": "left",
+              "enable_image": true,
+              "image": "",
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": "",
+              "title_clr": "#ff186e",
+              "text_clr": "#727272",
+              "text_content_bg": "#e2e2e2"
+            }
+          }
+        },
+        "block_order": [
+          "1568027968305",
+          "1568027975391",
+          "1568027987939"
+        ],
+        "settings": {
+          "title": "<span>Our Lingerie <\/span> Models",
+          "title_clr": "#000000",
+          "heading_image": "",
+          "small_title": "Donec vitae sapien ut libero venenatis faucibus",
+          "text_clr": "#575757"
+        }
+      },
+      "1573708181964": {
+        "type": "newsletter-block",
+        "settings": {
+          "background_color": "#ff156e",
+          "overlay_background_color": "#ff176e",
+          "title": "Newsletter",
+          "title_color": "#ffffff",
+          "text": "Feeling Sassy??? Sign Up For the Sassy Mama Lingerie\nNewsletter To Receive Updates And Exclusive Offers for sexy plus size lingerie",
+          "text_color": "#ffffff",
+          "button": "Subscribe",
+          "btn_bg_color": "#000000",
+          "btn_text_color": "#ffffff",
+          "btn_bg_hover_color": "#727272",
+          "btn_hover_text_color": "#000000",
+          "input_box_border": "#ffffff",
+          "input_text_clr": "#000000",
+          "input_box_place": "#6a6a6a"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1597784420930": {
+            "type": "style_1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide1.jpg",
+              "mobile_image": "",
+              "show_mobile_bg_overlay": false,
+              "mobile_bg_clr": "#000",
+              "subheading": "Special Offer In Store & Online",
+              "subheading_color": "#ffc0cb",
+              "subheading_size": "26",
+              "title": "Beautiful Lingerie Wear",
+              "heading_color": "#ffb6c1",
+              "heading_size": "60",
+              "title_2": "Sale 25% Off",
+              "title_2_clr": "#ffc0cb",
+              "sub_vertical_size": "12",
+              "button": "Shop Now",
+              "link": "shopify:\/\/collections"
+            }
+          }
+        },
+        "block_order": [
+          "1597784420930"
+        ],
+        "settings": {
+          "slideshow_speed": "5000",
+          "slideshow_transition": "true",
+          "navigation_color": "#fff"
+        }
+      },
+      "space-divider": {
+        "type": "space-divider",
+        "settings": {
+          "divider_spacing": 40,
+          "divider_border": false
+        }
+      },
+      "home-boxed-images": {
+        "type": "home-boxed-images",
+        "settings": {
+          "gradient_pri_clr": "#ff186e",
+          "gradient_Sec_clr": "#0096ff",
+          "image_5": "shopify:\/\/shop_images\/Lingerie_767_x_1044.png",
+          "title_5": "LINGERIE",
+          "title_5_color": "#0096ff",
+          "text_5": "Collections",
+          "text_5_color": "#ffffff",
+          "button_5": "Show Now",
+          "link_5": "shopify:\/\/collections\/lingerie",
+          "image_1": "shopify:\/\/shop_images\/Accessories_767_x_740.png",
+          "title_1": "ACCESSORIES",
+          "title_1_color": "#ffff00",
+          "text_1": "Collections",
+          "text_1_color": "#ffffff",
+          "button_1": "Show Now",
+          "link_1": "shopify:\/\/collections\/accessories",
+          "image_3": "shopify:\/\/shop_images\/Bra_Sets_767_540.png",
+          "title_3": "BRA SETS",
+          "title_3_color": "#e6e085",
+          "text_3": "Collections",
+          "text_3_color": "#ffffff",
+          "button_3": "Shop Now",
+          "link_3": "shopify:\/\/collections\/bra-sets",
+          "image_4": "shopify:\/\/shop_images\/Sexy_Mama_Costumes_767_x_865.png",
+          "desc_bg_color": "#000",
+          "title_4": "Sexy Mama Costumes",
+          "title_4_color": "#db5762",
+          "text_4": "",
+          "text_4_color": "#ffffff",
+          "button_4": "",
+          "link_4": "shopify:\/\/collections\/sexy-mama-costumes",
+          "image_6": "shopify:\/\/shop_images\/Stockings_Thigh_Highs_767_x_865.png",
+          "title_6": "Stockings & Thigh Highs",
+          "title_6_color": "#e9c2a3",
+          "text_6": "",
+          "text_6_color": "#000",
+          "button_6": "Shop Now",
+          "link_6": "shopify:\/\/collections\/stockings-thigh-highs",
+          "image_2": "shopify:\/\/shop_images\/Panties_767_x_422.png",
+          "title_2": "Panties & Garter Belts",
+          "title_2_color": "#000",
+          "text_2": "Collections",
+          "text_2_color": "#000",
+          "button_2": "Shop Now",
+          "link_2": "shopify:\/\/collections\/panties-garter-belts"
+        }
+      },
+      "space-divider2": {
+        "type": "space-divider2",
+        "settings": {
+          "divider_spacing": 40,
+          "divider_border": false
+        }
+      },
+      "home-featured-products": {
+        "type": "home-featured-products",
+        "settings": {
+          "title": "<span>Brand<\/span> Spanking New",
+          "title_clr": "#ffffff",
+          "heading_image": "",
+          "small_title": "Donec vitae sapien ut libero venenatis faucibus",
+          "text_clr": "#ffffff",
+          "collection": "brand-spanking-new",
+          "grid": "4",
+          "rows": "1"
+        }
+      },
+      "space-divider3": {
+        "type": "space-divider3",
+        "settings": {
+          "divider_spacing": 40,
+          "divider_border": false
+        }
+      },
+      "ver2-home-featured-products": {
+        "type": "ver2-home-featured-products",
+        "settings": {
+          "title": "<span>Bedroom<\/span> Costumes",
+          "title_clr": "#ffffff",
+          "heading_image": "",
+          "small_title": "",
+          "text_clr": "#ffffff",
+          "collection": "sexy-mama-costumes",
+          "grid": "4",
+          "rows": "1"
+        }
+      },
+      "home-banner-with-text": {
+        "type": "home-banner-with-text",
+        "settings": {
+          "image_1": "",
+          "background_color": "#ff186e",
+          "image_5": "shopify:\/\/shop_images\/Home_4.png",
+          "link_5": "",
+          "title_1": "Designer Lingeries",
+          "title_color": "#ffffff",
+          "text_1": "Exclusive Different Style",
+          "text_color": "#ffffff",
+          "title_2": "Sale 65% Off",
+          "title_2_color": "#ffffff",
+          "deal_desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
+          "deal_desc_color": "#ffffff",
+          "button_1": "Shop Now",
+          "link_1": "",
+          "btn_bg_color": "#000",
+          "btn_text_color": "#fff",
+          "btn_bg_hover_color": "#0096ff",
+          "btn_hover_text_color": "#fff"
+        }
+      },
+      "space-divider4": {
+        "type": "space-divider4",
+        "settings": {
+          "divider_spacing": 40,
+          "divider_border": false
+        }
+      },
+      "home-featured-products-carousel": {
+        "type": "home-featured-products-carousel",
+        "settings": {
+          "title": "<span>Popular<\/span> Items",
+          "title_clr": "#ffffff",
+          "small_title": "Donec vitae sapien ut libero venenatis faucibus",
+          "text_clr": "#ffffff",
+          "heading_image": "",
+          "image_1": "shopify:\/\/shop_images\/Home_E.png",
+          "overlay_bgcolor": "#fe7ead",
+          "alignment": "left",
+          "title_1": "Buy 2 Get One Free",
+          "title_1_clr": "#ffffff",
+          "btn_txt": "Shop Now",
+          "link_1": "shopify:\/\/collections\/all",
+          "collection": "panties-garter-belts",
+          "content_overlay_bgcolor": "#000"
+        }
+      },
+      "ver2-home-featured-products-carousel": {
+        "type": "ver2-home-featured-products-carousel",
+        "settings": {
+          "title": "",
+          "title_clr": "#000",
+          "small_title": "",
+          "text_clr": "#000",
+          "heading_image": "",
+          "image_1": "shopify:\/\/shop_images\/Home_G.png",
+          "overlay_bgcolor": "#fe7ead",
+          "alignment": "right",
+          "title_1": "World’s Biggest Brands",
+          "title_1_clr": "#ffffff",
+          "btn_txt": "Shop Now",
+          "link_1": "shopify:\/\/collections\/all",
+          "collection": "sexy-mama-costumes",
+          "content_overlay_bgcolor": "#000"
+        }
+      },
+      "space-divider5": {
+        "type": "space-divider5",
+        "settings": {
+          "divider_spacing": 20,
+          "divider_border": false
+        }
+      },
+      "newsletter-block": {
+        "type": "newsletter-block",
+        "settings": {
+          "image_1": "",
+          "background_color": "#000",
+          "overlay_background_color": "#ff186e",
+          "title": "Newsletter",
+          "title_color": "#ffffff",
+          "text": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros",
+          "text_color": "#ffffff",
+          "button": "Subscribe",
+          "btn_bg_color": "#000",
+          "btn_text_color": "#fff",
+          "btn_bg_hover_color": "#0096ff",
+          "btn_hover_text_color": "#fff",
+          "input_box_border": "#ffffff",
+          "input_text_clr": "#000",
+          "input_box_place": "#000"
+        }
+      },
+      "home-customer-support": {
+        "type": "home-customer-support",
+        "blocks": {
+          "1597857226328": {
+            "type": "text",
+            "settings": {
+              "icon_clr": "#ff186e",
+              "title": "Worldwide Delivery",
+              "title_color": "#1e1e1e",
+              "desc": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros",
+              "desc_color": "#727272",
+              "link": "#"
+            }
+          },
+          "1597857339174": {
+            "type": "text",
+            "settings": {
+              "icon_clr": "#ff186e",
+              "title": "Best Services",
+              "title_color": "#1e1e1e",
+              "desc": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros",
+              "desc_color": "#727272",
+              "link": ""
+            }
+          },
+          "1597857400473": {
+            "type": "text",
+            "settings": {
+              "icon_clr": "#ff186e",
+              "title": "Fast Delivery",
+              "title_color": "#1e1e1e",
+              "desc": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros",
+              "desc_color": "#727272",
+              "link": ""
+            }
+          },
+          "1597857462807": {
+            "type": "text",
+            "settings": {
+              "icon_clr": "#ff186e",
+              "title": "Made With Love",
+              "title_color": "#1e1e1e",
+              "desc": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros",
+              "desc_color": "#727272",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1597857226328",
+          "1597857339174",
+          "1597857400473",
+          "1597857462807"
+        ],
+        "settings": {
+          "image_1": "",
+          "bg_color": "#ffffff",
+          "show_overlay_bg_clr": true,
+          "overlay_bg_clr": "rgba(0,0,0,0)",
+          "iconhovertext_color": "#ff186e"
+        }
+      },
+      "space-divider6": {
+        "type": "space-divider6",
+        "settings": {
+          "divider_spacing": 40,
+          "divider_border": false
+        }
+      },
+      "home-banner-with-text-1": {
+        "type": "home-banner-with-text-1",
+        "settings": {
+          "image_1": "",
+          "background_color": "#ff186e",
+          "overlay_color": "#000",
+          "title_1": "LITTLE LUXURIES",
+          "title_color": "#ffffff",
+          "title_2": "OUR RANGE OF PREMIUM BRAS",
+          "title_2_color": "#ffffff",
+          "deal_desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium",
+          "deal_desc_color": "#ffffff",
+          "button_1": "Read More",
+          "link_1": "shopify:\/\/collections",
+          "btn_bg_color": "#000",
+          "btn_text_color": "#fff",
+          "btn_bg_hover_color": "#0096ff",
+          "btn_hover_text_color": "#fff",
+          "image_5": "shopify:\/\/shop_images\/Home_5.png",
+          "title_5_color": "#000",
+          "image_text_1": "STRAPLESS <br> CONVERTIBLE BRA",
+          "image_clr_1": "#ff186e",
+          "subimage_text_1": "Unde omnis iste natus",
+          "subimage_clr_1": "#ffffff",
+          "image_btn_1": "Read More",
+          "link_5": "shopify:\/\/collections",
+          "image_6": "shopify:\/\/shop_images\/Home_3.png",
+          "title_6_color": "#000",
+          "image_text_2": "CROTCHLESS <br> LACE TEDDY",
+          "image_clr_2": "#ff186e",
+          "subimage_text_2": "Unde omnis iste natus",
+          "subimage_clr_2": "#ffffff",
+          "image_btn_2": "Read More",
+          "link_6": "shopify:\/\/collections"
+        }
+      },
+      "space-divider7": {
+        "type": "space-divider7",
+        "settings": {
+          "divider_spacing": 40,
+          "divider_border": false
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+        }
+      },
+      "1600901514307": {
+        "type": "home-banner-with-text",
+        "disabled": true,
+        "settings": {
+          "background_color": "#ff186e",
+          "image_5": "shopify:\/\/shop_images\/banner_2x_dc110744-27ac-4dfa-88e0-8878443c55e2.jpg",
+          "link_5": "",
+          "top_image": "shopify:\/\/shop_images\/banner_with_text1_logo_200x_ac5f0c4a-a036-40c7-86a9-e992a3c31777.png",
+          "title_1": "Sassy Mama Lingerie",
+          "title_color": "#ffffff",
+          "text_1": "Sizes up to Curvy 6X",
+          "text_color": "#ffffff",
+          "title_2": "USA Owned & FEMALE Operated",
+          "title_2_color": "#ffffff",
+          "deal_desc": "Authentic Brands & NEVER any Fakes",
+          "deal_desc_color": "#ffffff",
+          "button_1": "",
+          "link_1": "",
+          "btn_bg_color": "#000000",
+          "btn_text_color": "#ffffff",
+          "btn_bg_hover_color": "#dc1d24",
+          "btn_hover_text_color": "#ffffff"
+        }
+      },
+      "1602553959377": {
+        "type": "home-featured-products",
+        "settings": {
+          "title": "Trending this week",
+          "title_clr": "#ffffff",
+          "links": "shopify:\/\/collections\/trending-this-week",
+          "small_title": "",
+          "text_clr": "#000000",
+          "collection": "trending-this-week",
+          "grid": "4",
+          "rows": "2"
+        }
+      },
+      "navigation-sticky": {
+        "type": "navigation-sticky",
+        "settings": {
+          "choose_sticky_menu": "sticky-menu",
+          "display_search": true,
+          "display_minicart": true,
+          "display_wishlist": true
+        }
+      },
+      "1642602324cbd1c582": {
+        "type": "home-banner-with-text",
+        "settings": {
+          "background_color": "#ffffff",
+          "image_5": "shopify:\/\/shop_images\/colourful-shopping-packets.jpg",
+          "link_5": "",
+          "top_image": "shopify:\/\/shop_images\/Group_156.png",
+          "title_1": "LOVE THE WAY YOU PAY <a href=\"#\">BOOK NOW<\/a>",
+          "title_color": "#000000",
+          "text_1": "",
+          "text_color": "#000000",
+          "title_2": "",
+          "title_2_color": "#000000",
+          "deal_desc": "Pay later.<br>\nAlways interest-free.",
+          "deal_desc_color": "#ff186e",
+          "button_1": "",
+          "link_1": "#",
+          "btn_bg_color": "#000000",
+          "btn_text_color": "#ffffff",
+          "btn_bg_hover_color": "#dc1d24",
+          "btn_hover_text_color": "#ffffff"
+        }
+      },
+      "1645673801c93643d2": {
+        "type": "home-product-tab",
+        "disabled": true,
+        "blocks": {
+          "1645673801c93643d2-0": {
+            "type": "text_block",
+            "settings": {
+              "title": "$25 DOLLA SALE",
+              "collection": "25-dolla-make-you-holla-sale"
+            }
+          },
+          "20ea4637-11c4-47a7-8ddd-e8b939eed97c": {
+            "type": "text_block",
+            "settings": {
+              "title": "BOGO 1\/2 PRICE",
+              "collection": "bogo-1-2-price"
+            }
+          },
+          "e03e3086-c293-4e0a-8e4d-3cc473ac894b": {
+            "type": "text_block",
+            "settings": {
+              "title": "Wet Look Lingerie",
+              "collection": "wet-look-lingerie"
+            }
+          },
+          "45fbf0e0-1ada-47d2-97b2-714371880fdf": {
+            "type": "text_block",
+            "settings": {
+              "title": "Bedroom Costumes",
+              "collection": "bedroom-costumes"
+            }
+          }
+        },
+        "block_order": [
+          "1645673801c93643d2-0",
+          "20ea4637-11c4-47a7-8ddd-e8b939eed97c",
+          "e03e3086-c293-4e0a-8e4d-3cc473ac894b",
+          "45fbf0e0-1ada-47d2-97b2-714371880fdf"
+        ],
+        "settings": {
+          "title_1": "featured <span> collection <span><\/span><\/span>",
+          "title_1_clr": "#ff186e",
+          "tag_clr": "#707070",
+          "tag_hover_clr": "#ff186e",
+          "tag_border_clr": "#ff186e"
+        }
+      },
+      "1645674139ff29180c": {
+        "type": "featured-product-slide",
+        "settings": {
+          "title": "Brand  Spanking New Lingerie",
+          "link": "shopify:\/\/collections\/brand-spanking-new",
+          "linktext": "View all",
+          "collection": "brand-spanking-new"
+        }
+      },
+      "1645692362ec5530b3": {
+        "type": "brands",
+        "disabled": true,
+        "blocks": {
+          "1645692362ec5530b3-1": {
+            "type": "Image",
+            "settings": {
+              "client_img": "shopify:\/\/shop_images\/1646902935842.jpg",
+              "client_heading": "",
+              "client_link": "shopify:\/\/collections\/teddies"
+            }
+          },
+          "1645692362ec5530b3-2": {
+            "type": "Image",
+            "settings": {
+              "client_img": "shopify:\/\/shop_images\/1646903012148.jpg",
+              "client_heading": "",
+              "client_link": "shopify:\/\/collections\/bodystockings"
+            }
+          },
+          "1645692362ec5530b3-3": {
+            "type": "Image",
+            "settings": {
+              "client_img": "shopify:\/\/shop_images\/1646903056135.jpg",
+              "client_heading": "",
+              "client_link": "shopify:\/\/collections\/wet-look-lingerie"
+            }
+          }
+        },
+        "block_order": [
+          "1645692362ec5530b3-1",
+          "1645692362ec5530b3-2",
+          "1645692362ec5530b3-3"
+        ],
+        "settings": {
+        }
+      },
+      "164577224304dc9fb9": {
+        "type": "space-divider",
+        "settings": {
+          "divider_spacing": 30,
+          "divider_border": false
+        }
+      },
+      "164601363993c16444": {
+        "type": "home-banner-custom-text",
+        "settings": {
+          "text": "<span class=\"color-tile\">EVERY<\/span> order is now covered under,<br>\nRoute Package Protection in the event of <span class=\"color-tile\">ANY<\/span> lost, <br>\ndamaged or stolen packages- <span class=\"color-tile\">FREE!<\/span>"
+        }
+      },
+      "1646030900a44b054d": {
+        "type": "home-featured-collection-slide",
+        "disabled": true,
+        "blocks": {
+          "b2e25727-2246-42ab-8073-0157c30f5a16": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/media_1000x-977296_grande_545046c9-2e1c-4e8b-812b-e74fef8be794.jpg",
+              "links": "shopify:\/\/collections",
+              "title_1": "lingerie"
+            }
+          },
+          "04eecf9b-e00e-472f-8060-0fa6db1bd51e": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FL2901-Plus-ProductImages-web-961604.jpg",
+              "links": "shopify:\/\/collections\/20-dolla-unda-sale",
+              "title_1": "$20 DOLLA  & UNDER  SALE"
+            }
+          },
+          "2116aed6-94a2-40ab-ab5f-40b6412be2f6": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_6280_grande_39d9cbd1-2e58-49ae-953a-08532ea941ee.jpg",
+              "links": "shopify:\/\/collections\/39-under",
+              "title_1": "$39 & UNDER"
+            }
+          }
+        },
+        "block_order": [
+          "b2e25727-2246-42ab-8073-0157c30f5a16",
+          "04eecf9b-e00e-472f-8060-0fa6db1bd51e",
+          "2116aed6-94a2-40ab-ab5f-40b6412be2f6"
+        ],
+        "settings": {
+          "title": "FEATURED <span>COLLECTION<\/span>"
+        }
+      },
+      "1646932764e2d26aa8": {
+        "type": "space-divider2",
+        "settings": {
+          "divider_spacing": 20,
+          "divider_border": false
+        }
+      },
+      "16469327892cac7d40": {
+        "type": "space-divider2",
+        "settings": {
+          "divider_spacing": 20,
+          "divider_border": false
+        }
+      },
+      "164851927374149d31": {
+        "type": "featured-custom",
+        "blocks": {
+          "847f3460-f1b7-42fd-9b6b-00fef3579156": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PK447XL.jpg",
+              "links": "shopify:\/\/collections\/trick-treat",
+              "title_1": "HALLOWEEN"
+            }
+          },
+          "0a88dbc4-e8b3-42f8-b340-c15cf690f91d": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2631X-Black-Front_500x749_4e37f973-1c93-4666-ad16-3caceaf32780.jpg",
+              "links": "shopify:\/\/collections\/bra-sets",
+              "title_1": "BRA SETS"
+            }
+          },
+          "7486423f-d102-4c77-91a2-16a3fd1f217a": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8705X-BlackPrint-Front_1.jpg",
+              "links": "shopify:\/\/collections\/teddies",
+              "title_1": "TEDDIES"
+            }
+          },
+          "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/P649-ProductImages01-web.jpg",
+              "links": "shopify:\/\/collections\/wet-look-lingerie",
+              "title_1": "WET LOOK"
+            }
+          },
+          "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/7447X-Black-Front_1.jpg",
+              "links": "shopify:\/\/collections\/loungewear",
+              "title_1": "LOUNGEWEAR"
+            }
+          },
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8258X-BLUEa.jpg",
+              "links": "shopify:\/\/collections\/babydolls",
+              "title_1": "BABYDOLLS"
+            }
+          },
+          "29658277-42ba-4865-8e99-53beebc97e55": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/818JT300Q_BLK_l.jpg",
+              "links": "shopify:\/\/collections\/25-dolla-make-you-holla-sale",
+              "title_1": "$25 DOLLA MAKE YOU HOLLA"
+            }
+          },
+          "b45946a4-aec9-404e-9003-122b5bf2c337": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PL2201-plus-ProductImages01-web_5fa935ef-4461-46bd-b92e-8600776e119d.jpg",
+              "links": "shopify:\/\/collections\/bedroom-costumes",
+              "title_1": "BEDROOM COSTUMES"
+            }
+          }
+        },
+        "block_order": [
+          "847f3460-f1b7-42fd-9b6b-00fef3579156",
+          "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
+          "7486423f-d102-4c77-91a2-16a3fd1f217a",
+          "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb",
+          "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
+          "29658277-42ba-4865-8e99-53beebc97e55",
+          "b45946a4-aec9-404e-9003-122b5bf2c337"
+        ],
+        "settings": {
+          "title": "FEATURED  Styles <span><\/span>"
+        }
+      },
+      "1648729268f9b0846c": {
+        "type": "slideshow",
+        "blocks": {
+          "8df1f673-9ec9-429a-8af6-084fcac2b8ee": {
+            "type": "style_1",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2560x1440-rose-solid-color-background_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/2560x1440-rose-solid-color-background_1.jpg",
+              "show_mobile_bg_overlay": false,
+              "mobile_bg_clr": "#000000",
+              "subheading": "",
+              "subheading_color": "#000000",
+              "subheading_size": "12",
+              "title": "",
+              "heading_color": "#000000",
+              "heading_size": "40",
+              "title_2": "",
+              "title_2_clr": "#000000",
+              "sub_vertical_size": "12",
+              "button": "",
+              "link": "shopify:\/\/collections\/swimwear-2022"
+            }
+          },
+          "34666daa-89e4-4483-a9aa-03f119b35bc0": {
+            "type": "style_1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/images_2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/images_3_44.jpg",
+              "show_mobile_bg_overlay": false,
+              "mobile_bg_clr": "#000000",
+              "subheading": "",
+              "subheading_color": "#000000",
+              "subheading_size": "12",
+              "title": "",
+              "heading_color": "#000000",
+              "heading_size": "40",
+              "title_2": "",
+              "title_2_clr": "#000000",
+              "sub_vertical_size": "12",
+              "button": "",
+              "link": "shopify:\/\/collections\/bodystockings"
+            }
+          }
+        },
+        "block_order": [
+          "8df1f673-9ec9-429a-8af6-084fcac2b8ee",
+          "34666daa-89e4-4483-a9aa-03f119b35bc0"
+        ],
+        "settings": {
+          "slideshow_speed": "5000",
+          "slideshow_transition": "true",
+          "navigation_color": "#ffffff"
+        }
+      },
+      "16487294170b09e672": {
+        "type": "space-divider",
+        "settings": {
+          "divider_spacing": 30,
+          "divider_border": false
+        }
+      },
+      "164873091102c1538b": {
+        "type": "space-divider",
+        "settings": {
+          "divider_spacing": 20,
+          "divider_border": false
+        }
+      },
+      "1652464910be35b479": {
+        "type": "space-divider",
+        "settings": {
+          "divider_spacing": 20,
+          "divider_border": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1562030841260",
+      "1562045263017",
+      "1645674139ff29180c",
+      "1645673801c93643d2",
+      "164851927374149d31",
+      "1646030900a44b054d",
+      "1645692362ec5530b3",
+      "16469327892cac7d40",
+      "1600901514307",
+      "164577224304dc9fb9",
+      "1648729268f9b0846c",
+      "164873091102c1538b",
+      "16487294170b09e672",
+      "1602553959377",
+      "164601363993c16444",
+      "1642602324cbd1c582",
+      "1646932764e2d26aa8",
+      "1573708181964",
+      "1652464910be35b479",
+      "1561997079024"
+    ],
+    "blocks": {
+      "7420477900589326039": {
+        "type": "shopify:\/\/apps\/youpay-multiplayer-shopping\/blocks\/youpay-product-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": false,
+        "settings": {
+          "product-callout-status": false,
+          "product-button-status": false,
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-background-colour": "rgba(0,0,0,0)",
+          "button-height": 37,
+          "border-radius": 0,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "width": 100,
+          "alignment": "left",
+          "callout-theme": "blue",
+          "modal-theme": "dark",
+          "modal-icon": "shirt"
+        }
+      },
+      "10576504925779971753": {
+        "type": "shopify:\/\/apps\/youpay-multiplayer-shopping\/blocks\/youpay-cart-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": false,
+        "settings": {
+          "cart-button-status": true,
+          "cart-position": "after-checkout-button",
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-background-colour": "rgba(0,0,0,0)",
+          "button-height": 36,
+          "border-radius": 30,
+          "margin-top": 0,
+          "margin-bottom": 10,
+          "width": 100,
+          "alignment": "center"
+        }
+      },
+      "6593136046357153830": {
+        "type": "shopify:\/\/apps\/youpay-multiplayer-shopping\/blocks\/youpay-flyout-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": false,
+        "settings": {
+          "flyout-button-status": false,
+          "flyout-position": "after-checkout-button",
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-background-colour": "rgba(0,0,0,0)",
+          "button-height": 36,
+          "border-radius": 30,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "width": 70,
+          "alignment": "center"
+        }
+      }
+    }
+  }
+}
