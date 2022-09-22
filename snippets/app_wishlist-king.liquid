@@ -131,16 +131,14 @@
   });
 
   // Header link
-  /*
   WishlistKing.observe(
     {
-      selector: "header a[href='{{ routes.cart_url }}']",
+      selector: ".header_cart",
     },
     (target) => {
-      target.insertBefore(WishlistKing.createComponent("wishlist-link"));
+      target.prepend(WishlistKing.createComponent("wishlist-link"));
     }
   );
-  */
 
   // Wishlist button on product page
   /*
