@@ -30,7 +30,7 @@
 {% assign size9 = '1900x' %}
 {% assign size10 = '2000x' %}
 
-<li class="grid__item item-row {{grid_item_width}} {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}" {% if template contains 'index' %} {% if forloop.index > section.settings.total_products_load %} style="display:none"  data-wow-duration="1{{ forloop.index }}" {% endif %}{% endif %}>
+<li data-product-id="{{ product.id }}" class="grid__item item-row {{grid_item_width}} {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}" {% if template contains 'index' %} {% if forloop.index > section.settings.total_products_load %} style="display:none"  data-wow-duration="1{{ forloop.index }}" {% endif %}{% endif %}>
  <div class="products">
     <div class="product-container">  
       {% if settings.count_down_enable and settings.count_down_collections %}
