@@ -1,0 +1,103 @@
+<div data-section-id="{{ section.id }}"  data-section-type="logo-list-section">
+  {% if section.blocks.size > 0 %}    
+  <div class="grid-uniform">
+    <div class="container">
+      <div class="logo-list_1">
+        <div class="grid__item">
+          {% if section.settings.title != blank %}
+          <h2>{{ section.settings.title }}</h2>
+          {% endif %}
+          <div id="logo-carousel_1" class="owl-carousel owl-theme" style="background:{{section.settings.client_bg_clr}};">
+            {% for block in section.blocks %}
+            {% if block.settings.client_img != blank %}
+            <div class="item">
+              <a href="{{ block.settings.client_link }}"> <img src="{{ block.settings.client_img | img_url: "250x250"  }}" alt="{{ block.settings.client_heading }}" /></a>
+            </div>
+            {% else %}          
+            <div class="item"><a href="#">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</a></div>
+            {% endif %}           
+            {% endfor %}
+          </div>
+          <div class="nav_client"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %} 
+</div>
+
+
+{% schema %}
+{
+"name": "Logo list",
+"class": "index-section home-logo-list-section",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "client_bg_clr",
+"label": "Client Bg Color"
+}
+],
+"blocks": [
+{
+"type": "Image",
+"name":"client img",
+"settings": [
+{
+"type": "image_picker",
+"id": "client_img",
+"label": "Image",
+"info": "Size: 250x110"
+},
+{
+"type": "text",
+"id": "client_heading",
+"label": "text"
+},
+{
+"type": "url",
+"id": "client_link",
+"label": "Link URL"
+}
+]
+}
+]
+}
+{% endschema %}
+
+ <script type="text/javascript">
+   $(document).ready(function(){
+var brand_logos = $("#logo-carousel_1");
+brand_logos.owlCarousel({
+items:8,
+loop:true,      
+dots: false, 
+navContainer: ".logo-list_1 .nav_client",
+navText: [' <a class="prev active btn"><i class="material-icons">navigate_before</i></a>','<a class="next btn"><i class="material-icons">navigate_next</i></a>'],
+nav:true,
+autoplay: true,
+autoplayTimeout: 3000,
+responsive:{
+0:{
+items: 1
+},
+600:{
+items:2
+},
+700:{
+items:4
+},
+
+1000:{
+items: 4
+}
+}
+});
+});
+ </script>
+

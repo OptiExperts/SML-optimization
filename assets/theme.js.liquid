@@ -1,0 +1,470 @@
+/* Jonathan Snook - MIT License - https://github.com/snookca/prepareTransition */
+(function(a){a.fn.prepareTransition=function(){return this.each(function(){var b=a(this);b.one("TransitionEnd webkitTransitionEnd transitionend oTransitionEnd",function(){b.removeClass("is-transitioning")});var c=["transition-duration","-moz-transition-duration","-webkit-transition-duration","-o-transition-duration"];var d=0;a.each(c,function(a,c){d=parseFloat(b.css(c))||d});if(d!=0){b.addClass("is-transitioning");b[0].offsetWidth}})}})(jQuery);
+/* Run function after window resize */
+var afterResize=(function(){var t={};return function(callback,ms,uniqueId){if(!uniqueId){uniqueId="Don't call this twice without a uniqueId";}if(t[uniqueId]){clearTimeout(t[uniqueId]);}t[uniqueId]=setTimeout(callback,ms);};})();
+// Helper functions
+function replaceUrlParam(url, paramName, paramValue) {
+  var pattern = new RegExp('('+paramName+'=).*?(&|$)'),
+      newUrl = url.replace(pattern,'$1' + paramValue + '$2');
+  if ( newUrl == url ) {
+    newUrl = newUrl + (newUrl.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
+  }
+  return newUrl;
+}
+window.theme = window.theme || {};
+theme.cacheSelectors = function () {
+  theme.cache = {
+    // General
+    $w: $(window),
+    $html: $('html'),
+    $body: $('body'),
+    // Cart Page
+    cartNoteAdd: '.cart__note-add',
+    cartNote: '.cart__note',
+    // Search Page       
+    $searchInput: $('.search-bar__input'),
+    $searchSubmit: $('.search-bar__submit'),
+    $changeView: $('.change-view'), 
+    {% if settings.single_product_layout_type != 'layout_style_11' %}
+    // Product Page   
+    $productImage: $('#product-featured-image')
+    {% endif %}
+    {% if settings.single_product_layout_type == 'layout_style_11' %}
+    // Product Page
+    $productImage            : $('#ProductPhotoImg'),
+    $thumbImages             : $('#ProductThumbs').find('a.product-template__thumbnail')
+    {% endif %}
+  }
+};
+
+theme.init = function () {
+  theme.cacheSelectors();
+  theme.cartPage();
+  theme.drawersInit();
+  theme.autoResponsiveElements();
+  {% if settings.single_product_layout_type == 'layout_style_11' %}theme.productImageSwitch();{% endif %}
+  theme.notify();
+};
+
+/*============================================================================
+  Cart Page
+==============================================================================*/
+theme.cartPage = function () {
+  {% unless settings.cart_notes_enable %}
+    return;
+  {% endunless %}
+
+  theme.cache.$body.on('click', theme.cache.cartNoteAdd, function () {
+    $(this).addClass('is-hidden');
+    $(theme.cache.cartNote).addClass('is-active');   
+  });
+};
+theme.drawersInit = function () {
+  // Add required classes to HTML
+  $('#PageContainer').addClass('drawer-page-content');  
+  $('.js-drawer-open-top').attr('aria-controls', 'SearchDrawer').attr('aria-expanded', 'false');  
+  theme.SearchDrawer = new theme.Drawers('SearchDrawer', 'top', {'onDrawerOpen': theme.searchFocus});
+};
+/*============================================================================
+  Search Module
+==============================================================================*/
+theme.searchFocus = function () {
+  theme.cache.$searchInput.focus();
+  // set selection range hack for iOS
+  theme.cache.$searchInput[0].setSelectionRange(0, theme.cache.$searchInput[0].value.length);
+};
+theme.searchSubmit = function () {
+  theme.cache.$searchSubmit.on('click', function(evt) {
+    if (theme.cache.$searchInput.val().length == 0) {
+      evt.preventDefault();
+      theme.cache.$searchInput.focus();
+    }
+  });
+};
+/*============================================================================
+  Drawer modules
+==============================================================================*/
+theme.Drawers = (function () {
+  var Drawer = function (id, position, options) {
+    var defaults = {
+      close: '.js-drawer-close',
+      open: '.js-drawer-open-' + position,
+      openClass: 'js-drawer-open',
+      dirOpenClass: 'js-drawer-open-' + position
+    };
+
+    this.$nodes = {
+      parent: $('body, html'),
+      page: $('#PageContainer')
+    };
+
+    this.config = $.extend(defaults, options);
+    this.position = position;
+
+    this.$drawer = $('#' + id);
+
+    if (!this.$drawer.length) {
+      return false;
+    }
+
+    this.drawerIsOpen = false;
+    this.init();
+  };
+
+  Drawer.prototype.init = function () {
+    $(this.config.open).on('click', $.proxy(this.open, this));
+    this.$drawer.on('click', this.config.close, $.proxy(this.close, this));
+  };
+
+  Drawer.prototype.open = function (evt) {
+    // Keep track if drawer was opened from a click, or called by another function
+    var externalCall = false;
+
+    // Prevent following href if link is clicked
+    if (evt) {
+      evt.preventDefault();
+    } else {
+      externalCall = true;
+    }
+
+    // Without this, the drawer opens, the click event bubbles up to $nodes.page
+    // which closes the drawer.
+    if (evt && evt.stopPropagation) {
+      evt.stopPropagation();
+      // save the source of the click, we'll focus to this on close
+      this.$activeSource = $(evt.currentTarget);
+    }
+
+    if (this.drawerIsOpen && !externalCall) {
+      return this.close();
+    }
+
+    // Add is-transitioning class to moved elements on open so drawer can have
+    // transition for close animation
+    this.$drawer.prepareTransition();
+
+    this.$nodes.parent.addClass(this.config.openClass + ' ' + this.config.dirOpenClass);
+    this.drawerIsOpen = true;
+
+    // Set focus on drawer
+    this.trapFocus({
+      $container: this.$drawer,
+      $elementToFocus: this.$drawer.find('.drawer__close-button'),
+      namespace: 'drawer_focus'
+    });
+
+    // Run function when draw opens if set
+    if (this.config.onDrawerOpen && typeof(this.config.onDrawerOpen) == 'function') {
+      if (!externalCall) {
+        this.config.onDrawerOpen();
+      }
+    }
+
+    if (this.$activeSource && this.$activeSource.attr('aria-expanded')) {
+      this.$activeSource.attr('aria-expanded', 'true');
+    }
+
+    this.$nodes.parent.on('keyup.drawer', $.proxy(function (evt) {
+      // close on 'esc' keypress
+      if (evt.keyCode === 27) {
+        this.close();
+        return false;
+      }
+    }, this));
+
+    // Lock scrolling on mobile
+    this.$nodes.page.on('touchmove.drawer', function () {
+      return false;
+    });
+
+    this.$nodes.page.on('click.drawer', $.proxy(function () {
+      this.close();
+      return false;
+    }, this));
+  };
+
+  Drawer.prototype.close = function () {
+    if (!this.drawerIsOpen) { // don't close a closed drawer
+      return;
+    }
+
+    // deselect any focused form elements
+    $(document.activeElement).trigger('blur');
+
+    // Ensure closing transition is applied to moved elements, like the nav
+    this.$drawer.prepareTransition();
+
+    this.$nodes.parent.removeClass(this.config.dirOpenClass + ' ' + this.config.openClass);
+
+    this.drawerIsOpen = false;
+
+    // Remove focus on drawer
+    this.removeTrapFocus({
+      $container: this.$drawer,
+      namespace: 'drawer_focus'
+    });
+
+    this.$nodes.page.off('.drawer');
+    this.$nodes.parent.off('.drawer');
+  };
+
+  /**
+  * Traps the focus in a particular container
+  *
+  * @param {object} options - Options to be used
+  * @param {jQuery} options.$container - Container to trap focus within
+  * @param {jQuery} options.$elementToFocus - Element to be focused when focus leaves container
+  * @param {string} options.namespace - Namespace used for new focus event handler
+  */
+  Drawer.prototype.trapFocus = function (options) {
+    var eventName = options.eventNamespace
+      ? 'focusin.' + eventNamespace
+      : 'focusin';
+
+    if (!options.$elementToFocus) {
+      options.$elementToFocus = options.$container;
+    }
+
+    options.$container.attr('tabindex', '-1');
+    options.$elementToFocus.focus();
+
+    $(document).on(eventName, function (evt) {
+      if (options.$container[0] !== evt.target && !options.$container.has(evt.target).length) {
+        options.$container.focus();
+      }
+    });
+  };
+
+  /**
+   * Removes the trap of focus in a particular container
+   *
+   * @param {object} options - Options to be used
+   * @param {jQuery} options.$container - Container to trap focus within
+   * @param {string} options.namespace - Namespace used for new focus event handler
+   */
+  Drawer.prototype.removeTrapFocus = function (options) {
+    var eventName = options.namespace
+      ? 'focusin.' + options.namespace
+      : 'focusin';
+
+    if (options.$container && options.$container.length) {
+      options.$container.removeAttr('tabindex');
+    }
+
+    $(document).off(eventName);
+  };
+
+  return Drawer;
+})();
+/*============================================================================
+  Detail Page
+==============================================================================*/
+theme.productPage = function (options) {
+  var moneyFormat = options.money_format,
+      variant = options.variant,
+      selector = options.selector,
+      translations = options.translations;
+
+  // Selectors
+  var $productImage = $('#product-featured-image'),
+      $addToCart = $('#AddToCart'),
+      $productPrice = $('#ProductPrice'),
+      $comparePrice = $('#ComparePrice'),
+      {% if settings.display_availability %}
+      $productItem = $('.product-infor'),
+      {% endif %}
+      $productsku = $('#product-sku'),
+      $addToCartText = $('#AddToCartText');
+      
+
+  if (variant) {
+    
+     //update variant inventory    
+    
+    {% if settings.display_availability %}
+     var inventorySpan = $productItem.find('.product-inventory span');
+          if (variant.available) {
+            if (variant.inventory_management !=null ) {
+              inventorySpan.text(window.in_stock );
+              inventorySpan.addClass('items-count');
+              inventorySpan.removeClass('many-in-stock');
+              inventorySpan.removeClass('out-of-stock');
+              inventorySpan.removeClass('unavailable');
+            } else {
+              inventorySpan.text(window.many_in_stock);
+              inventorySpan.addClass('many-in-stock')
+              inventorySpan.removeClass('items-count');
+              inventorySpan.removeClass('out-of-stock');
+              inventorySpan.removeClass('unavailable');
+            }
+          } else {
+            inventorySpan.addClass('out-of-stock')
+            inventorySpan.text(window.out_of_stock);
+            inventorySpan.removeClass('items-count');
+            inventorySpan.removeClass('many-in-stock');
+            inventorySpan.removeClass('unavailable');
+          }
+     {% endif %}
+    
+    
+    
+    
+
+    // Select a valid variant if available
+    if (variant.available) {
+      // Available, enable the submit button, change text, show quantity elements
+      $addToCart.removeClass('disabled').prop('disabled', false);
+      $addToCartText.html(translations.add_to_cart);
+      $productsku.text(variant.sku);
+      //$quantityElements.show();
+    } else {
+      // Sold out, disable the submit button, change text, hide quantity elements
+      $addToCart.addClass('disabled').prop('disabled', true);
+      $addToCartText.html(translations.sold_out);
+      //$quantityElements.hide();
+    }
+
+    // Regardless of stock, update the product price
+    $productPrice.html( Shopify.formatMoney(variant.price, moneyFormat) );
+
+    // Also update and show the product's compare price if necessary
+    if (variant.compare_at_price > variant.price) {
+      $comparePrice
+        .html(Shopify.formatMoney(variant.compare_at_price, moneyFormat))
+        .show();
+    } else {
+      $comparePrice.hide();
+    }
+
+  } else {
+    // The variant doesn't exist, disable submit button.
+    // This may be an error or notice that a specific variant is not available.
+    // To only show available variants, implement linked product options:
+    //   - http://docs.shopify.com/manual/configuration/store-customization/advanced-navigation/linked-product-options
+    $addToCart.addClass('disabled').prop('disabled', true);
+    $addToCartText.html(translations.unavailable);
+    {% if settings.display_availability %}
+    $('.product-infor .product-inventory span').addClass("unavailable");
+    $('.product-infor .product-inventory span').removeClass("many-in-stock");
+    $('.product-infor .product-inventory span').removeClass("items-count");
+    $('.product-infor .product-inventory span').removeClass("out-of-stock");
+    $('.product-infor .product-inventory span').text(window.unavailable);
+    {% endif %}
+    
+   
+  }
+  {% if settings.single_product_layout_type == 'layout_style_4'  or  settings.single_product_layout_type == 'layout_style_5' %}
+   /*begin variant image*/
+        if (variant && variant.featured_image) {
+            var originalImage = $("img[id|='product-featured-image']");
+            var newImage = variant.featured_image;
+            var element = originalImage[0];
+
+            Shopify.Image.switchImage(newImage, element, function (newImageSizedSrc, newImage, element) {
+                jQuery('.slider-nav img').each(function() {
+                    var grandSize = $(this).attr('src').split('?')[0].replace('medium','grande');
+                    
+                    newImageSizedSrc = newImageSizedSrc.split('?')[0];
+
+                    if(grandSize === newImageSizedSrc) {
+                        var item = $(this).closest('.item');
+                            
+                        item.trigger('click');
+                        return false;
+                    }
+                });
+            });          
+        };
+  {% else %}
+  /*begin variant image*/
+    if (variant && variant.featured_image) {
+        var originalImage = jQuery("#product-featured-image");
+        var newImage = variant.featured_image;
+        var element = originalImage[0];
+       Shopify.Image.switchImage(newImage, element, function (newImageSizedSrc, newImage, element) {
+          jQuery('#ProductThumbs img').each(function() {
+            var grandSize = jQuery(this).attr('src');            
+            grandSize = grandSize.replace('medium','grande');                       
+            if (grandSize == newImageSizedSrc) {
+              jQuery(this).parent().trigger('click');              
+              return false;
+            }
+          });
+        });        
+    }
+    /*end of variant image*/
+   {% endif %}
+                              
+  
+   // BEGIN SWATCHES
+if (variant) {
+  var form = jQuery('#' + selector.domIdPrefix).closest('form');
+  for (var i=0,length=variant.options.length; i<length; i++) {
+    var radioButton = form.find('.swatch[data-option-index="' + i + '"] :radio[value="' + variant.options[i] +'"]');
+    if (radioButton.size()) {
+      radioButton.get(0).checked = true;
+    }
+  }
+}
+// END SWATCHES
+  
+  {% if settings.display_subtotal %} 
+  updatePricing();
+   {% endif %}
+  
+};
+{% if settings.single_product_layout_type == 'layout_style_11' %}
+theme.productImageSwitch = function () {
+  if (timber.cache.$thumbImages.length) {
+    // Switch the main image with one of the thumbnails
+    // Note: this does not change the variant selected, just the image
+    theme.cache.$thumbImages.on('click', function(evt) {
+      evt.preventDefault();
+      var newImage = $(this).attr('href');
+      timber.switchImage(newImage, null, timber.cache.$productImage);
+    });
+  }
+};
+theme.switchImage = function (src, imgObject, el) {
+  // Make sure element is a jquery object
+  var $el = $(el);
+  $el.attr('src', src);
+};
+{% endif %}
+/*============================================================================
+ Iframe Videos
+==============================================================================*/
+theme.autoResponsiveElements = function () {
+  var $iframeVideo = $('iframe[src*="youtube.com/embed"], iframe[src*="player.vimeo"]');
+  var $iframeReset = $iframeVideo.add('iframe#admin_bar_iframe');
+
+  $('table').wrap('<div class="table-wrapper"></div>');
+
+  $iframeVideo.each(function () {
+    // Add wrapper to make video responsive
+    $(this).wrap('<div class="video-wrapper"></div>');
+  });
+
+  $iframeReset.each(function () {
+    // Re-set the src attribute on each iframe after page load
+    // for Chrome's "incorrect iFrame content on 'back'" bug.
+    // https://code.google.com/p/chromium/issues/detail?id=395791
+    // Need to specifically target video and admin bar
+    this.src = this.src;
+  });
+};
+/*============================================================================
+  Back to Stock
+==============================================================================*/
+theme.notify = function () {
+$('#notify-me').on('click' , function() {
+$('#notify-me-wrapper').fadeIn();
+return false;
+});
+};
+
+if(window.top.location.href.indexOf("?customer_posted=true") > -1) {
+  $(".success").addClass("show");
+}  
+// Initialize shop's JS on docready
+$(theme.init);

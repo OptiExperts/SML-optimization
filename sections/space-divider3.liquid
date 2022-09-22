@@ -1,0 +1,58 @@
+{% comment %}
+** Divider - homepage partial **
+- Draggable section
+{% endcomment %}
+
+{% if type == 'block' %}
+{% assign id = block.id %}
+{% assign show_border = block.show_border %}
+{% assign divider_border = block.settings.divider_border %}
+{% assign divider_spacing = block.settings.divider_spacing %}
+{% else %}
+{% assign id = section.id %}
+{% assign show_border = section.show_border %}
+{% assign divider_border = section.settings.divider_border %}
+{% assign divider_spacing = section.settings.divider_spacing %}
+{% endif %}
+
+<div class="container" style="padding: 0;">
+  <div class="grid__item">
+    <hr class="page-divider {% if divider_border %}active-divider{% endif %}" style="{% if divider_spacing %}margin: {{ divider_spacing }}px 0px;{% endif %}">
+  </div>
+</div>
+
+{% schema %}
+
+{
+"name": "Divider",
+"class": "divider-section",
+"settings": [
+{
+"type": "range",
+"id": "divider_spacing",
+"min": 0,
+"max": 50,
+"step": 5,
+"unit": "px",
+"label": "Space",
+"default": 20
+},
+{
+"type": "checkbox",
+"id": "divider_border",
+"label": "Show border",
+"default": false
+}
+],
+"presets": [
+{
+"name": "Divider",
+"category": "Layout",
+"settings": {
+
+}
+}
+]
+}
+
+{% endschema %}

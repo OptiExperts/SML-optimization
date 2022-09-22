@@ -1,0 +1,692 @@
+
+{% if settings.product_page_sidebar == "left_sidebar" or  settings.product_page_sidebar == "right_sidebar" %}
+{% assign mid_width = "grid__item extra-large--four-fifths post-large--three-quarters large--one-whole" %}
+{% else %}
+{% assign mid_width = "grid__item" %}
+{% endif %}
+
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+{%- assign compare_at_price = current_variant.compare_at_price -%}
+{%- assign price = current_variant.price -%}
+<!-- Created for product Structured Data  -->
+<div itemscope itemtype="http://schema.org/Product">
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">  
+  <meta itemprop="name" content="{{ product.title | escape }}" />
+  <meta itemprop="sku" content="{{ product.variants.first.sku }}"/>
+  <meta itemprop="gtin14" content="{{ product.variants.first.barcode }}"/>
+  <meta itemprop="brand" content="{{ product.vendor }}"/>
+  <meta itemprop="description" content="{{ product.description | strip_html | escape }}"/>
+  <meta itemprop="image" content="https:{{ product.featured_image.src | img_url: 'master' }}"/>
+  <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+    <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+    <meta itemprop="price" content="{{ product.price |money_without_currency  |strip_html }}">
+    <meta itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition" content="http://schema.org/NewCondition" />
+    {% if product.available == true %}<meta itemprop="availability" content="http://schema.org/InStock"/>{% else %}<meta itemprop="availability" content="http://schema.org/OutOfStock"/>{% endif %}
+  </div>
+</div>
+<!-- Created for Structured Data  -->
+<div class="{{ mid_width }}">
+  <div class="product-template-default"> 
+    <div class="product-template-wrapper">
+      <div class="grid__item extra-large--two-fifths post-large--two-fifths large--two-fifths product-img-box">
+        {% if product.images.size == 0 %}
+        <div class="product-photo-container">
+          <img src="{{ '' | product_img_url: 'grande' }}" alt="">
+        </div>
+        {% else %}
+        <div class="product-photo-container slider-for">
+          {% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
+          <a href="{{ featured_image | img_url: 'master' }}" >
+            <img id="product-featured-image" src="{{ featured_image | img_url: 'grande' }}" alt="{{ product.title }}" data-zoom-image="{{ featured_image.src | img_url: 'master' }}"/>
+          </a>  
+          
+          {% if section.settings.enable_video %}
+          <div class="p-video">
+            <a href="{{ lng_videos_url }}" class="btn five jas-popup-url" data-effect="mfp-move-from-top"><i class="fas fa-video" aria-hidden="true"></i> Video </a>     
+          </div>
+          {% endif %}
+          
+        </div>
+        {% if product.images.size > 0 %}
+        <div class="{% unless section.settings.display_product_thumb_img %} hide {% endunless %}  more-view-wrapper{% if product.images.size == 1 %} hidden{% endif %}   slider-nav">
+            {% for image in product.images %}
+            <li id="ProductThumbs" class="product-photo-thumbs ">
+              <a href="javascript:void(0)" data-image="{{ image.src | product_img_url: 'grande' }}" data-zoom-image="{{ image.src | product_img_url: 'master' }}" {% if forloop.first %} class="active" {%endif%}>
+                <img src="{{ image.src | product_img_url: '100x' }}" alt="{{ image.alt | escape }}">
+              </a>
+            </li>
+            {% endfor %}
+        </div>
+
+        {% endif %}
+        
+        {%- if featured_image.alt != product.title -%}
+        {% for media in product.media %}
+        {% if media.media_type=='video' %}
+        {% for source in media.sources %}  
+        {% assign lng_videos_url = source.url %}
+        {%endfor%}
+        {%endif %}
+        {% endfor %}
+        
+     
+        
+        {%- endif -%}
+        
+        {% endif %}
+      </div>
+      <div class="grid__item extra-large--three-fifths post-large--three-fifths large--three-fifths product-content-box">
+        <h2 class="product-template_title">{{ product.title }}</h2>
+        {% if collection %}
+        {% if collection.previous_product or collection.next_product %}
+        <p class="product-arrows">
+          {% if collection.previous_product %}
+          {% capture prev_url %}{{ collection.previous_product}}#content{% endcapture %}
+          <span class="left">
+            <a href="{{ prev_url }}"> <i class="fas fa-chevron-left"></i></a>
+          </span>
+          {% endif %}
+
+          {% if collection.next_product %}
+          {% capture next_url %}{{ collection.next_product}}#content{% endcapture %}
+          <span class="right">
+            <a href="{{ next_url }}"> <i class="fas fa-chevron-right"></i></a>
+          </span>
+          {% endif %}
+        </p>
+        {% endif %}
+        {% endif %}
+        <div class="product-template_price">
+          {% include 'product-price', variant: current_variant %}    
+           <img class="payment-img" src="{{ 'paymm_2x.png' | asset_url }}"/>
+          <img class="payment-img-mb" src="{{ 'payment-mb.png' | asset_url }}"/>
+        </div>
+        <div class="youpay-container youpay-callout-container" data-theme="dark">
+          <button class="youpay-callout-button" type="button" data-type="modal" data-modal-theme="dark" data-icon="lingerie">
+              <span class="youpay-callout-content">
+                  <span class="youpay-callout-message-before">Have someone else pay with</span>
+                  <span aria-label="YouPay information" class="youpay-callout-badge">
+                      <svg viewBox="0 0 121 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="youpay-badge-logo"><path class="youpay-logo-text" d="M44.71 1.993a1.882 1.882 0 0 1-.093.507l-7.06 18.903c-.142.4-.718.601-1.724.601h-.525c-1.232 0-1.848-.2-1.848-.601.001-.177.043-.352.123-.51l1.94-4.766-5.086-13.631c-.059-.164-.1-.334-.123-.507 0-.415.627-.622 1.88-.622h.99c1.007 0 1.582.197 1.726.591l1.818 5.212c.186.528.474 1.664.864 3.408h.122c.412-1.805.7-2.941.864-3.408l1.818-5.212c.145-.4.72-.59 1.727-.59h.74c1.233.002 1.849.21 1.847.625zM46.348 14.447c-1.278-1.313-1.917-3.198-1.915-5.657 0-2.459.64-4.34 1.915-5.64 1.274-1.3 3.133-1.95 5.578-1.95 2.444 0 4.298.65 5.563 1.95 1.265 1.295 1.898 3.176 1.898 5.64 0 2.464-.633 4.35-1.898 5.657-1.263 1.31-3.118 1.964-5.563 1.962-2.446-.001-4.305-.655-5.578-1.962zm7.725-2.426c.462-.723.693-1.8.693-3.231 0-1.431-.231-2.5-.693-3.207-.461-.715-1.176-1.073-2.144-1.073-.967 0-1.686.358-2.157 1.073-.472.716-.709 1.785-.709 3.207 0 2.878.956 4.318 2.866 4.318.962 0 1.676-.362 2.144-1.087zM62.218 15.295c-.74-.743-1.11-1.895-1.11-3.456V2.273c0-.601.617-.902 1.85-.902h.862c1.235 0 1.851.3 1.85.902v8.944c0 .583.144 1.02.432 1.311.287.293.76.438 1.418.438a2.313 2.313 0 0 0 1.464-.488 3.89 3.89 0 0 0 1.002-1.142V2.273c0-.601.617-.902 1.85-.902h.856c1.234 0 1.85.3 1.85.902v8.944c-.01.66.016 1.319.077 1.975.051.452.117.95.198 1.495.055.203.087.412.093.622 0 .3-.416.527-1.248.675a12.43 12.43 0 0 1-2.205.227.785.785 0 0 1-.77-.401 3.613 3.613 0 0 1-.325-.888c-.071-.32-.117-.537-.138-.65a6.004 6.004 0 0 1-1.957 1.524 5.73 5.73 0 0 1-2.635.621c-1.537-.005-2.675-.38-3.414-1.122zM77.722 21.43V5.716c0-1.24-.062-2.129-.184-2.666-.125-.535-.187-.832-.187-.888 0-.227.198-.391.595-.493a4.197 4.197 0 0 1 1.08-.157.658.658 0 0 1 .631.401c.134.275.237.564.307.862.071.3.119.497.139.592 1.475-1.409 3.106-2.113 4.894-2.113a5.33 5.33 0 0 1 3.22.972 6.143 6.143 0 0 1 2.05 2.68c.492 1.242.733 2.571.71 3.909 0 1.604-.264 2.967-.793 4.09a5.794 5.794 0 0 1-2.198 2.581 6.084 6.084 0 0 1-3.266.874 7.114 7.114 0 0 1-2.39-.367c-.719-.26-1.399-.62-2.02-1.07v6.517c0 .413-.41.62-1.231.62h-.125c-.822-.006-1.232-.215-1.232-.628zm9.493-8.52c.7-.903 1.05-2.2 1.048-3.894 0-1.824-.33-3.227-.99-4.21a3.197 3.197 0 0 0-1.208-1.117 3.152 3.152 0 0 0-1.597-.363 5.054 5.054 0 0 0-2.141.507 7 7 0 0 0-2.016 1.429v7.734a6.135 6.135 0 0 0 3.822 1.268c1.351 0 2.378-.451 3.082-1.355zM94.307 15.285c-.967-.716-1.45-1.77-1.45-3.161 0-1.487.488-2.601 1.463-3.344a7.769 7.769 0 0 1 3.592-1.437 37.222 37.222 0 0 1 5.179-.353V5.663a2.129 2.129 0 0 0-.201-.95 2.093 2.093 0 0 0-.601-.756c-.528-.442-1.391-.663-2.589-.663a8.473 8.473 0 0 0-2.377.296c-.576.161-1.143.359-1.695.592-.24.116-.487.215-.741.296-.198 0-.436-.188-.693-.563-.258-.375-.38-.658-.38-.858 0-.243.27-.507.816-.79a9.066 9.066 0 0 1 2.178-.72c.92-.197 1.858-.296 2.799-.294 1.912 0 3.402.39 4.47 1.17 1.069.781 1.603 1.867 1.603 3.258v6.326c0 1.242.062 2.13.186 2.666.123.536.184.832.184.888 0 .227-.198.401-.594.495a4.284 4.284 0 0 1-1.078.155.66.66 0 0 1-.631-.437 4.435 4.435 0 0 1-.309-.918 35.203 35.203 0 0 1-.139-.62c-1.39 1.412-3.114 2.116-5.172 2.115-1.581 0-2.855-.355-3.82-1.066zm6.55-1.496c.8-.385 1.55-.868 2.234-1.439V9.017c-1.541.02-2.799.076-3.775.17a6.219 6.219 0 0 0-2.575.79 2.141 2.141 0 0 0-.84.84c-.197.355-.29.758-.27 1.164 0 .751.221 1.325.662 1.72.441.396 1.094.596 1.96.601a6.145 6.145 0 0 0 2.604-.517v.004zM121 1.854c-.009.138-.04.274-.093.401l-7.923 19.214c-.164.4-.645.601-1.448.601h-.461c-.679 0-1.018-.15-1.018-.45.027-.167.079-.329.154-.48l2.589-5.775-5.393-13.148a1.23 1.23 0 0 1-.093-.363c0-.32.441-.479 1.325-.479h.247c.719 0 1.129.15 1.232.451l3.146 7.646c.327.828.657 1.778.99 2.85h.061c.04-.132.082-.258.123-.38.042-.123.081-.241.123-.354l.766-2.116 3.082-7.65c.103-.3.525-.45 1.266-.45h.091c.823 0 1.234.16 1.234.482z" fill="currentColor"></path> <path d="M11.167 11.29V.05H0s7.487 6.537 8.767 17.57c0 0 2.4-1.52 2.4-6.33z" fill="#F796B9"></path> <path d="M17.511 8.746V.05h-6.338v11.24c0 4.81-2.4 6.33-2.4 6.33a8.73 8.73 0 0 0 6.176-2.614 8.943 8.943 0 0 0 2.562-6.26z" fill="#2F3A93"></path> <path d="M17.96.05h-.454v8.696a8.94 8.94 0 0 1-2.561 6.261 8.726 8.726 0 0 1-6.178 2.613l9.192-.012a8.584 8.584 0 0 0 3.36-.63 8.667 8.667 0 0 0 2.86-1.894 8.786 8.786 0 0 0 1.914-2.864 8.871 8.871 0 0 0 0-6.781 8.786 8.786 0 0 0-1.915-2.865A8.666 8.666 0 0 0 21.32.68a8.584 8.584 0 0 0-3.36-.63z" fill="#0CD9DC"></path></svg>
+                  </span>
+                  <span class="youpay-callout-message-after">More info</span>
+              </span>
+          </button>
+        </div>
+        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+        <div class="product-infor">
+          {% if section.settings.display_vendor_type  %}  
+          <p class="product-vendor">
+            <label>{{ 'products.product.product_vendor' | t }}</label>
+            <span>{{ product.vendor }}</span>
+          </p>
+          {% endif %}
+          {% if section.settings.display_product_type %}
+          <p class="product-type">
+            <label>{{ 'products.product.product_type' | t }} </label>  
+            <span>{{ product.type }}</span>
+          </p>
+          {% endif %}
+          {% if settings.display_availability %}
+          <p class="product-inventory" id="product-inventory">
+            <label>{{ 'products.product.availability' | t  }}  </label>              
+            <span>
+              {% if product.selected_or_first_available_variant.inventory_management %}
+              {% assign first_inventory = product.selected_or_first_available_variant.inventory_quantity %}
+              {% if first_inventory > 0 %}
+              {{first_inventory}} {{ 'products.product.in_stock' | t }}
+              {% else %}
+              {{ 'products.product.out_of_stock' | t }}
+              {% endif %}
+              {% else %}
+              {{ 'products.product.many_in_stock' | t }}
+              {% endif %}
+            </span>
+          </p>
+          {% endif %}  
+          {% if section.settings.display_product_sku %}
+          {% assign current_variant = product.selected_or_first_available_variant %}
+          {% if current_variant.sku != "" or current_variant.sku != empty  %}<p><label class="sku_wrapper">{{ 'products.product.product_sku' | t }}</label> <span class="sku variant-sku" id="product-sku">{{current_variant.sku}}</span></p>{% endif %}
+          {% endif %} 
+        </div>
+        {% if section.settings.short_desc %}
+        <div class="product-description rte">
+          {{ product.description | strip_html | truncatewords: 50 }} 
+        </div>
+        {% endif %}
+        {% assign variant = product.selected_or_first_available_variant %}
+        {% if settings.count_down_enable and settings.count_down_prodetails %}
+        {% assign dealTime = settings.home_productdeal_time | split: ' ' | join: ' ' | split: ' ' %}
+        {% include 'deal-snippet' %}
+        {% endif %} 
+        {% form 'product', product, id: "AddToCartForm", class: "product-form" %}
+        {% assign hide_default_title = false %}
+        {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+        {% assign hide_default_title = true %}
+        {% endif %}      
+        <div class="selector-wrapper-secton"  {% if hide_default_title %} style="display:none;"{% endif %}>           
+          {% if settings.enable_color_swatch %}                       
+          {% for option in product.options %}
+          {% include 'swatch' with option %}
+          {% endfor %}
+          {% endif %}              
+          <select name="id" id="productSelect" class="{% if hide_default_title %} product-template__variants {% endif %}" >
+            {% for variant in product.variants %}
+            <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">{{ variant.title }}</option>
+            {% endfor %}
+          </select>
+        </div>          
+        {% include 'qty' %}
+        {% include 'notify-form' %}
+        <div class="product-template_button">
+          {% if section.settings.enable_cart %}
+          <button type="submit" name="add" id="AddToCart" class="btn">
+           <i class="material-icons">shopping_cart</i><span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
+          </button>
+          {% endif %}
+          {% if section.settings.enable_wishlist %}
+          {% include 'wishlist-product' %}
+          {% endif %}
+          {% if section.settings.payment_button %}
+          {{ form | payment_button }}
+          {% endif %}
+
+          <div class="youpay-button-group youpay-container" data-theme="blue" data-type="product" data-id="code">
+            <button class="youpay-button" type="button">
+                <div class="youpay-text-group">
+                    <span class="youpay-text" data-text-3="Get it paid for you with" data-text-2="Get it paid for with" data-text-1="Get it paid">Get it paid for you with</span>
+                </div>
+                <div class="youpay-logo-container">
+                    <svg class="youpay-logo youpay-logo-colour" viewBox="0 0 121 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M44.71 1.993a1.882 1.882 0 0 1-.093.507l-7.06 18.903c-.142.4-.718.601-1.724.601h-.525c-1.232 0-1.848-.2-1.848-.601.001-.177.043-.352.123-.51l1.94-4.766-5.086-13.631c-.059-.164-.1-.334-.123-.507 0-.415.627-.622 1.88-.622h.99c1.007 0 1.582.197 1.726.591l1.818 5.212c.186.528.474 1.664.864 3.408h.122c.412-1.805.7-2.941.864-3.408l1.818-5.212c.145-.4.72-.59 1.727-.59h.74c1.233.002 1.849.21 1.847.625zM46.348 14.447c-1.278-1.313-1.917-3.198-1.915-5.657 0-2.459.64-4.34 1.915-5.64 1.274-1.3 3.133-1.95 5.578-1.95 2.444 0 4.298.65 5.563 1.95 1.265 1.295 1.898 3.176 1.898 5.64 0 2.464-.633 4.35-1.898 5.657-1.263 1.31-3.118 1.964-5.563 1.962-2.446-.001-4.305-.655-5.578-1.962zm7.725-2.426c.462-.723.693-1.8.693-3.231 0-1.431-.231-2.5-.693-3.207-.461-.715-1.176-1.073-2.144-1.073-.967 0-1.686.358-2.157 1.073-.472.716-.709 1.785-.709 3.207 0 2.878.956 4.318 2.866 4.318.962 0 1.676-.362 2.144-1.087zM62.218 15.295c-.74-.743-1.11-1.895-1.11-3.456V2.273c0-.601.617-.902 1.85-.902h.862c1.235 0 1.851.3 1.85.902v8.944c0 .583.144 1.02.432 1.311.287.293.76.438 1.418.438a2.313 2.313 0 0 0 1.464-.488 3.89 3.89 0 0 0 1.002-1.142V2.273c0-.601.617-.902 1.85-.902h.856c1.234 0 1.85.3 1.85.902v8.944c-.01.66.016 1.319.077 1.975.051.452.117.95.198 1.495.055.203.087.412.093.622 0 .3-.416.527-1.248.675a12.43 12.43 0 0 1-2.205.227.785.785 0 0 1-.77-.401 3.613 3.613 0 0 1-.325-.888c-.071-.32-.117-.537-.138-.65a6.004 6.004 0 0 1-1.957 1.524 5.73 5.73 0 0 1-2.635.621c-1.537-.005-2.675-.38-3.414-1.122zM77.722 21.43V5.716c0-1.24-.062-2.129-.184-2.666-.125-.535-.187-.832-.187-.888 0-.227.198-.391.595-.493a4.197 4.197 0 0 1 1.08-.157.658.658 0 0 1 .631.401c.134.275.237.564.307.862.071.3.119.497.139.592 1.475-1.409 3.106-2.113 4.894-2.113a5.33 5.33 0 0 1 3.22.972 6.143 6.143 0 0 1 2.05 2.68c.492 1.242.733 2.571.71 3.909 0 1.604-.264 2.967-.793 4.09a5.794 5.794 0 0 1-2.198 2.581 6.084 6.084 0 0 1-3.266.874 7.114 7.114 0 0 1-2.39-.367c-.719-.26-1.399-.62-2.02-1.07v6.517c0 .413-.41.62-1.231.62h-.125c-.822-.006-1.232-.215-1.232-.628zm9.493-8.52c.7-.903 1.05-2.2 1.048-3.894 0-1.824-.33-3.227-.99-4.21a3.197 3.197 0 0 0-1.208-1.117 3.152 3.152 0 0 0-1.597-.363 5.054 5.054 0 0 0-2.141.507 7 7 0 0 0-2.016 1.429v7.734a6.135 6.135 0 0 0 3.822 1.268c1.351 0 2.378-.451 3.082-1.355zM94.307 15.285c-.967-.716-1.45-1.77-1.45-3.161 0-1.487.488-2.601 1.463-3.344a7.769 7.769 0 0 1 3.592-1.437 37.222 37.222 0 0 1 5.179-.353V5.663a2.129 2.129 0 0 0-.201-.95 2.093 2.093 0 0 0-.601-.756c-.528-.442-1.391-.663-2.589-.663a8.473 8.473 0 0 0-2.377.296c-.576.161-1.143.359-1.695.592-.24.116-.487.215-.741.296-.198 0-.436-.188-.693-.563-.258-.375-.38-.658-.38-.858 0-.243.27-.507.816-.79a9.066 9.066 0 0 1 2.178-.72c.92-.197 1.858-.296 2.799-.294 1.912 0 3.402.39 4.47 1.17 1.069.781 1.603 1.867 1.603 3.258v6.326c0 1.242.062 2.13.186 2.666.123.536.184.832.184.888 0 .227-.198.401-.594.495a4.284 4.284 0 0 1-1.078.155.66.66 0 0 1-.631-.437 4.435 4.435 0 0 1-.309-.918 35.203 35.203 0 0 1-.139-.62c-1.39 1.412-3.114 2.116-5.172 2.115-1.581 0-2.855-.355-3.82-1.066zm6.55-1.496c.8-.385 1.55-.868 2.234-1.439V9.017c-1.541.02-2.799.076-3.775.17a6.219 6.219 0 0 0-2.575.79 2.141 2.141 0 0 0-.84.84c-.197.355-.29.758-.27 1.164 0 .751.221 1.325.662 1.72.441.396 1.094.596 1.96.601a6.145 6.145 0 0 0 2.604-.517v.004zM121 1.854c-.009.138-.04.274-.093.401l-7.923 19.214c-.164.4-.645.601-1.448.601h-.461c-.679 0-1.018-.15-1.018-.45.027-.167.079-.329.154-.48l2.589-5.775-5.393-13.148a1.23 1.23 0 0 1-.093-.363c0-.32.441-.479 1.325-.479h.247c.719 0 1.129.15 1.232.451l3.146 7.646c.327.828.657 1.778.99 2.85h.061c.04-.132.082-.258.123-.38.042-.123.081-.241.123-.354l.766-2.116 3.082-7.65c.103-.3.525-.45 1.266-.45h.091c.823 0 1.234.16 1.234.482z" fill="currentColor"></path>
+                      <path d="M11.167 11.29V.05H0s7.487 6.537 8.767 17.57c0 0 2.4-1.52 2.4-6.33z" fill="currentColor"></path>
+                      <path d="M17.511 8.746V.05h-6.338v11.24c0 4.81-2.4 6.33-2.4 6.33a8.73 8.73 0 0 0 6.176-2.614 8.943 8.943 0 0 0 2.562-6.26z" fill="none"></path>
+                      <path d="M17.96.05h-.454v8.696a8.94 8.94 0 0 1-2.561 6.261 8.726 8.726 0 0 1-6.178 2.613l9.192-.012a8.584 8.584 0 0 0 3.36-.63 8.667 8.667 0 0 0 2.86-1.894 8.786 8.786 0 0 0 1.914-2.864 8.871 8.871 0 0 0 0-6.781 8.786 8.786 0 0 0-1.915-2.865A8.666 8.666 0 0 0 21.32.68a8.584 8.584 0 0 0-3.36-.63z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </button>
+          </div>
+        </div>
+        <div class="grid__item">        
+            {% if product.options contains 'Size' and section.settings.enable_size_chart %}
+          <div class="size-chart-section" > <i class="fas fa-ruler"></i>  <a class="open-popup-link"  href="#size-chart">{{ 'products.product.size_chart' | t }}</a></div>
+           <div id="size-chart" class="white-popup-block mfp-hide">
+             {{ pages.size-guide.content }}
+           </div>
+            {% endif %}
+          {% endform %}
+        </div>
+        {% if section.settings.social_sharing_products %}     
+        <div class="share_this_btn">
+          {% include 'addthis' %}
+        </div>
+        {% endif %}
+        {% if section.settings.secure_pay_enable %}     
+        <div class="grid__item" style="margin-top:10px;">
+          <img src="{{ section.settings.secure_pay | img_url: "medium" }}" alt="secure_pay">
+        </div>
+        {% endif %}
+        
+        {% include 'product-accordion' %}
+        
+      </div>
+    </div>
+    <div class="space-clear-hidden-large"></div>
+    {% include 'product-tab' %}
+    {% if section.settings.product_related_enable %}        
+    {% include 'related-products' %}
+    {% endif %}
+    {% if section.settings.display_recently_viewed_products %} 
+    {% include 'recently-viewed-products' %}
+    {% endif %}
+  </div>
+</div>
+
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+{{ 'jquery.fancybox.js' | asset_url | script_tag }}
+
+<script>
+  var selectCallback = function(variant, selector) {
+    theme.productPage({
+      money_format: "{{ shop.money_format }}",
+      variant: variant,
+      selector: selector,
+      translations: {
+      add_to_cart : "{{ 'products.product.add_to_cart' | t }}",
+      sold_out : "{{ 'products.product.sold_out' | t }}",
+      unavailable : "{{ 'products.product.unavailable' | t }}"
+    }
+   });
+  };
+
+  jQuery(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+    {% if settings.enable_linked_option %}
+    {% if product.available and product.options.size > 1 %}
+    Shopify.linkOptionSelectors({{ product | json }});
+    {% endif %}
+    {% endif %}
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    {% if product.options.size == 1 and product.options.first != 'Title' %}
+    $('.selector-wrapper:eq(0)').prepend('<label for="productSelect-option-0">{{ product.options.first | escape }}</label>');
+    {% endif %}
+    // Hide selectors if we only have 1 variant and its title contains 'Default'.
+    {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+    $('.selector-wrapper').hide();
+    $('.selector-wrapper-secton').hide();
+    {% endif %}
+    // Auto-select first available variant on page load. Otherwise the product looks sold out.
+    {% assign found_one_in_stock = false %}
+    {% for variant in product.variants %}
+    {% if variant.available and found_one_in_stock == false %}
+    {% assign found_one_in_stock = true %}
+    {% for option in product.options %}
+    $('.single-option-selector:eq({{ forloop.index0 }})').val({{ variant.options[forloop.index0] | json }}).trigger('change');
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+    $('.product-template-wrapper .single-option-selector').wrap('<div class="selector-arrow">');
+  });  
+
+</script>
+<style>
+  .swatch .tooltip{ {% if section.settings.color_tooltip %} display:block; {% else %} display:none; {% endif %}}  
+</style>
+
+
+
+
+<style>
+  
+  .product-content-box #AddToCart { {% if section.settings.use_cart_width %} width:100%;padding:{{ section.settings.cart_size }};font-size:{{ section.settings.cart_font_size }}px; {% else %} width:auto;  {% endif %}  float:left; background: {{ section.settings.color_cart }};border:none;color: {{ section.settings.color_button_cart_text }};margin-bottom:10px;margin-right:10px; }
+  .product-content-box #AddToCart:hover { background:{{ section.settings.cart_hover_btn }};color: {{ section.settings.cart_hover_btn_text }};border-color: {{ section.settings.cart_hover_btn }}; }
+  .product-content-box .add-to-wishlist { {% if section.settings.use_cart_width %} width:100%; {% else %} width:auto;  {% endif %} }
+  .product-content-box .add-to-wishlist .btn { {% if section.settings.use_cart_width %} width:100%; {% endif %} }
+  @media (max-width: 567px) { 
+    .product-content-box .add-to-wishlist { {% if section.settings.use_cart_width %} width:100%; {% else %}width:100%;  {% endif %}}
+    .product-content-box #AddToCart { {% if section.settings.use_cart_width %} width:100%; {% else %} width:100%;  {% endif %}}}
+  .product-content-box .add-to-wishlist .btn  { {% unless section.settings.use_cart_width %} width:100%;  {% endunless %} }
+
+  {% if section.settings.use_cart_width %}  @media (max-width: 1599px) { .product-content-box #AddToCart { padding:{{ section.settings.small_cart_size }};font-size:{{ section.settings.small_cart_font_size }}px; }} {% endif %}
+  .shopify-payment-button{ {% if section.settings.use_cart_width %} width:100%; {% else %} width:0;  {% endif %}
+</style>
+
+
+
+
+ {% schema %}
+{
+"name": "Product Page",
+"settings": [
+
+{
+        "type": "checkbox",
+        "id": "display_product_thumb_img",
+        "label": "Display thumb image?",
+        "default": true
+      },
+
+{
+        "type": "checkbox",
+        "id": "display_product_sku",
+        "label": "Display Product sku?",
+        "default": true
+      },
+
+      {
+        "type": "checkbox",
+        "id": "display_product_type",
+        "label": "Display Product Type?",
+        "default": true
+      },
+      
+      {
+        "type": "checkbox",
+        "id": "display_vendor_type",
+        "label": "Display Vendor Type"
+      },
+      
+      {
+        "type": "checkbox",
+        "id": "color_tooltip",
+        "label": "Enable color Tooltip?",
+        "default": true
+      },
+      
+      {
+        "type": "checkbox",
+        "id": "product_quantity_enable",
+        "label": "Show quantity selector"
+      },
+
+{
+        "type": "checkbox",
+        "id": "enable_size_chart",
+        "label": "Enable Size Chart",
+        "default": true
+      },
+{
+        "type": "checkbox",
+        "id": "enable_video",
+        "label": "Enable video",
+        "default": false
+      },
+{
+        "type": "checkbox",
+        "id": "enable_wishlist",
+        "label": "Enable wishlist",
+        "default": true
+      },
+{
+        "type": "checkbox",
+        "id": "enable_cart",
+        "label": "Enable add to cart",
+        "default": true
+      },
+{
+        "type": "color",
+        "id": "color_cart",
+        "label": "Cart buttons Bg",
+        "default": "#204a80"
+      },
+      {
+        "type": "color",
+        "id": "color_button_cart_text",
+        "label": "Cart button text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "cart_hover_btn",
+        "label": "Cart hover buttons",
+        "default": "#ff003a"
+      },
+      {
+        "type": "color",
+        "id": "cart_hover_btn_text",
+        "label": "Cart hover buttons text",
+        "default": "#fff"
+      },
+{
+        "type": "checkbox",
+        "id": "use_cart_width",
+        "label": "Use Cart Full Width",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "cart_size",
+        "label": "Cart Size",
+        "default": "14px 28px"
+      },
+      {
+        "type": "text",
+        "id": "cart_font_size",
+        "label": "Font Size",
+        "default": "34"
+      },
+      {
+        "type": "text",
+        "id": "small_cart_size",
+        "label": "Small Cart Size",
+        "default": "14px 28px"
+      },
+      {
+        "type": "text",
+        "id": "small_cart_font_size",
+        "label": "Small Font Size",
+        "default": "34"
+      },
+      {
+        "type": "checkbox",
+        "id": "payment_button",
+        "label": "Enable Buy Now",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "short_desc",
+        "label": "Enable Short description",
+        "default": true
+      },
+{
+        "type": "checkbox",
+        "id": "social_sharing_products",
+        "label": "Enable product sharing",
+        "default": true
+      },
+{
+        "type": "checkbox",
+        "id": "secure_pay_enable",
+        "label": "Enable Secure Payments"
+      },
+      {
+        "type": "image_picker",
+        "id": "secure_pay",
+        "label": "Secure Payments Image"
+      },
+      {
+      "type" : "checkbox",
+      "id" : "display_back_in_stock",
+      "label" : "Display Back In Stock",
+      "default" : true
+      },
+      {
+      "type" : "textarea",
+      "id" : "text",
+      "label" : "Text Someone recently bought", 
+      "default" : "Thanks! We will notify you when this product becomes available!"
+      },
+      {
+      "type" : "text",
+      "id" : "text1",
+      "label" : "Link Text", 
+      "default" : "Click Here"
+      },
+      {
+      "type" : "text",
+      "id" : "text2",
+      "label" : "Text 1", 
+      "default" : "to be notified by email when"
+      },
+      {
+      "type" : "text",
+      "id" : "text3",
+      "label" : "Text 3", 
+      "default" : "becomes available"
+      },
+      {
+      "type" : "text",
+      "id" : "error",
+      "label" : "Error Text", 
+      "default" : "Please provide a valid email address."
+      },
+      {
+        "type": "checkbox",
+        "id": "product_tab1",
+        "label": "Enable Product Description",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "product_tab1_heading",
+        "label": "Tab 1 heading",
+        "default": "Product Description"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_tab2",
+        "label": "Enable Product Review",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "product_tab2_heading",
+        "label": "Tab 2 heading",
+        "default": "Reviews"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_tab3",
+        "label": "Enable Shipping details",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "product_tab3_heading",
+        "label": "Tab 3 heading",
+        "default": "Shipping Details"
+      },
+      {
+        "type": "page",
+        "id": "product_tab3_page",
+        "label": "Select shipping info page"
+      },
+
+      {
+        "type": "checkbox",
+        "id": "product_related_enable",
+        "label": "Enable related products"
+      },
+      {
+        "type": "text",
+        "id": "related_prds_heading",
+        "label": "Main Heading"
+      },
+      {
+        "type": "checkbox",
+        "id": "heading_image_need",
+        "label": "Show Heading Image ?"
+      },
+      {
+        "type": "image_picker",
+        "id": "heading_image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "related_prds_title",
+        "label": "Small Heading"
+      },
+      {
+        "type": "header",
+        "content": "Recently Viewed Products"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_recently_viewed_products",
+        "label": "Display Recently Viewed Products?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "recently_viewed_products_title",
+        "label": "Title of recently viewed products",
+        "default": "Recently Viewed Products"
+      },
+{
+        "type": "text",
+        "id": "recently_viewed_products_subtitle",
+        "label": "Title of recently viewed products",
+        "default": "Recently Viewed Sub Products"
+      },
+{
+        "type": "checkbox",
+        "id": "heading_image_need_recently",
+        "label": "Show Heading Image ?"
+      },
+      {
+        "type": "image_picker",
+        "id": "heading_image_recently",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "number_of_recently_viewed_products",
+        "label": "Number of recently viewed products",
+        "default": "8"
+      },
+{
+        "type": "checkbox",
+        "id": "custom_text_block",
+        "label": "Custom Text Block ?"
+      }
+
+],
+
+
+"blocks": [
+    {
+      "type": "text",
+      "name": "Content block",
+      "settings": [ 
+ 		 {
+          "type": "text",
+          "id": "class",
+          "label": "Font Awesoem class",
+          "default": "far fa-heart",
+"info": "Works only on product type 3"
+        },
+		{
+          "type": "color",
+          "id": "class_color",
+          "label": "Icon color",
+		  "default":"#000"
+        },
+{
+          "type": "color",
+          "id": "icon_bg_color",
+          "label": "Bg color",
+		  "default":"#000"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"          
+        },
+		{
+          "type": "color",
+          "id": "title_color",
+          "label": "Color",
+		  "default":"#000"
+        },
+{
+          "type": "text",
+          "id": "sub_title",
+          "label": "Sub Title"          
+        },
+		{
+          "type": "color",
+          "id": "sub_title_color",
+          "label": "Color",
+		  "default":"#000"
+        },
+ 		{
+          "type": "textarea",
+          "id": "desc",
+          "label": "Description"
+
+        },
+{
+          "type": "color",
+          "id": "desc_color",
+          "label": "Color",
+		  "default":"#000"
+        },
+		{
+          "type": "text",
+          "id": "link",
+          "label": "Link"          
+        }      
+		
+      ]
+    }
+  ]
+
+
+
+}
+{% endschema %}

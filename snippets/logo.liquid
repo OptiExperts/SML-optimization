@@ -1,0 +1,18 @@
+{% if template == 'index' %}
+<h1 class="theme-logo placemnet" itemscope itemtype="http://schema.org/Organization">
+  {% else %}
+  <div class="h1 theme-logo placemnet" itemscope itemtype="http://schema.org/Organization">
+    {% endif %}
+    {% if settings.logo_use_image %}
+    <a href="{{shop.url}}" itemprop="url">
+      <img class="logo lazyload" src="{{ 'logo.png' | asset_img_url: '300x', crop: 'center'  }}" alt="{{ shop.name }}" itemprop="logo">
+    </a>
+    {% else %}
+    <a href="{{shop.url}}" itemprop="url"  class="shop-name" itemprop="{{ shop.name }}">{{ shop.name }}</a>
+    {% endif %}
+    {% if template == 'index' %}
+    </h1>
+  {% else %}
+  </div>
+
+{% endif %}   

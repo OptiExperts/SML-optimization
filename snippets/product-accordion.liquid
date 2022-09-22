@@ -1,0 +1,23 @@
+
+<div class="product-accordion">
+  <div id="accordion" class="accordion-container">
+    
+    <h4 class="accordion-title js-accordion-title">Description</h4>
+    <div class="accordion-content">
+      {{product.description | split:'Sizes' |first }}
+    </div>
+     
+    <h4 class="accordion-title js-accordion-title">Sizes</h4>
+    <div class="accordion-content">
+      {% if product.description contains 'Sizes'%}
+     {{product.description  | split:'Sizes:' |last | split:'Features' |first}}
+        {% endif %}
+    </div>
+    <h4 class="accordion-title js-accordion-title">Features</h4>
+    <div class="accordion-content">
+        {% if product.description contains 'Features'%}
+         <span>Features: </span>{{product.description | split:'Features:' |last }}
+        {% endif %}
+    </div>
+  </div>
+</div>

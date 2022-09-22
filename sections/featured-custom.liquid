@@ -1,0 +1,215 @@
+<style>
+  .collection-custom{
+  text-align: center;
+  }
+  #collection-custom{
+  display: -ms-flexbox;
+    display: flex;
+        -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .collection-custom .section-title{
+  margin-bottom: 40px;
+  }
+  .collection-custom #collection-custom .block-item h3{
+  color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .collection-custom .block-item{
+    padding: 0 15px 30px;
+    flex: 25%;
+    -webkit-flex: 0 1 25%;
+    -moz-flex: 0 1 25%;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+    max-width: 25%;
+  }
+  .collection-custom .image-wrapper{
+      margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  .collection-custom .image-wrapper img{
+  display: block;
+    transition: transform .25s ease;
+    width: 100%;
+        height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .collection-custom .image-wrapper:hover img{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+  }
+  @media screen and (max-width: 1199px) {
+
+  }
+  @media screen and (max-width: 1024px) {
+
+  }
+  @media screen and (max-width: 991px) {
+
+  }
+  @media screen and (max-width: 767px) {
+    .collection-custom .block-item{
+      flex: 50%;
+      -webkit-flex: 0 1 50%;
+      -moz-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (max-width: 479px) {
+
+  }
+</style>
+
+<div data-section-id="{{ section.id }}"  data-section-type="featured-custom">
+  <div class="collection-custom container">
+    {% if section.settings.title != blank %}
+    <h2 class="section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    <div id="collection-custom" class="grid">
+      {% for block in section.blocks %}
+      <div class="item block-item">
+        <a href="{{ block.settings.links }}">
+          <div class="image-wrapper">
+            <img  data-src="{{ block.settings.image.src | img_url: '1200x' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }}"
+                 alt="{{ block.settings.image.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ block.settings.image | img_url }}"
+                 data-srcset="{{ block.settings.image | img_url: '2048x' }} 2048w,
+                              {{ block.settings.image | img_url: '1200x' }} 1200w,
+                              {{ block.settings.image | img_url: '1000x' }} 1000w,
+                              {{ block.settings.image | img_url: '800x' }} 800w,
+                              {{ block.settings.image | img_url: '600x' }} 600w,
+                              {{ block.settings.image | img_url: '400x' }} 400w"
+                 />
+            
+          </div>
+          <div class="title">
+            <h3>{{ block.settings.title_1 }}</h3>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+<!--       <a href="/collections/lingerie" class="btn">View all <i class="fa-solid fa-angle-right"></i></a> -->
+  </div>
+</div>
+
+<!-- <script type="text/javascript">
+  $(document).ready(function(){
+    $('#collection-custom').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrow: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+</script> -->
+
+{% schema %}
+  {
+      "name": "Featured Custom",
+	"settings": [
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+          }
+
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "item",
+        "settings": [
+          {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+          },
+			{
+          "type": "url",
+          "id": "links",
+          "label": "Link"
+          },
+          {
+          "type": "text",
+          "id": "title_1",
+          "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+           "name": "Featured Custom",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+<!-- 
+{
+"name": "Featured Custom",
+"tag": "section",
+"blocks": [
+    {
+    "name": "Block",
+    "type": "Testi",
+        "settings": [
+            {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+            },
+            {
+            "type": "text",
+            "id": "title",
+            "label":"Heading"
+            },
+            {
+            "type": "url",
+            "id": "link",
+            "label": "Collection link"
+            }
+        ]
+    }
+    ],
+"presets": [
+{
+"name": "Featured Custom"
+}
+]
+}
+ -->

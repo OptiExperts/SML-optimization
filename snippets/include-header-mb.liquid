@@ -1,0 +1,89 @@
+<div class="grid__item header-mb mobile-show">
+  <ul class="menu-icon placement">
+    <div class="menu-icon-inner">
+    <div class="menu-left">
+      <li class="header-mobile">
+        <div class="menu-block visible-phone"><!-- start Navigation Mobile  -->
+          <div id="showLeftPush">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+
+          </div>
+        </div><!-- end Navigation Mobile  --> 
+      </li>
+      <li class="navigation-bar-right">
+
+        <div class="slidedown_section">
+          <a title="{{ 'layout.customer.log_in' | t }}" id="Togglemodal" class="icon-cart-arrow">{%include 'user-icon'%}</a>
+          <div id="slidedown-modal">
+            <div class="header-panel-top">
+              <ul>
+
+                {% if shop.customer_accounts_enabled or section.settings.display_wishlist %}
+                <li>
+                  <div class="customer_account">                          
+                    <ul>
+                      {% if shop.customer_accounts_enabled %}
+                      {% if customer %}
+                      <li>
+                        <a href="/account" title="{{ 'layout.customer.account' | t }}"><i class="fa fa-user" aria-hidden="true"></i> {{ 'layout.customer.account' | t }}</a>
+                      </li>
+                      <li class="logout-link">
+                        <a href="/account/logout" title="{{ 'layout.customer.log_out' | t }}" data-value="value 1"><i class="fa fa-user" aria-hidden="true"></i> {{ 'layout.customer.log_out' | t }}</a>
+                      </li>
+                      {% else %}
+                      <li>
+                        <a href="/account/login" title="{{ 'layout.customer.log_in' | t }}"> <i class="fa fa-user-plus" aria-hidden="true"></i> {{ 'layout.customer.log_in' | t }}</a>
+                      </li>
+                      <li>
+                        <a href="/account/register" title="{{ 'layout.customer.create_account' | t }}"> <i class="fa fa-user" aria-hidden="true"></i> {{ 'layout.customer.create_account' | t }}</a>
+                      </li>          
+                      {% endif %}  
+                      {% endif %} 
+                      {% if section.settings.display_wishlist %}
+                      <li>
+                        <a href="/apps/advanced-wishlist" title="{{ 'products.wishlist.wishlist_name' | t }}"> <i class="fa fa-heart" aria-hidden="true"></i> {{ 'products.wishlist.wishlist_name' | t }}</a>
+                      </li>
+                      {% endif %}
+                    </ul>
+                  </div>     
+                </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </li>
+    </div>
+    <li class="header-mobile logo-mb">
+      {% if settings.logo_use_image %}
+      <a href="{{shop.url}}" itemprop="url">
+        <img class="logo" src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+      </a>
+      {% else %}
+      <a href="{{shop.url}}" itemprop="url"  class="shop-name" itemprop="{{ shop.name }}">{{ shop.name }}</a>
+      {% endif %}
+    </li>
+    <div class="menu-right">
+      {% if section.settings.display_search %} 
+      <li class="mobile_search"><a href="/search">    {%include 'search-icon'%}</a></li>
+      {% endif %} 
+      <li class="header-bar__module cart header_cart">
+        {% if section.settings.display_minicart %}
+        {% include 'mini-cart' %} 
+        {% endif %} 
+      </li>
+      {% if settings.display_currency %} 
+      <li class="header_currency">
+        <ul class="tbl-list">
+          <li class="currency dropdown-parent uppercase currency-block">
+            {% include 'currencies-switcher' %}
+          </li>
+        </ul>
+      </li> 
+      {% endif %}
+
+    </div>
+    </div>
+  </ul> 
+</div>

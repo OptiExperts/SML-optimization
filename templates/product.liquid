@@ -1,0 +1,318 @@
+{% if template contains == 'product' %}
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
+
+{% endif %}
+
+<div class="position-change">
+  {% if settings.product_page_sidebar == "left_sidebar" or  settings.product_page_sidebar == "right_sidebar" %}
+  {% assign mid_width = "grid__item extra-large--four-fifths post-large--three-quarters large--grid__item" %}
+  {% else %}
+  {% assign mid_width = "grid__item" %}
+  {% endif %}
+
+  {% if settings.product_page_sidebar == "left_sidebar" %}
+  <div class="grid__item extra-large--one-fifth post-large--one-quarter left-sidebar">
+    {% include 'product-sidebar' %}
+  </div>
+  {% endif %}
+  <div class="second">
+    {% section 'product-template' %}
+  </div>
+</div>
+
+
+
+
+<script src="https://widget.sezzle.com/v1/javascript/price-widget?uuid=41a650a5-4851-4db7-9510-43d551dcac56"></script>
+
+<script>
+  $(function () {
+    $(".accordion-content:not(:first-of-type)").css("display", "none");
+    $(".js-accordion-title:first-of-type").addClass("open");
+
+    $(".js-accordion-title").click(function () {
+      $(".open").not(this).removeClass("open").next().slideUp(300);
+      $(this).toggleClass("open").next().slideToggle(300);
+    });
+  });
+</script>
+
+
+
+<script>
+  $(document).ready(function(){
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      swipe: true,
+      swipeToSlide : true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      vertical:true,
+      asNavFor: '.slider-for',
+      dots: false,
+      focusOnSelect: true,
+      verticalSwiping:true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            vertical: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            vertical: true,
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            vertical: true,
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 380,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
+    });
+  });
+</script>
+<script>
+$(document).ready(function() {
+	$('.open-popup-link').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+});
+</script>
+<script>
+    $('p').each(function() {
+    const $this = $(this);
+    if($this.html().replace(/\s|&nbsp;/g, '').length === 0)
+        $this.remove();
+});
+  </script>
+
+
+<style>
+    .related_products_container .product-additional .wrapper-img, .related_products_container .product-container .wrapper-img{
+        padding-bottom: 110%;
+          background-color: #cccccc1f;
+    background-blend-mode: multiply;
+  }
+  .related_products_container .product-additional .wrapper-img-chill img,  .related_products_container .product-container .wrapper-img .wrapper-img-chill img{
+        object-fit: contain;
+  }
+.size-chart-section .open-popup-link{
+  text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+  #size-chart{
+        width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+        position: relative;
+    padding: 50px 30px;
+  }
+  .product-accordion .accordion-product + .panel {
+    display: none;
+  }
+  .product-accordion .accordion-product:first-child + .panel {
+    display: block;
+    max-height: initial;
+  }
+  .product-accordion .accordion-product.active + .panel {
+    display: block;
+  }
+  .product-accordion .accordion-product,
+  .accordion__btn{
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    padding: 0;
+    text-transform: uppercase;
+    min-height: 33px;
+    border-top: solid 1px#e5e5e5;
+    margin: 0;
+    padding: 2px;
+    padding-top: 5px;
+  }
+  .product-accordion .accordion-product:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .product-accordion .accordion-product.active:after{
+    content: "\2212";
+  }
+
+  .product-accordion .panel {
+    padding: 0 5px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 16px;
+  }
+  .product-accordion{
+    display: inline-block;
+    border-bottom: solid 1px#e5e5e5;
+    margin-top: 20px;
+    max-width: 350px;
+    width: 100%;
+  }
+  .product-content-box .size-chart-open-popup{
+    font-size: 18px;
+  }
+   .accordion-content{
+    padding: 10px 0;
+    display: block;
+    font-size: 14px;
+    color: #000
+  }
+  .accordion-content p{
+    padding: 0;
+    display: block;
+    font-size: 15px;
+    color: #000
+  }
+  .panel-conent h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .panel-conent{
+    padding-bottom: 30px;
+  }
+      .accordion-content p,
+    .accordion-content p strong,
+    .accordion-content strong,
+    .accordion-content p span,
+    .accordion-content span,{
+    font-weight: normal;
+    }
+  .accordion-content strong{
+      font-weight: normal;
+  }
+  .accordion-container .accordion-title {
+    position: relative;
+    margin: 0;
+    color: #000;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+    padding: 0;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-top: 1px solid #cccc;
+  }
+  .accordion-title.open { 
+    background-color: transparent;
+    font-weight: 800;
+  }
+  .accordion-container .accordion-title::after {
+    content: "+";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    line-height: 16px;
+  }
+  .accordion-container .accordion-title.open::after {
+    content: "-";
+  }
+
+  .accordion-content{
+    padding: 30px 0;
+  }
+  @media screen and (max-width: 767px) {
+    .product-accordion{
+      max-width: 100%;
+    }
+
+  }
+</style>
+
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
+
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+  document.getElementById("AddToCart").addEventListener('click',function (){
+    _learnq.push(['track', 'Added to Cart', item]);
+  });</script>
+
+
+<script src='https://widget.sezzle.com/v1/javascript/price-widget?uuid=41a650a5-4851-4db7-9510-43d551dcac56'></script>

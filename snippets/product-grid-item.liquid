@@ -1,0 +1,164 @@
+{% unless grid_item_width  %}
+{% assign grid_item_width = 'extra-large--one-third large--one-third medium-down--one-half' %}
+{% endunless %}
+{% if template contains 'product' %}
+{% assign grid_item_width = '' %}
+{% endif %}
+{% unless current_collection == blank %}
+{% assign current_collection = collection %}
+{% endunless %}
+{% assign on_sale = false %}
+{% assign sale_text = 'products.product.sale' | t %}
+{% if product.compare_at_price > product.price %}
+{% assign on_sale = true %}
+{% endif %}
+{% assign sold_out = true %}
+{% assign sold_out_text = 'products.product.sold_out' | t %}
+{% if product.available %}
+{% assign sold_out = false %}
+{% endif %}
+{% assign img_size='large' %}
+<li class="grid__item item-row  {{grid_item_width}} {% if settings.product_row_mob == 'single' %} medium--grid__item small-grid__item {% else %} medium--one-half small--one-half {% endif %} {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}" {% if section.settings.collection_infinite_scrolling %}{% if forloop.index > section.settings.total_products_load %} style="display:none"  data-wow-duration="1{{ forloop.index }}" {% endif %}{% endif %}>
+  <div class="products wow fadeInUp animated">
+    <div class="product-container">  
+      {% if settings.count_down_enable and settings.count_down_collections %}
+      {% assign dealTime = settings.home_productdeal_time | split: ' ' | join: ' ' | split: ' ' %}
+      {% include 'deal-snippet' %}
+      {% endif %}
+      <a href="{{ product.url | within: collection }}" class="grid-link">                  
+        {% unless sold_out %}
+        {% if on_sale %}
+        <div class="featured-tag {% if on_sale %} offer_exist {% endif %}">
+          {% if settings.sale_label_as == "sale_label" %}
+          <span class="badge badge--sale">          
+            <span class="gift-tag badge__text{% if sale_text.size > 7 %} badge__text--small{% endif %}">{{ 'products.product.sale' | t }}</span>
+          </span>
+          {% endif %}
+          {% if settings.sale_label_as == "offer_label" %} {% include 'offer-price' %} {% endif %} 
+        </div>
+        {% endif %} 
+        {% endunless %}
+        {% if sold_out and settings.collections_show_sold_out_circle %}
+        <span class="badge badge--sold-out">
+          <span class="badge__text{% if sold_out_text.size > 9 %} badge__text--small{% endif %}">{{ 'products.product.sold_out' | t }}</span>
+        </span>
+        {% endif %}   
+        <div class="ImageOverlayCa"></div>
+        {% if settings.secondary_image_use %}
+        {% if product.images.size > 1 %}
+         <div class="reveal"> 
+          <span class="product-additional">      
+            <span class="wrapper-img">
+              <span class="wrapper-img-chill">
+              <img data-src="{{ product.featured_image.src | img_url: '300x' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }}"
+                 alt="{{ product.featured_image.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ product.featured_image | img_url }}"
+                 data-srcset="{{ product.featured_image | img_url: '2048x' }} 2048w,
+                              {{ product.featured_image | img_url: '1200x' }} 1200w,
+                              {{ product.featured_image | img_url: '1000x' }} 1000w,
+                              {{ product.featured_image | img_url: '800x' }} 800w,
+                              {{ product.featured_image | img_url: '600x' }} 600w,
+                              {{ product.featured_image | img_url: '400x' }} 400w"
+                 />
+              </span>
+            </span>
+          </span>
+            <img data-src="{{ product.images.last.src | img_url: '300x' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }} hidden-feature_img"
+                 alt="{{ product.images.last.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ product.images.last | img_url }}"
+                 data-srcset="{{ product.images.last | img_url: '2048x' }} 2048w,
+                              {{ product.images.last | img_url: '1200x' }} 1200w,
+                              {{ product.images.last | img_url: '1000x' }} 1000w,
+                              {{ product.images.last | img_url: '800x' }} 800w,
+                              {{ product.images.last | img_url: '600x' }} 600w,
+                              {{ product.images.last | img_url: '400x' }} 400w"
+                 />
+        </div> 
+        {% else %}
+            <span class="wrapper-img">
+              <span class="wrapper-img-chill">
+                <img  data-src="{{ product.featured_image.src | img_url: '300x' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }}"
+                 alt="{{ product.featured_image.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ product.featured_image | img_url }}"
+                 data-srcset="{{ product.featured_image | img_url: '2048x' }} 2048w,
+                              {{ product.featured_image | img_url: '1200x' }} 1200w,
+                              {{ product.featured_image | img_url: '1000x' }} 1000w,
+                              {{ product.featured_image | img_url: '800x' }} 800w,
+                              {{ product.featured_image | img_url: '600x' }} 600w,
+                              {{ product.featured_image | img_url: '400x' }} 400w"
+                 />
+              </span>
+            </span>
+        {% endif %}
+        {% else %}
+            <span class="wrapper-img">
+              <span class="wrapper-img-chill">
+                <img  data-src="{{ product.featured_image.src | img_url: '300x' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }}"
+                 alt="{{ product.featured_image.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ product.featured_image | img_url }}"
+                 data-srcset="{{ product.featured_image | img_url: '2048x' }} 2048w,
+                              {{ product.featured_image | img_url: '1200x' }} 1200w,
+                              {{ product.featured_image | img_url: '1000x' }} 1000w,
+                              {{ product.featured_image | img_url: '800x' }} 800w,
+                              {{ product.featured_image | img_url: '600x' }} 600w,
+                              {{ product.featured_image | img_url: '400x' }} 400w"
+                 />
+              </span>
+            </span>
+        {% endif %}
+      </a>
+      <div class="product_right_tag">
+       
+        {% include 'new-label' %}
+      </div>
+      <div class="ImageWrapper">
+        <div class="product-button"> 
+
+          {% if settings.enable_add_cart %}
+          {% if product.available %}    
+          <form  action="/cart/add" method="post" class="gom variants clearfix" id="cart-form-{{ product.id }}">                                    
+            <input type="hidden" name="id" value="{{ product.variants[0].id }}" />  
+            <a class="add-cart-btn" title="{{ 'products.product.add_to_cart' | t }}">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </form> 
+          {% endif %}
+          {% endif %} 
+          {% if settings.enable_quick_view %}       
+          <a title="{{ 'products.product.quick_view' | t }}" href="javascript:void(0)" id="{{ product.handle }}" class="quick-view-text">                      
+            <i class="material-icons">visibility</i>
+          </a>       
+          {% endif %}
+          {% if settings.enable_wishlist %}       
+          {% include 'wishlist-icon' %}         
+          {% endif %} 
+        </div>
+        {% if settings.display_item_size %}
+        {% include 'items-size' %}
+        {% endif %}
+      </div>
+    </div>
+    <div class="product-detail">
+      <a href="{{ product.url | within: collection }}" class="grid-link__title">{{ product.title }}</a>
+      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+      {% if settings.product_review %}     <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span> {% endif %}
+      <div class="grid-link__meta">
+        {% include 'product-price', variant: product %}      
+      </div>
+      {% if settings.display_short_desc and  product.description.size > 0 %}
+      <p class="product_short-description rte">      
+        {{ product.description | strip_html | truncate: 500 }}
+      </p>
+      {% endif %}
+      {% include 'item-swatch' %}
+    </div> 
+  </div>
+</li>

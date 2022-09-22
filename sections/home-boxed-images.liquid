@@ -1,0 +1,486 @@
+<div data-section-id="{{ section.id }}" data-section-type="home-boxed-images-section" class="home-boxed-images"> 
+  <div class="wrapper">
+    <div class="grid-uniform">  
+      <div class="grid__item extra-large--one-third post-large--one-third large--one-third medium--grid__item small-grid__item"> 
+        <div class="hover-effect-wrapper  ">
+          <div class="img-hover-effect-1 img-hover-effect last wow fadeIn animated">     
+            {% if section.settings.link_5 != blank %}<a class="banner_half_img" href="{{ section.settings.link_5 }}">{% endif%}
+            {% if section.settings.image_5 != blank %}
+            <img src="{{ section.settings.image_5 | img_url: '1920X' }}" alt="{{ section.settings.title_5 }}" />
+            {% else %}
+            <img src="//via.placeholder.com/767x1044">
+            {% endif%}           
+            {% if section.settings.link_5 != blank %}  </a>
+            {% endif%}
+            <div class="featured-content">       
+              {% if section.settings.title_5 != blank %}
+              <h6 style="color:{{ section.settings.title_5_color }}">{{ section.settings.title_5 }}</h6>
+              {% endif %}
+              {% if section.settings.text_5 != blank %}
+              <h2 style="color:{{ section.settings.text_5_color }}">{{ section.settings.text_5}}</h2>    
+              {% endif %}  
+              {% if section.settings.button_5 != blank %}
+              <a class="btn five" href="{{ section.settings.link_5 }}" style="color:{{ section.settings.button_5_txt_color }};">{{ section.settings.button_5}}</a>    
+              {% endif %}         
+            </div>      
+          </div>  
+        </div>
+      </div>
+      <div class="grid__item extra-large--two-thirds post-large--two-thirds large--two-thirds medium--grid__item small-grid__item">
+        <div class="grid__item">
+          <div class="grid__item  home-boxed-images-r1">   
+            <div class="hover-effect-wrapper">
+              <div class="img-hover-effect-1 img-hover-effect wow fadeIn animated">  
+                {% if section.settings.link_1 != blank %}<a class="banner_half_img" href="{{ section.settings.link_1 }}">{% endif%}
+                {% if section.settings.image_1 != blank %}
+                <img src="{{ section.settings.image_1 | img_url: '1920X' }}" alt="{{ section.settings.title_1 }}" />
+                {% else %}
+                <img src="//via.placeholder.com/767x740">
+                {% endif%}           
+                {% if section.settings.link_1 != blank %}  </a>
+                {% endif%}
+                <div class="featured-content">       
+                  {% if section.settings.title_1 != blank %}
+                  <h6 style="color:{{ section.settings.title_1_color }}">{{ section.settings.title_1 }}</h6>
+                  {% endif %}
+                  {% if section.settings.text_1 != blank %}
+                  <h2 style="color:{{ section.settings.text_1_color }}">{{ section.settings.text_1}}</h2>    
+                  {% endif %}  
+                  {% if section.settings.button_1 != blank %}
+                  <a class="btn three" href="{{ section.settings.link_1 }}" style="color:{{ section.settings.button_1_txt_color }};">{{ section.settings.button_1}}</a>    
+                  {% endif %}         
+
+                </div>      
+              </div> 
+            </div>
+
+            <div class="grid__item">
+              <div class="grid__item  home-boxed-images-r2">
+
+                <div class="hover-effect-wrapper">
+                  <div class="img-hover-effect-3 img-hover-effect wow fadeIn animated">
+                    {% if section.settings.link_3 != blank %}<a class="banner_half_img" href="{{ section.settings.link_3 }}">{% endif%}
+                    {% if section.settings.image_3 != blank %}
+                    <img src="{{ section.settings.image_3 | img_url: '1920X' }}" alt="{{ section.settings.title_3 }}" />
+                    {% else %}
+
+                    <img src="//via.placeholder.com/767x540">
+                    {% endif%}           
+                    {% if section.settings.link_3 != blank %}  </a>
+
+                    {% endif%}
+                    <div class="featured-content">        
+                      {% if section.settings.title_3 != blank %}
+                      <h6 style="color:{{ section.settings.title_3_color }}">{{ section.settings.title_3 }}</h6>
+                      {% endif %}
+                      {% if section.settings.text_3 != blank %}
+                      <h2 style="color:{{ section.settings.text_3_color }}">{{ section.settings.text_3}}</h2>    
+                      {% endif %}  
+                      {% if section.settings.button_3 != blank %}
+                      <div class="clear-btn">
+                      <a class="btn two" href="{{ section.settings.link_3 }}" style="color:{{ section.settings.button_3_txt_color }};">{{ section.settings.button_3}}</a>    
+                      </div>
+                      {% endif %}         
+                    </div>   
+                  </div> 
+                </div>
+
+              </div>
+
+            </div>
+          </div>  
+
+          <div class="grid__item  home-boxed-images-l1">   
+            <div class="hover-effect-wrapper">
+              <div class="img-hover-effect-2 img-hover-effect left-side wow fadeIn animated">   
+                {% if section.settings.link_4 != blank %}<a class="banner_half_img" href="{{ section.settings.link_4 }}">{% endif%}
+                {% if section.settings.image_4 != blank %}
+                <img src="{{ section.settings.image_4 | img_url: '1920X' }}" alt="{{ section.settings.title_4 }}" />
+                {% else %}
+                <img src="//via.placeholder.com/767x865">
+                {% endif%}           
+                {% if section.settings.link_4 != blank %}  </a>
+                {% endif%}
+                <div class="featured-content">       
+                  {% if section.settings.title_4 != blank %}
+                  <h6 style="color:{{ section.settings.title_4_color }}">{{ section.settings.title_4 }}</h6>
+                  {% endif %}
+                  {% if section.settings.text_4 != blank %}
+                  <h2 style="color:{{ section.settings.text_4_color }}">{{ section.settings.text_4}}</h2>    
+                  {% endif %}  
+                  {% if section.settings.button_4 != blank %}
+                  <a class="btn one" href="{{ section.settings.link_4 }}" style="color:{{ section.settings.button_4_txt_color }};">{{ section.settings.button_4}}</a>    
+                  {% endif %}         
+                </div>      
+              </div>
+            </div>
+            <div class="hover-effect-wrapper">
+              <div class="img-hover-effect-2 img-hover-effect right-side wow fadeIn animated">   
+                {% if section.settings.link_6 != blank %}<a class="banner_half_img" href="{{ section.settings.link_6 }}">{% endif%}
+                {% if section.settings.image_6 != blank %}
+                <img src="{{ section.settings.image_6 | img_url: '1920X' }}" alt="{{ section.settings.title_6 }}" />
+                {% else %}
+                <img src="//via.placeholder.com/767x865">
+                {% endif%}           
+                {% if section.settings.link_6 != blank %}  </a>
+                {% endif%}
+                <div class="featured-content">       
+                  {% if section.settings.title_6 != blank %}
+                  <h6 style="color:{{ section.settings.title_6_color }}">{{ section.settings.title_6 }}</h6>
+                  {% endif %}
+                  {% if section.settings.text_6 != blank %}
+                  <h2 style="color:{{ section.settings.text_6_color }}">{{ section.settings.text_6}}</h2>    
+                  {% endif %}  
+                  {% if section.settings.button_6 != blank %}
+                  <div class="clear-btn">
+                  <a class="btn one" href="{{ section.settings.link_6 }}" style="color:{{ section.settings.button_6_txt_color }};">{{ section.settings.button_6}}</a>    
+                  </div>
+                  {% endif %}         
+
+                </div>      
+              </div>
+            </div>
+            <div class="grid__item  home-boxed-images-l2">
+              <div class="hover-effect-wrapper">
+                <div class="img-hover-effect img-hover-effect-4 wow fadeIn animated">
+                  {% if section.settings.link_2 != blank %}<a class="banner_half_img" href="{{ section.settings.link_2 }}">{% endif%}
+                  {% if section.settings.image_2 != blank %}
+                  <img src="{{ section.settings.image_2 | img_url: '1920X' }}" alt="{{ section.settings.title_2 }}" />
+                  {% else %}
+                  <img src="//via.placeholder.com/767x422">
+                  {% endif%}           
+                  {% if section.settings.link_2 != blank %}  </a>
+                  {% endif%}
+                  <div class="featured-content">     
+                    {% if section.settings.offer != blank or section.settings.offer_text != blank  %}
+                    <div class="offer_text">{{ section.settings.offer }}<p><span>{{ section.settings.offer_text }}</span></p></div>
+                    {% endif %} 
+                    {% if section.settings.title_2 != blank %}
+                    <h6 style="color:{{ section.settings.title_2_color }}">{{ section.settings.title_2 }}</h6>
+                    {% endif %}
+                    {% if section.settings.text_2 != blank %}
+                    <h2 style="color:{{ section.settings.text_2_color }}">{{ section.settings.text_2}}</h2>    
+                    {% endif %}  
+
+                    {% if section.settings.button_2 != blank %}
+                    <a class="btn four" href="{{ section.settings.link_2 }}" style="color:{{ section.settings.button_2_txt_color }};">{{ section.settings.button_2}}</a>    
+                    {% endif %}         
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<style>
+  .home-boxed-images .featured-content .btn.one:hover { background: {{ section.settings.button_4_hover_bg_color }} !important;color:{{ section.settings.button_4_hover_txt_color }} !important;}
+  .home-boxed-images .featured-content .btn.two:hover { background: {{ section.settings.button_3_hover_bg_color }} !important; color:{{ section.settings.button_3_hover_txt_color }} !important;}
+  .home-boxed-images .featured-content .btn.three:hover { background: {{ section.settings.button_1_hover_bg_color }} !important;color:{{ section.settings.button_1_hover_txt_color }} !important; }
+  .home-boxed-images .featured-content .btn.four:hover { background:{{ section.settings.button_2_hover_bg_color }} !important;color:{{ section.settings.button_2_hover_txt_color }} !important; }
+  .home-boxed-images .featured-content .btn.five:hover { background:{{ section.settings.button_5_hover_bg_color }} !important;color:{{ section.settings.button_5_hover_txt_color }} !important; }
+  .home-boxed-images .featured-content h2 span { color:{{ section.settings.hot_text }}; }
+  .home-boxed-images .featured-content .offer_text { color:{{ section.settings.offer_text_clr }}; }
+  .home-boxed-images .featured-content p span:before,.grid-banner-type-4 .featured-content p span:after { background:{{ section.settings.offer_text_clr }}; }
+  .home-boxed-images .img-hover-effect-2.img-hover-effect.left-side .featured-content {background:{{section.settings.desc_bg_color | color_modify: 'alpha', 0.88  }};}  
+  .home-boxed-images .img-hover-effect a.banner_half_img {position:relative;float:left;width:100%;}
+  .home-boxed-images .img-hover-effect a::after {
+     background:linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+     background: -webkit-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+     background: -moz-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+     background: -ms-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+     background: linear-gradient(top left {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}}); border-radius: 0%;opacity:0.7;
+     position: absolute;content: "";height: 100%;width: 100%;transition: 0.3s linear;opacity: 0;top:0;}
+  .home-boxed-images .img-hover-effect:hover a.banner_half_img::after { opacity:0.7;}
+  
+  
+  
+  
+</style>
+
+
+{% schema %}
+{
+"name": "Home boxed images",
+"class": "index-section home-boxed-images-section",
+"settings": [
+{
+  "type": "header",
+  "content": "Image Overlay Bg Color"
+ },
+{
+"type": "color",
+"id": "gradient_pri_clr",
+"label": "Gradient Primary Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "gradient_Sec_clr",
+"label": "Gradient Secondary Color",
+"default":"#000"
+},
+{
+"type": "image_picker",
+"id": "image_5",
+"label": "Image",
+"info": "Size: 767x1044"
+},
+{
+"type": "text",
+"id": "title_5",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_5_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "textarea",
+"id": "text_5",
+"label": "Description"
+
+},
+{
+"type": "color",
+"id": "text_5_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "button_5",
+"label": "Button text"
+},
+{
+"type": "url",
+"id": "link_5",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 767x740"
+},
+
+{
+"type": "text",
+"id": "title_1",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_1_color",
+"label": "Color",
+"default":"#000"
+},
+
+{
+"type": "textarea",
+"id": "text_1",
+"label": "Description"
+},
+{
+"type": "color",
+"id": "text_1_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "button_1",
+"label": "Button text"
+},
+{
+"type": "url",
+"id": "link_1",
+"label": "Link URL"
+},
+
+
+{
+"type": "image_picker",
+"id": "image_3",
+"label": "Image",
+"info": "Size: 767x540"
+},
+
+{
+"type": "text",
+"id": "title_3",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_3_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "textarea",
+"id": "text_3",
+"label": "Description"
+
+},
+{
+"type": "color",
+"id": "text_3_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "button_3",
+"label": "Button text"
+},
+
+{
+"type": "url",
+"id": "link_3",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_4",
+"label": "Image",
+"info": "Size: 767x865"
+},
+{
+"type": "color",
+"id": "desc_bg_color",
+"label": "Desc Bg Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "title_4",
+"label": "Heading"
+},
+
+{
+"type": "color",
+"id": "title_4_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "textarea",
+"id": "text_4",
+"label": "Description"
+
+},
+{
+"type": "color",
+"id": "text_4_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "button_4",
+"label": "Button text"
+},
+{
+"type": "url",
+"id": "link_4",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_6",
+"label": "Image",
+"info": "Size: 767x865"
+},
+{
+"type": "text",
+"id": "title_6",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_6_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "textarea",
+"id": "text_6",
+"label": "Description"
+
+},
+{
+"type": "color",
+"id": "text_6_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "button_6",
+"label": "Button text"
+},
+{
+"type": "url",
+"id": "link_6",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": "Image",
+"info": "Size: 767x422"
+},
+
+{
+"type": "text",
+"id": "title_2",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_2_color",
+"label": "Color",
+"default":"#000"
+},
+{
+"type": "textarea",
+"id": "text_2",
+"label": "Description"
+
+},
+{
+"type": "color",
+"id": "text_2_color",
+"label": "Color",
+"default":"#000"
+},
+
+{
+"type": "text",
+"id": "button_2",
+"label": "Button text"
+},
+
+{
+"type": "url",
+"id": "link_2",
+"label": "Link URL"
+}
+],
+"presets": [
+{
+"name": "Home boxed images",
+"category": "Image",
+"blocks": []
+}
+]
+}
+{% endschema %}
+
+
+

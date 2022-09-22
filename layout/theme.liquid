@@ -1,0 +1,319 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-52B5SSFJ3S"></script>
+<script>
+  window.TAC_SCRIPT_INJECTED = true;
+</script> 
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-52B5SSFJ3S');
+</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+     {% if template contains 'index' %}
+{%- render '__home-css' -%}
+{% elsif template contains 'product' %}
+{%- render '__product-css' -%}
+{% elsif template contains 'collection' %}
+{%- render '__collection-css' -%}
+{% else %}
+ {{ 'theme-style.scss.css' | asset_url | stylesheet_tag}}
+{{ 'custom-style.css' | asset_url | stylesheet_tag}}
+{% endif %}
+
+    {% comment %}
+    <!-- Backup for preferences - Google Analytics -->
+    <script>
+      function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MGDLRCB');
+     </script>
+    {% endcomment  %}
+    
+    
+    {% include 'limespot' %}
+    
+    {% render 'judgeme_core' %} 
+    <!-- Basic page needs ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    {% if settings.favicon_enable %}
+    <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
+    {% endif %}
+    <img width="99999" height="99999" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+">
+    <!-- Title and description ================================================== -->
+
+
+    <!-- Avada Size Chart Script -->
+    {% include 'avada-sc-setting' %}
+    <!-- /Avada Size Chart Script -->
+
+    <title>
+      {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+    {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+    <!-- Social meta ================================================== -->
+    {% include 'social-meta-tags' %}
+    <!-- Helpers ================================================== -->
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+    {% include 'header-styles' %}  
+    {% include 'header-fonts' %}  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    {% include 'header-scripts' %}  
+
+ 
+    {% include '__opt-sys-headers' %}
+    
+    {{ content_for_header }}
+
+{% comment %}
+    <script>var trekkie=[];trekkie.integrations=!0;</script>
+{% endcomment  %}
+
+    {% if template == '404' %}
+    <script>window.location.href = '/';</script>
+    {% endif %}
+    <meta name="facebook-domain-verification" content="s0lt4kicgeu74582w7lpb47dyyej4w" />
+
+
+    {% render 'digismoothie-candyrack' %}
+    {% include 'ufe-offer' %}
+
+   <script type='text/javascript' src='https://pixel.concentricmanagement.com/vpixel.js?ver=1.1.0'></script>  
+
+    {% include 'fa_translate_core' %} 
+    <!--DOOFINDER-SHOPIFY-->
+    {% if content_for_header contains 'doofinder-installed.js' %}
+    {% render 'doofinder-script-tag' %}
+    {% endif %}
+    <!--/DOOFINDER-SHOPIFY--><script type="lazyload2">if(typeof window.hulkappsWishlist === 'undefined') {
+  window.hulkappsWishlist = {};
+}
+  window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
+  window.hulkappsWishlist.hasAppBlockSupport = '';
+
+    </script>
+
+
+    {% include 'flashify-common' %}<script type="text/javascript">if(typeof window.hulkappsWishlist === 'undefined') {
+  window.hulkappsWishlist = {};
+}
+    window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
+    window.hulkappsWishlist.hasAppBlockSupport = '';
+    </script>
+  {% render "rale-render" %} <!-- roartheme: Terms and Conditions Checkbox app -->
+</head>
+
+
+  <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {% unless tempate contains 'index' %} others {% endunless %} {% if template contains 'homepage2' %}homepage2{% endif %}">
+
+
+
+    <script>vpixel.piximage('6748');</script>
+    {% include 'header' %}  
+
+    <main class="main "> 
+
+
+      {% unless template contains 'index' or template contains 'homepage2' %}
+      {% include 'breadcrumb' %}  
+      <div class="{% unless template contains 'contact'  %} space-clear-hidden-large {% endunless %}"></div>
+      {% endunless %}
+      <div class="{% if settings.layout == 'boxed' %} boxed-layout{% elsif settings.layout == 'wide' %}wide-layout {% else %} container{% endif %}">  
+        <div class="wrapper">
+          <div class="grid-uniform">
+            <div class="grid__item">  
+              <div class=" {% unless template contains 'index' or template contains 'homepage2' or template contains 'about' or template contains 'contact' %}content_for_layout {% endunless %}"> 
+                {{ content_for_layout }}
+                <limespot></limespot>
+                {% if template contains 'index' %}
+                <div class=" content_for_layout home_reviews">
+                  <h2 class="section-title">customer<span class=""> reviews</span></h2>
+                  <div id="stamped-reviews-widget" data-widget-type="carousel" data-auto-play="true" data-auto-play-speed="10000" data-take="15" data-style-color-title="#f5f5f5" data-style-color-text="#f5f5f5" data-style-color-link="#ffffff" data-with-photos="? string: ?"></div>
+                </div>
+                {% endif %}
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      {% unless template contains 'index' or template contains 'contact' or template contains 'homepage2' %}
+      <div class="space-clear-hidden-large"></div>
+      {% endunless %}
+    </main>
+    {% include 'footer' %}
+    {% include 'footer-scripts' %}  
+    {% include 'qmodal' %}
+    {% include 'modal-box' %}
+    {% include 'currencies' %}
+    {% include 'newsletter' %}     
+    {% include 'modal-compare' %}
+    {% unless template contains 'product' %}
+    {% section 'someone-purchased' %}
+    {% endunless %}
+    {% section 'GDPR-modal' %}
+
+    {% if template contains 'index' %}
+    <style>
+      .jdgm-subtab__name[data-tabname="product-reviews"] {
+        display: none !important;
+      }
+    </style>
+    <script>
+      $(document).ready( function() {
+        setTimeout( function() {
+          $('.jdgm-all-reviews-widget .jdgm-subtab__name[data-tabname="shop-reviews"]').click();
+        }, 500);
+      });
+    </script>
+    {% endif %}
+    {% render 'hulkappsWishlistPopup' %} {% if template != null %}{% endif %} 
+    {% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
+    {% assign oneclickupsellapp = true %}
+    {% render 'spurit_occ2_theme_snippet' %}
+
+    <script type="lazyload2" data-src="{{'tiny-img-link-preloader.js' | asset_url }}"></script>
+    <script type="lazyload2" data-src="{{'custom.js' | asset_url }}"></script>
+    {% include 'smile-initializer' %}
+
+    <!-- Accessibility Code for "www.sassymamalingerie.com" --> <script> window.interdeal = { "sitekey": "c60ae4e09be0e6ef187e685f24de9bf3", "Position": "Right", "Menulang": "EN", "domains": { "js": "https://cdn.equalweb.com/", "acc": "https://access.equalweb.com/" }, "btnStyle": { "vPosition": [ "80%", null ], "scale": [ "0.8", "0.8" ], "icon": { "type": 7, "shape": "semicircle", "outline": false } } }; (function(doc, head, body){ var coreCall = doc.createElement('script'); coreCall.src = 'https://cdn.equalweb.com/core/4.2.2/accessibility.js'; coreCall.defer = true; coreCall.integrity = 'sha512-5JFUorutIyGmP61zRJjdTke6AFi8/IYzJ6pyQL0UpUqwMNDuukmNH2qv2s+lj0X6MPtblMt4KgWLoDmqrTa5kg=='; coreCall.crossOrigin = 'anonymous'; coreCall.setAttribute('data-cfasync', true ); body? body.appendChild(coreCall) : head.appendChild(coreCall); })(document, document.head, document.body); </script>
+
+    <script type="text/javascript" src="{{ '__vendors.js' | asset_url }}"></script>
+
+    <script type="text/javascript" src="{{ '__opti-ling.js' | asset_url }}"></script>
+
+
+  </body>
+
+
+
+<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.8) -->
+<script type="lazyload2">
+  // Overrides:
+   var afterpay_min = 25.00;            // As per your Afterpay contract.
+  // var afterpay_max = 2000.00;         // As per your Afterpay contract.
+  // var afterpay_cbt_enabled = false;   // As per your Afterpay contract; change to true to display Cross-Border Trade artwork (for AU/NZ).
+  // var afterpay_logo_theme = 'colour'; // Can be 'colour', 'black' or 'white'.
+  // var afterpay_product_selector = '#product-price-selector';
+  // var afterpay_cart_integration_enabled = true;
+  // var afterpay_cart_static_selector = '#cart-subtotal-selector';
+
+  // Non-editable fields:
+  var afterpay_shop_currency = {{ shop.currency | json }};
+  var afterpay_cart_currency = {{ cart.currency.iso_code | json }};
+  var afterpay_shop_money_format = {{ shop.money_format | json }};
+  var afterpay_shop_permanent_domain = {{ shop.permanent_domain | json }};
+  var afterpay_theme_name = {{ theme.name | json }};
+  var afterpay_product = {{ product | json }};
+  var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
+  var afterpay_cart_total_price = {{ cart.total_price | json }};
+  var afterpay_js_snippet_version = '1.0.8';
+  var afterpay_footer_logo_enabled=false;
+</script>
+<script type="lazyload2" data-src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
+<!-- End Shopify-Afterpay JavaScript Snippet (v1.0.8) -->
+
+<script type="lazyload2">  
+  $(document).on('ready', function() {
+    setTimeout(
+      function() {
+        $('.jdgm-shop-reviews__body').slick({
+          dots: false,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          autoplay:true,
+          autoplaySpeed:10000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        }); 
+      },7000);
+  });
+  $(document).ready(function() {
+    function AddReadMore() {
+      //This limit you can set after how much characters you want to show Read More.
+      var carLmt = 200;
+      // Text to show when text is collapsed
+      var readMoreTxt = " ... Read More";
+      // Text to show when text is expanded
+      var readLessTxt = " Read Less";
+
+
+      //Traverse all selectors with this class and manupulate HTML part to show Read More
+      $(".addReadMore").each(function() {
+        if ($(this).find(".firstSec").length)
+          return;
+
+        var allstr = $(this).text();
+        if (allstr.length > carLmt) {
+          var firstSet = allstr.substring(0, carLmt);
+          var secdHalf = allstr.substring(carLmt, allstr.length);
+          var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
+          $(this).html(strtoadd);
+        }
+
+      });
+      //Read More and Read Less Click Event binding
+      $(document).on("click", ".readMore,.readLess", function() {
+        $(this).closest(".addReadMore").toggleClass("showlesscontent showmorecontent");
+      });
+    }
+
+
+    setTimeout(
+      function() {
+        $(".jdgm-rev__body p").each(function() {
+          $(this).addClass('addReadMore showlesscontent');
+        });
+        AddReadMore();
+      },6000);
+  });
+</script>
+
+

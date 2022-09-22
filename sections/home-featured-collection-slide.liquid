@@ -1,0 +1,74 @@
+<div data-section-id="{{ section.id }}"  data-section-type="home-featured-collection-slide">
+  <div class="collection-slide-mobile">
+    {% if section.settings.title != blank %}
+    <h2 class="section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    <div id="collection-carousel" class="owl-carousel owl-theme">
+      {% for block in section.blocks %}
+      <div class="item">
+        <a href="{{ block.settings.links }}">
+          <img src="{{ block.settings.image | img_url: " "  }}" alt="{{ block.settings.client_heading }}" />
+          <div class="title">
+            <h3>{{ block.settings.title_1 }}</h3>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+      <a href="/collections/lingerie" class="btn">View all <i class="fa-solid fa-angle-right"></i></a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#collection-carousel').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrow: true
+    });
+  });
+</script>
+
+{% schema %}
+  {
+      "name": "Featured Collection MB",
+	"settings": [
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+          }
+
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "item",
+        "settings": [
+          {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+          },
+			{
+          "type": "url",
+          "id": "links",
+          "label": "Link"
+          },
+          {
+          "type": "text",
+          "id": "title_1",
+          "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+           "name": "Featured Collection MB",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

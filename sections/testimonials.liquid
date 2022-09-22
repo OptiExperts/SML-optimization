@@ -1,0 +1,272 @@
+<div data-section-id="{{ section.id }}"  data-section-type="theme-testimonials" class="theme-testimonials" style="{% if section.settings.image_1 %}background-image:url('{{ section.settings.image_1 | img_url: '1920X' }}');background-attachment:fixed;background-repeat:no-repeat;background-position:center center; {% else %}background-color:{{section.settings.background_color}};{% endif%}">
+  <div class="grid-uniform">
+    <div class="container">
+
+      {% if section.settings.title != blank %}
+      <div class="section-heading">
+        <h2 style="color:{{section.settings.title_color }}">{{ section.settings.title }}</h2>  
+      </div>
+      {% endif %}
+
+      <div class="invisible-very-small"></div>
+      <div id="theme-testimonials_carousel" class="owl-carousel owl-theme theme-testimonials_carousel {{section.id}}-init">
+        {% if section.blocks.size > 0 %}  
+        {% for block in section.blocks %}
+        <div class="grid__item"> 
+          <div class="testimonials-wrapper">   
+            <div class="testimonials-reviews">
+              <div class="avator">
+                {% if  block.settings.image_1 != blank %}
+                <img src="{{  block.settings.image_1 | img_url: "1920X" }}" alt="{{  block.settings.author_name }}"  />
+                {% else %}
+                <img src="//via.placeholder.com/500x500">
+                {% endif %} 
+              </div>
+              {% if block.settings.heading != blank %}
+              <h4 style="color:{{block.settings.heading_color }}">{{ block.settings.heading }}</h4>
+              {% endif %}
+              {% case block.settings.star %}
+              {% when '1' %}
+              <div class="{{block.settings.star}}start rating" style="background-image:url('{{  'Stars.png' | asset_url }}');background-position:0 -57px"></div>
+              {% when '2' %}
+              <div class="{{block.settings.star}}start rating" style="background-image:url('{{  'Stars.png' | asset_url }}');background-position:0px -43px"></div>
+              {% when '3' %}
+              <div class="{{block.settings.star}}start rating" style="background-image:url('{{  'Stars.png' | asset_url }}');background-position:0 -29px"></div>
+              {% when '4' %}
+              <div class="{{block.settings.star}}start rating" style="background-image:url('{{  'Stars.png' | asset_url }}');background-position:0 -15px"></div>
+              {% when '5' %}
+              <div class="{{block.settings.star}}start rating" style="background-image:url('{{  'Stars.png' | asset_url }}');background-position:0px -1px"></div>
+              {% endcase %}
+            </div>
+            <blockquote>
+              {% if block.settings.text_desc != blank %}
+              <q style="color:{{block.settings.des_color }}">{{ block.settings.text_desc }}</q>
+              {% endif %} 
+            </blockquote>
+
+            {% if block.settings.author_name != blank %}
+            <span style="color:{{block.settings.author_color }}">{{ block.settings.author_name }}</span>
+            {% endif %}       
+          </div>
+        </div>
+        {% endfor %}         
+        {% endif %}  
+      </div>
+    </div>    
+  </div>
+</div>
+
+
+<style>
+      {% if section.settings.heading_image_need %}  .theme-testimonials .section-heading:after {  content:"";background-image:url({{ section.settings.heading_image | img_url: 'master' }});display:inline-block;background-repeat:no-repeat;width:238px;height:24px;} {% endif %}
+
+  .theme-testimonials {background:{{section.settings.bg_color }};}
+
+  .theme-testimonials .owl-theme .owl-controls .owl-page span{background:{{section.settings.border_color }};}
+
+  .theme-testimonials .authorimg::before{    border-bottom: 40px solid {{section.settings.imgborder_color }};}
+
+  .theme-testimonials .authorimg{border:3px solid {{section.settings.imgborder_color }};}
+
+  .theme-testimonials blockquote q::before , .theme-testimonials blockquote q::after{color:{{section.settings.quote_color }};}
+
+   .theme-testimonials .owl-prev , .theme-testimonials .owl-next{line-height:30px;background:{{section.settings.arrowbg_color }};color:{{section.settings.arrow_color }};}
+  .rating {display:block;width:70px;height:10px;background-repeat: no-repeat;margin: 0 auto;    text-align: center;}
+</style>
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var testimonial  = $(".theme-testimonials_carousel.{{section.id}}-init");
+                      testimonial .owlCarousel({
+                      loop:false,
+                      items: 3,
+                      margin:10,
+                      autoPlay: false,
+                      nav:false,     
+                      dots: true,
+                      smartSpeed : 1000,
+                      navSpeed : 1000,
+                      responsive:{
+                      0:{
+                      items: 1
+                      },
+                      600:{
+                      items: 2
+                      },
+                      720:{
+                      items: 3
+                      }
+                      }
+                      });   
+  });    
+</script>
+
+
+
+
+
+{% schema %}
+{
+"name": "Testimonial",
+"settings": [
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 1920x1280"
+},
+{
+"type": "color",
+"id": "background_color",
+"label":"Bckground color",
+"default": "#000"
+},
+
+{
+"type": "color",
+"id": "imgborder_color",
+"label": "Img Border Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "quote_color",
+"label": "Quote Color",
+"default":"#000"
+},
+{
+      "type": "checkbox",
+      "id": "heading_image_need",
+      "label": "Show Heading Image ?"
+      
+    },	
+{
+      "type": "image_picker",
+      "id": "heading_image",
+      "label": "Image",
+	  "info": "Size: 105x17"
+      
+    },
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_color",
+"label": "Title Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "arrowbg_color",
+"label": "Arrow Bg Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "arrow_color",
+"label": "Arrow  Color",
+"default":"#000"
+}
+],
+"blocks": [
+{
+"type": "text",
+"name": "content",
+"settings": [
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "heading",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "heading_color",
+"label": "Heading Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "author_name",
+"label": "Subject"
+},
+{
+"type": "color",
+"id": "author_color",
+"label": "Subject Color",
+"default":"#000"
+},
+{
+        "type": "select",
+        "id": "star",
+        "label": "rating",
+        "default": "4",
+        "options": [
+{
+            "value": "1",
+            "label": "1"
+          },
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          }
+        ]
+      },
+{
+"type": "textarea",
+"id": "text_desc",
+"label": "Description"
+},
+{
+"type": "color",
+"id": "des_color",
+"label": "Description Color",
+"default":"#000"
+}
+]
+}
+],
+
+"presets": [
+{
+"name": "Testimonial",
+"category": "Text",
+"blocks": [
+{
+"type": "text"
+},
+{
+"type": "text"
+},
+{
+"type": "text"
+}
+
+]
+}
+]
+}
+{% endschema %}
+

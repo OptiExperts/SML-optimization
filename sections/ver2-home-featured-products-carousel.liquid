@@ -1,0 +1,265 @@
+<div data-section-id="{{ section.id }}" data-section-type="home-featured-products-carousel-section" style="float:left;width:100%;background-color:{{ section.settings.type_bg }};">    
+  {%- assign collection = collections[section.settings.collection] -%} 
+  <div class="container">
+     {% if section.settings.title != blank %}
+    <div class="section-main-heading section-header--small wow fadeInDown animated">          
+      <h2 class="section-header__title" style="color:{{ section.settings.title_clr }};">    
+        {{ section.settings.title }}
+      </h2>
+      {% if section.settings.small_title != blank %}
+      <div class="short-desc"><p style="color:{{ section.settings.text_clr }};">{{ section.settings.small_title }}</p></div>
+      {% endif %}  
+      {% if section.settings.heading_image != blank %}
+      <img src="{{ section.settings.heading_image | img_url: '200X' }}" alt="title-img" />
+      {% endif%}          
+    </div>
+     {% endif %} 
+    
+    {% if section.settings.alignment == 'right' or  section.settings.alignment == 'left' %} 
+    {%- assign grid_mid_width = 'extra-large--one-half post-large--one-half large--one-half medium-down--grid__item small--grid__item' -%}     
+    {% else %}
+    {%- assign grid_mid_width = ' ' -%}
+    {% endif%}
+    <div class="grid-uniform">
+      <div class="inner-cover">
+         <div class="product-carouel-alignment-{{section.settings.alignment}}">
+        {% if section.settings.alignment == 'left' %}
+        <div class="grid__item extra-large--one-half post-large--one-half large--one-half medium--one-whole {{section.settings.alignment}}-side">
+          <div class="ovrly10 wow fadeIn animated">
+            {% if section.settings.link_1 != blank %}<a class="banner_half_img" href="{{ section.settings.link_1 }}">{% endif%}
+            {% if section.settings.image_1 != blank %}
+            <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="{{ section.settings.title_1 }}" />
+            <div style="background:{{ section.settings.overlay_bgcolor | color_modify: 'alpha', 0.7 }};"   class="ovrly"></div>
+            {% else %}
+            <img src="//via.placeholder.com/767x850">
+            {% endif%}           
+
+            <div class="featured-content">       
+              {% if section.settings.text_1 != blank %}
+              <h4 style="color:{{ section.settings.text_1_clr }};">{{ section.settings.text_1}}</h4>    
+              {% endif %}  
+              {% if section.settings.title_1 != blank %}
+              <h2 style="color:{{ section.settings.title_1_clr }};">{{ section.settings.title_1 }}</h2>
+              {% endif %} 
+              {% if section.settings.link_1 != blank %} 
+              <a href="{{section.settings.link_1}}" class="btn">{{section.settings.btn_txt}}</a>
+              {% endif%}
+            </div> 
+            <div class="collection_count">
+              {% if section.settings.count != blank %}
+              <span class="text_count" style="color:{{ section.settings.count_clr }};">{{ section.settings.count }}</span>    
+              {% endif %}  
+              {% if section.settings.text_1_count != blank %}
+              <span class="text_count text" style="color:{{ section.settings.text_1_count_clr }};">{{ section.settings.text_1_count }}</span>    
+              {% endif %}
+            </div>
+
+            </a>
+          </div>
+        </div>
+        {% endif %}
+       
+        <div class="grid__item {{ grid_mid_width }} home-featured-products-carousel ">
+          
+          <div class="carousel_wrapper">                            
+            <ul class="data-carousel {{ section.id }} owl-carousel owl-theme">                               
+              {% for product in collection.products   %}           
+              {% include 'index-grid-item', grid_item_width:" " %} 
+              {% else %}
+              {% include 'empty-row', grid_item_width:grid_item_width %} 
+              {% endfor %}        
+            </ul>             
+          </div>
+		 <div class="data-carousel-nav {{ section.id }}"></div>
+
+          <script type="text/javascript">       
+            $(document).ready(function(){
+              var data_carousel = $(".data-carousel.{{ section.id }}");
+                                    data_carousel.owlCarousel({
+                                    loop:false,            
+                                    nav:true,
+                                    navContainer: ".data-carousel-nav.{{ section.id }}",
+                                    navText: ['<a class="prev btn"><i class="material-icons">navigate_before</i></a>','<a class="next btn"><i class="material-icons">navigate_next</i></a>'],
+                                    dots: false,
+                                     items:1,
+                                     smartSpeed : 1000,
+      								 navSpeed : 1000
+                                    });     
+            });
+          </script>
+        </div>
+        {% if section.settings.alignment == 'right' %}
+        <div class="grid__item extra-large--one-half post-large--one-half large--one-half {{section.settings.alignment}}-side">
+          <div class="ovrly10 wow fadeIn animated">
+            <div class="img-hover-effect">
+              {% if section.settings.link_1 != blank %}<a class="banner_half_img" href="{{ section.settings.link_1 }}">{% endif%}
+              {% if section.settings.image_1 != blank %}
+              <img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="{{ section.settings.title_1 }}" />
+              <div style="background:{{ section.settings.overlay_bgcolor | color_modify: 'alpha', 0.7 }};"  class="ovrly"></div>
+              {% else %}
+              <img src="//via.placeholder.com/767x850">
+              {% endif%}           
+
+              <div class="featured-content">       
+                {% if section.settings.text_1 != blank %}
+                <h4 style="color:{{ section.settings.text_1_clr }};">{{ section.settings.text_1}}</h4>    
+                {% endif %}  
+                {% if section.settings.title_1 != blank %}
+                <h2 style="color:{{ section.settings.title_1_clr }};">{{ section.settings.title_1 }}</h2>
+                {% endif %}  
+
+                {% if section.settings.link_1 != blank %} 
+                <a href="{{section.settings.link_1}}" class="btn">{{section.settings.btn_txt}}</a>
+                {% endif%}
+              </div> 
+              <div class="collection_count">
+                {% if section.settings.count != blank %}
+                <span class="text_count" style="color:{{ section.settings.count_clr }};">{{ section.settings.count }}</span>    
+                {% endif %}  
+                {% if section.settings.text_1_count != blank %}
+                <span class="text_count text" style="color:{{ section.settings.text_1_count_clr }};">{{ section.settings.text_1_count }}</span>    
+                {% endif %}
+              </div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endif %} 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+  .home-featured-products-carousel-section .featured-content {background:{{section.settings.content_overlay_bgcolor | color_modify: 'alpha', 0.8 }};}
+
+</style>
+
+
+
+{% schema %}
+
+
+
+
+
+
+{
+"name": "Home products carousel",
+"class": "index-section home-featured-products-carousel-section",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "New arrivals"
+},    
+{
+"type": "color",
+"id": "title_clr",
+"label": "Title Color",
+"default":"#000"
+},
+
+ 
+{
+"type": "text",
+"id": "small_title",
+"label": "Small Heading"
+},    
+{
+"type": "color",
+"id": "text_clr",
+"label": "Text color",
+"default":"#000"
+},
+{
+"type": "image_picker",
+"id": "heading_image",
+"label": "Image",
+"info": "Size: 153x30"
+
+}, 
+
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 570x500"
+},
+{
+"type": "color",
+"id": "overlay_bgcolor",
+"label": "Image Overlay",
+"default":"#000"    
+},
+{
+"type": "select",
+"id": "alignment",
+"label": "Image block alignment",
+"default": "left",
+"options": [
+{
+"value": "left",
+"label": "Left"
+},
+{
+"value": "right",
+"label": "Right"
+},
+{
+"value": "none",
+"label": "None"
+}  
+]
+},
+{
+"type": "text",
+"id": "title_1",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "title_1_clr",
+"label": "Heading",
+"default": "#000"
+},
+
+
+{
+"type": "text",
+"id": "btn_txt",
+"label": "Button Text"
+},
+{
+"type": "url",
+"id": "link_1",
+"label": "Link URL"
+},
+{
+"id": "collection",
+"type": "collection",
+"label": "Collection"
+},
+{
+"type": "color",
+"id": "content_overlay_bgcolor",
+"label": "Desc Overlay Bg Color",
+"default":"#000"    
+}
+
+
+],
+"presets": [
+{
+"name": "Home products carousel",
+"category": "Collection",
+"blocks": []
+}
+]
+}
+{% endschema %}

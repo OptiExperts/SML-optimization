@@ -1,0 +1,638 @@
+
+<div data-section-id="{{ section.id }}"  data-section-type="story-page" class="theme-intro">
+  {% if section.settings.showvedaone_2_section %}
+  <div class="grid-uniform section-two block1">
+    <div class="container">
+      <div class="grid__item">
+        <div class="grid__item extra-large--one-whole post-large--one-whole large--one-whole medium--grid__item small-grid__item">
+          <div class="section-two-leftimg">   
+            {% if  section.settings.abtone_image_2 != blank %}
+            <img src="{{  section.settings.abtone_image_2 | img_url: "200X" }}" alt="{{ section.settings.abtone_image_2_heading }}" />             
+            {% else %}
+            <img src="//via.placeholder.com/50x50">
+            {% endif %}
+          </div>
+        </div>
+        <div class="grid__item extra-large--one-whole post-large--one-whole large--one-whole medium--grid__item small-grid__item">
+          {% if section.settings.abtone_2_title != blank %}   <h2 style="color:{{section.settings.abtone_2_maintilte }}">{{ section.settings.abtone_2_title }}</h2>{% endif %} 
+          {% if section.settings.abtone_2_des != blank %}
+          <p style="color:{{section.settings.abtone_2_desc }}">{{section.settings.abtone_2_des }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section_bt_space"></div>
+  {% endif %} 
+
+  {% if section.settings.show_6_section %}
+  <div class="section-six block2" style="">
+    <div class="container">
+      <div class="grid__item">
+        <div class="grid__item">
+          <div class="grid__item extra-large--one-third post-large--one-third large--one-third medium--grid__item small-grid__item">
+            <div class="gallery-img">            
+              <a href="{{section.settings.gallery_2_img_link}}">
+                {% if  section.settings.gallery_2_img != blank %}
+                <img src="{{  section.settings.gallery_2_img | img_url: "master" }}" alt="{{ section.settings.gallery_2_imgheading }}" />
+                {% else %}
+                <img src="//via.placeholder.com/770x510">
+                {% endif %}
+                <div class="gallery-overlay">
+                  <div class="overlay-link">
+                    {% if section.settings.gallery_2_heading != blank %}
+                    <h6><a href="{{section.settings.gallery_2_img_link}}">{{section.settings.gallery_2_heading}}</a></h6>
+                    {% endif %}
+                    {% if section.settings.gallery_2_subheading != blank %}
+                    <h4>{{section.settings.gallery_2_subheading}}</h4>                  
+                  </div>
+                </div>
+              </a>
+              {% endif %}
+              {% if section.settings.section_3_detailone != blank %}
+              {{section.settings.section_3_detailone }} 
+              {% endif %}
+            </div>
+          </div>
+          <div class="grid__item extra-large--one-third post-large--one-third large--one-third medium--grid__item small-grid__item">
+            <div class="gallery-img">
+              <a href="{{section.settings.gallery_3_img_link}}">
+                {% if  section.settings.gallery_3_img != blank %}
+                <img src="{{  section.settings.gallery_3_img | img_url: "master" }}" alt="{{ section.settings.gallery_3_imgheading }}" />
+                {% else %}
+                <img src="//via.placeholder.com/770x510">
+                {% endif %}
+                <div class="gallery-overlay">
+                  <div class="overlay-link">
+                    {% if section.settings.gallery_3_heading != blank %}
+                    <h6>{{section.settings.gallery_3_heading}}</h6>
+                    {% endif %}
+                    {% if section.settings.gallery_3_subheading != blank %}
+                    <h4>{{section.settings.gallery_3_subheading}}</h4>
+                    {% endif %}
+
+                  </div>
+                </div>
+              </a>
+              {% if section.settings.section_3_detailtwo != blank %}
+              {{section.settings.section_3_detailtwo }}
+              {% endif %} 
+            </div>
+          </div>
+          <div class="grid__item extra-large--one-third post-large--one-third large--one-third medium--grid__item small-grid__item">
+            <div class="gallery-img">
+              <a href="{{section.settings.gallery_4_img_link}}">
+                {% if  section.settings.gallery_4_img != blank %}
+                <img src="{{  section.settings.gallery_4_img | img_url: "master" }}" alt="{{ section.settings.gallery_4_imgheading }}" />
+                {% else %}
+                <img src="//via.placeholder.com/770x510">
+                {% endif %}
+                <div class="gallery-overlay">
+                  <div class="overlay-link">
+                    {% if section.settings.gallery_4_heading != blank %}
+                    <h6>{{section.settings.gallery_4_heading}}</h6>
+                    {% endif %}
+                    {% if section.settings.gallery_4_subheading != blank %}
+                    <h4>{{section.settings.gallery_4_subheading}}</h4>
+                    {% endif %}
+
+                  </div>
+                </div>
+              </a>
+              {% if section.settings.section_3_detailthree != blank %}
+              {{section.settings.section_3_detailthree }}
+              {% endif %} 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section_bt_space"></div>
+  {% endif %}
+  {% if section.settings.show_4_section != blank %}
+  <div class="grid-uniform section-four block4" style="{% if section.settings.image_3 != blank %}background-image:url('{{ section.settings.image_3 | img_url: '1920X' }}');background-repeat:no-repeat;background-position:center center; {% else %}background-color:{{section.settings.background_color_3}};{% endif%}">
+    <div class="background-overlay"></div>
+    <div class="container">
+      <div class="testimonial-wrapper">
+        <div class="section-main-heading section-header--small">     
+          {% if section.settings.title_1 != blank %}
+          <h2 class="section-header__title" style="color:{{ section.settings.title_1_clr }};">    
+            {{ section.settings.title_1 }}
+          </h2>
+          {% endif %}  
+          {% if section.settings.small_1_title != blank %}
+          <div class="short-desc"><p style="color:{{ section.settings.text_1_clr }};">{{ section.settings.small_1_title }}</p></div>
+          {% endif %}  
+
+          {% if section.settings.heading_image_1 != blank %}
+          <img src="{{ section.settings.heading_image_1 | img_url: '200X' }}" alt="title-img" />
+          {% endif%}   
+        </div>  
+        {% if section.settings.section_4_quotetxt != blank %}
+        <div class="testimonial-quote">
+          <blockquote>
+            <q> {{section.settings.section_4_quotetxt }} </q>
+          </blockquote>
+        </div>
+        {% endif %} 
+
+        {% if section.settings.test_author_img != blank %}
+        <div class="author_img" style="border:3px solid {{section.settings.test_border_clr}};">
+          <img src="{{ section.settings.test_author_img | img_url: 'small' }}" alt="title-img" />
+        </div>
+        {% endif%}  
+        <div class="testimonial-author">
+          <span>
+            {% if section.settings.testauthor_name != blank %}
+            <h4>{{section.settings.testauthor_name }}</h4>
+            {% endif %}
+            {% if section.settings.testauthor_wrk != blank %}
+            <h6>{{section.settings.testauthor_wrk }}</h6>
+            {% endif %}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section_bt_space"></div>
+  {% endif %} 
+  <div class="about-team-type">
+    <div class="section-main-heading section-header--small">     
+      {% if section.settings.title != blank %}
+      <h2 class="section-header__title" style="color:{{ section.settings.title_clr }};">    
+        {{ section.settings.title }}
+      </h2>
+      {% endif %}  
+      {% if section.settings.small_title != blank %}
+      <div class="short-desc"><p style="color:{{ section.settings.text_clr }};">{{ section.settings.small_title }}</p></div>
+      {% endif %}  
+      {% if section.settings.heading_image != blank %}
+      <img src="{{ section.settings.heading_image | img_url: 'small' }}" alt="title-img" />
+      {% endif%}          
+    </div>
+    <div class="container">
+      {% if section.blocks.size > 0 %}      
+      {% for block in section.blocks %} 
+      {% case section.blocks.size %}
+      {% when 1 %}
+      {%- assign block_width = 'one-whole text-center' -%}
+      {% when 2 %}
+      {%- assign block_width = 'extra-large--one-half post-large--one-half large--one-half medium--one-half small-grid__item' -%}
+      {% when 3 %}
+      {%- assign block_width = 'extra-large--one-third post-large--one-third large--one-third medium--one-half small-grid__item' -%}
+      {% when 4 %}
+      {%- assign block_width = 'extra-large--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item' -%}
+      {% endcase %}
+      <div class="grid__item {{ block_width }} ">
+        <div class="team  team--{{ block.id }}" style="">
+          <div class="team-img">
+            {% if  block.settings.team_1_img   != blank %}
+            <img src="{{  block.settings.team_1_img   | img_url: "large" }}" alt="{{ block.settings.team_1_imgheading }}" />
+            {% else %}
+            <img src="//via.placeholder.com/420x420">
+            {% endif %}
+            {% if  section.settings.show_social_icon  != blank %}
+            {% include 'social-links' %}
+            {% endif %}
+          </div>
+          <div class="team-detail">
+            {% if  block.settings.team_1_title  != blank %}
+            <h4 style="color:{{block.settings.team_1_title_clr}};">{{ block.settings.team_1_title }}</h4>
+            {% endif %}
+            {% if  block.settings.team_1_designation  != blank %}
+            <h5 style="color:{{block.settings.team_1_designation_clr}};">{{ block.settings.team_1_designation }}</h5>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="section_bt_space"></div>
+  </div>
+
+
+  <style>
+
+
+    .theme-intro .team-img::after {
+      background:linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+      background: -webkit-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+      background: -moz-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+       background: -ms-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+      background: linear-gradient(top left {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}}); border-radius: 0%;opacity:0.7; position: absolute; content: ""; height: 100%; width: 100%;transition: 0.3s linear; opacity: 0; top:0; }
+    .theme-intro .team:hover .team-img::after { opacity:0.7;}
+    .theme-intro .section-six .gallery-img a::after {
+      background:linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+      background: -webkit-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+       background: -ms-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+      background: -moz-linear-gradient(top left, {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}});
+      background: linear-gradient(top left {{section.settings.gradient_pri_clr}}, {{section.settings.gradient_Sec_clr}}); border-radius: 0%;opacity:0.7; position: absolute; content: ""; height: 100%; width: 100%;transition: 0.3s linear; opacity: 0; top:0; }
+
+    .theme-intro .section-six .gallery-img:hover a::after { opacity:0.7;}
+    .theme-intro .button{background: {{section.settings.aboutveda_1_pribtnbg}};color:{{section.settings.aboutveda_1_pribtncolor}};}
+    .theme-intro .button span {background:{{section.settings.aboutveda_1_pribtnarrowbg}}; color:{{section.settings.aboutveda_1_pribtnarrowcolor}};}
+    .theme-intro .button:hover{background:{{section.settings.aboutvedabtnhoverbg}};color:{{ section.settings.aboutvedabtnhovercolor}} !important;}
+    .theme-intro  .section-six  .gallery-overlay{   background-color:{{ section.settings.overlay_bgcolor | color_modify: 'alpha', 0 }};}
+    .theme-intro .section-six .gallery-img:hover .gallery-overlay{background-color:{{ section.settings.overlay_bgcolor | color_modify: 'alpha', 0.7 }};}
+    .theme-intro  .section-six  .overlay-link h6{color:{{section.settings.gallery_headingcolor}} ;}
+    .theme-intro  .section-six  .overlay-link h4{color:{{section.settings.gallery_headingcolor}} ;}
+    .theme-intro .section-four {float: left;width: 100%;background:{{section.settings.aboutvedafivetestleftbg}}; overflow:hidden;}
+    .theme-intro .testimonial-author img {border:2px solid {{section.settings.aboutvedafivetestcolor}};}
+    .theme-intro .testimonial-author span {color:{{section.settings.aboutvedafivetestcolor}};position: relative;z-index: 1;}
+    .theme-intro .testimonial-author::after {background: {{section.settings.aboutvedafivetestrightbg}};  }
+    .theme-intro .testimonial-wrapper::after {background: {{section.settings.aboutvedafivetestrightbg}};}
+    .theme-intro blockquote { color:{{section.settings.aboutvedafivetestcolor}};}
+    .theme-intro  .team-deatil h4{color: {{ section.settings.team_name_color }};}
+    .theme-intro .team-deatil h6{color: {{ section.settings.team_job_color }};}
+    .theme-intro  .section-two li {color:{{section.settings.aboutveda_1_listcolor}};}
+    .theme-intro .testimonial-author h4  , .theme-intro .testimonial-author h6{color:{{section.settings.test_authorcolor}};}
+    .theme-intro .btn-large:hover{background:{{section.settings.aboutvedabtnhoverbg}}!important;color:{{settings.aboutvedabtnhovercolor}} !important;}
+    .about-team-type .team:hover::before{background:{{section.settings.team_hoverbg_color}} !important;}
+    .about-team-type .team:hover h4,.rounded-team-type .team:hover h5{color:{{section.settings.team_hovertext_color}}!important;}
+    .theme-intro .background-overlay {background:{{section.settings.background_color_2}};}
+
+  </style>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+"name": "About Page",
+"settings": [
+{
+"type": "header",
+"content": "General Color"
+},
+{
+"type": "color",
+"id": "gradient_pri_clr",
+"label": "Gradient Primary Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "gradient_Sec_clr",
+"label": "Gradient Secondary Color",
+"default":"#000"
+},
+{
+"type": "header",
+"content": "Intro Block"
+},
+{
+"type": "checkbox",
+"id": "showvedaone_2_section",
+"label": "Display  This Section"
+},
+{
+"type": "image_picker",
+"id": "abtone_image_2",
+"label": "Image",
+"info": "Size: 150x164"
+},
+{
+"type": "text",
+"id": "abtone_image_2_heading",
+"label": "Image Alt Text"
+},
+
+{
+"type": "text",
+"id": "abtone_2_title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "abtone_2_maintilte",
+"default": "#000",
+"label": "Heading COlor"
+},
+{
+"type": "textarea",
+"id": "abtone_2_des",
+"label": "Description"
+},
+{
+"type": "color",
+"id": "abtone_2_desc",
+"default": "#000",
+"label": "Desc COlor"
+},
+
+
+{
+"type": "header",
+"content": "Gallery Section"
+},
+{
+"type": "checkbox",
+"id": "show_6_section",
+"label": "Display  This Section"
+},
+{
+"type": "color",
+"id": "gallery_headingcolor",
+"default": "#000",
+"label": "Heading Color"
+},
+{
+"type": "image_picker",
+"id": "gallery_2_img",
+"label": "Image",
+"info": "Size: 770x510"
+},
+{
+"type": "url",
+"id": "gallery_2_img_link",
+"label": "Image Link",
+"info": "Size: 770x510"
+},
+{
+"type": "text",
+"id": "gallery_2_imgheading",
+"label": "Img alt text"
+},
+{
+"type": "text",
+"id": "gallery_2_subheading",
+"label": "Heading"
+},
+{
+"type": "richtext",
+"id": "section_3_detailone",
+"label": "detail",
+"default": "<p>detail</p>"
+},
+{
+"type": "image_picker",
+"id": "gallery_3_img",
+"label": "Image",
+"info": "Size: 770x510"
+},
+{
+"type": "text",
+"id": "gallery_3_imgheading",
+"label": "Img alt text"
+},
+{
+"type": "url",
+"id": "gallery_3_img_link",
+"label": "Image Link",
+"info": "Size: 770x510"
+},
+{
+"type": "text",
+"id": "gallery_3_subheading",
+"label": "Heading"
+},
+{
+"type": "richtext",
+"id": "section_3_detailtwo",
+"label": "detail",
+"default": "<p>detail</p>"
+},
+{
+"type": "image_picker",
+"id": "gallery_4_img",
+"label": "Image",
+"info": "Size: 770x510"
+},
+{
+"type": "url",
+"id": "gallery_4_img_link",
+"label": "Image Link",
+"info": "Size: 770x510"
+},
+{
+"type": "text",
+"id": "gallery_4_imgheading",
+"label": "Img alt text"
+},
+{
+"type": "text",
+"id": "gallery_4_subheading",
+"label": "Heading"
+},
+{
+"type": "richtext",
+"id": "section_3_detailthree",
+"label": "detail",
+"default": "<p>detail</p>"
+},
+{
+"type": "header",
+"content": "Testimonial Block"
+},
+{
+"type": "checkbox",
+"id": "show_4_section",
+"label": "Display  This Section"
+},
+{
+"type": "image_picker",
+"id": "image_3",
+"label": "Image",
+"info": "Size: 1920x1000"
+},
+{
+"type": "color",
+"id": "background_color_3",
+"label":"Testimonial Bg COlor",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "background_overlay_bg",
+"label":"Testimonial Overlay Bg",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_1",
+"label": "Heading",
+"default": "New arrivals"
+},    
+{
+"type": "color",
+"id": "title_1_clr",
+"label": "Title Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "small_1_title",
+"label": "Small Heading"
+},    
+{
+"type": "color",
+"id": "text_1_clr",
+"label": "Text color",
+"default":"#000"
+},
+{
+"type": "image_picker",
+"id": "heading_image_1",
+"label": "Heading Image",
+"info": "Size: 153x30"
+}, 
+{
+"type": "textarea",
+"id": "section_4_quotetxt",
+"label": "detail",
+"default": "detail"
+},
+{
+"type": "color",
+"id": "aboutvedafivetestcolor",
+"default": "#000",
+"label": "color"
+},
+{
+"type": "image_picker",
+"id": "test_author_img",
+"label": "testimonial Author Image",
+"info": "Size: 100x100"
+},
+{
+"type": "color",
+"id": "test_border_clr",
+"label": "Testimonial Border Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "testauthor_name",
+"label": "Author Name",
+"default": "Hendry"
+},
+{
+"type": "text",
+"id": "testauthor_wrk",
+"label": "Author Work",
+"default": "Business"
+},
+{
+"type": "color",
+"id": "test_authorcolor",
+"default": "#000",
+"label": "author color"
+},
+{
+"type": "header",
+"content": "Team Section"
+},
+
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "New arrivals"
+},    
+{
+"type": "color",
+"id": "title_clr",
+"label": "Title Color",
+"default":"#000"
+},
+{
+"type": "image_picker",
+"id": "heading_image",
+"label": "Image",
+"info": "Size: 133x56"
+},  
+{
+"type": "text",
+"id": "small_title",
+"label": "Small Heading"
+},    
+{
+"type": "color",
+"id": "text_clr",
+"label": "Text color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "team_hovertext_color",
+"label": "Team Hover Text Color",
+"default": "#000"
+},
+{
+"type": "checkbox",
+"id": "show_social_icon",
+"label": "show Social Icon"
+}
+
+],
+"blocks": [
+{
+"type": "Image",
+"name": "Team Block",
+"settings": [ 
+
+{
+"type": "color",
+"id": "team_bg_color",
+"label": "Team Bg Color",
+"default": "#000"
+},
+{
+"type": "image_picker",
+"id": "team_1_img",
+"label": "Image",
+"info": "Size: 270x270"
+},
+{
+"type": "text",
+"id": "team_1_imgheading",
+"label": "Image Alt Text"
+},
+{
+"type": "text",
+"id": "team_1_title",
+"label": "Author Name"
+},
+{
+"type": "color",
+"id": "team_1_title_clr",
+"label": "Author Color",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "team_1_designation",
+"label": "Designation"
+},
+{
+"type": "color",
+"id": "team_1_designation_clr",
+"label": "Designation Color",
+"default": "#000"
+}
+]
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+
+
+
+{% endstylesheet %}

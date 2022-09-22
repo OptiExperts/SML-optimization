@@ -1,0 +1,28 @@
+<div class="banner-custom-text">
+  <div class="banner-wapper">
+    <img class="check-icon lazy2" data-src="{{ 'Icon_awesome-check.jpg' | asset_img_url: '80x' }}" />
+    <div class="text"><p>{{section.settings.text}}</p></div>
+   <img class="route-icon lazy2" data-src="{{ 'route.png' | asset_img_url: '80x' }}" />
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Home Banner Text",
+    "settings": [
+		{
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+
+   ],
+ "presets": [
+      {
+        "name": "Home Banner Custom Text",
+        "category": "Text"
+      }
+    ]
+  }
+{% endschema %}
+

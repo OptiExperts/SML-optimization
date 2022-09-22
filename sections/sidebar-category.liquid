@@ -1,0 +1,81 @@
+{%- assign sidebar_linklist = section.settings.linkedlist -%}
+{% if section.settings.enable_sidecategory %} 
+<aside class="collection-sidebar-category">
+  <div class="widget">
+    {% if section.settings.linkedlist_title != blank %}
+    <h4>
+      <span>{{ section.settings.linkedlist_title }}</span>
+    </h4>  
+    {% endif %}
+    <div class="widget-content">
+      {% if linklists[sidebar_linklist].links.size > 0 %}
+      <ul class="linked-list-menu theme-toggle-frame-set">
+        {% for link in linklists[sidebar_linklist].links %}
+        {% assign child_list_handle = link.title | handle %}             
+        {% if linklists[child_list_handle] and linklists[child_list_handle].links.size > 0 %}
+        <li>
+          <i></i>
+          <a class="{% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title | escape }}</a> <span class="theme-toggle"></span>
+
+          {% if linklists[child_list_handle].links.size > 0 %}        
+          <ul class="children theme-toggle-content ">
+            {% for child_link in linklists[link.handle].links %}
+            {% assign sub_sub_link_handle = child_link.title | handle %} 
+            <li class="second">
+              <i></i>             
+              <a class="{% if child_link.active %}active{% endif %}" href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+              {% if linklists[sub_sub_link_handle].links.size > 0 %}<span class="theme-toggle"></span>   {% endif %}
+              {% if linklists[sub_sub_link_handle].links.size > 0 %}    
+              <ul class="third children theme-toggle-content">
+                {% for sub_sub_link in linklists[child_link.handle].links %}
+                <li> <a class="{% if sub_sub_link.active %}active{% endif %}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title | escape }}</a></li>
+                {% endfor %}
+              </ul>
+              {% else %}
+              {% endif %}
+
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% else %}
+        <li>
+          <i></i><a class=" {% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title | escape }}</a> 
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif  %}
+    </div>
+  </div>
+</aside>
+{% endif %}
+
+{% schema %}
+{
+"name": "Sidebar Menu",   
+"settings": [
+{
+"type": "checkbox",
+"id": "enable_sidecategory",
+"label": "Enable category",
+"default":false
+},
+{
+"type": "link_list",
+"id": "linkedlist",
+"label": "Linklist"
+},
+{
+"type": "text",
+"id": "linkedlist_title",
+"label": "Heading"
+}     
+]
+
+}
+{% endschema %}
+
+
+

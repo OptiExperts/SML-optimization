@@ -1,0 +1,80 @@
+
+<div data-section-id="{{ section.id }}"  data-section-type="home-featured-products-section">
+  {%- assign collection = collections[section.settings.collection] -%}
+  {%- assign limit = section.settings.grid | times: section.settings.rows -%}
+
+  {% assign bg_color = section.settings.title_bg_clr | color_to_rgb %}       
+  {% assign opacity = section.settings.title_bg_opacity %}       
+  {% assign opacityWithEndBracket = ', ' | append: opacity | append: ')' %}       
+  {% assign rgba = bg_color | replace: 'rgb', 'rgba' | replace:')', opacityWithEndBracket %}
+
+  <div class="container">
+    {%- assign tp = section.settings.total_products  -%}
+    <div class="home-featured-products">  
+      <div class="header">  
+        <div class="title">
+          {% if section.settings.title != blank %}
+          <h2 class="section-title" style="">    
+            {{ section.settings.title }}
+          </h2>
+          {% endif %}  
+        </div>
+        <a href="{{ section.settings.link }}" class="btn hide-btn-mb">{{ section.settings.linktext }} <i class="fa-solid fa-angle-right"></i></a>
+      </div>
+    </div>
+    <div class="grid__item {{ grid_mid_width }} home-featured-products-carousel">
+      <div class="carousel_wrapper">                            
+        <ul class="data-slick {{ section.id }} slick_product" id="slick_product-{{ section.id }}">                               
+          {% for product in collection.products   %}           
+          {% include 'index-grid-item', grid_item_width:" " %} 
+          {% else %}
+          {% include 'empty-row', grid_item_width:grid_item_width %} 
+          {% endfor %}        
+        </ul>             
+      </div>
+
+
+      
+    </div>
+    <a href="{{ section.settings.link }}" class="btn mobile-btn">{{ section.settings.linktext }} <i class="fa-solid fa-angle-right"></i></a>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Featured products slide",
+"class": "featured-products-slide",
+"settings": [  
+
+{
+"type": "textarea",
+"id": "title",
+"label": "Heading",
+"default": "New arrivals"
+}, 
+{
+"id": "link",
+"type": "url",
+"label": "Button link"
+},
+{
+"id": "linktext",
+"type": "text",
+"label": "Button text",
+"default": "Click Here"
+},
+{
+"id": "collection",
+"type": "collection",
+"label": "Collection"
+}
+],
+"presets": [
+{
+"name": "Featured products slide",
+"category": "Collection"
+}
+]
+}
+{% endschema %}
+

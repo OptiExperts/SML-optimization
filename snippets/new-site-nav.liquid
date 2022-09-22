@@ -1,0 +1,263 @@
+<div class="new-menu-tool">
+  <label class="menu-close"><i class="fa fa-close" aria-hidden="true"></i></label>
+  <ul class="new-site-nav">
+    {%- assign primary_menu = section.settings.choose_menu %}
+    {% for link in linklists[primary_menu].links %}
+    {% assign i = forloop.index | downcase %}
+    {% assign cat = link.title | handleize %}
+
+    {% if section.settings.display_megamenu %}
+
+    {% assign is_megamenu = false %}
+    {% for block in section.blocks %}
+    {% for i in (1..8) %}  
+    {% capture cap_megamenu_item %}megamenu_items_{{ i }}{% endcapture %}  
+    {% capture cap_banner_first_style %}banner_first_style_{{ i }}{% endcapture %}
+    {% capture cap_banner_second_style %}banner_second_style_{{ i }}{% endcapture %}
+    {% capture cap_banner_third_style %}banner_third_style_{{ i }}{% endcapture %}
+
+
+    {% capture cap_link_banner_first_style %}link_banner_first_style_{{ i }}{% endcapture %}
+    {% capture cap_link_banner_second_style %}link_banner_second_style_{{ i }}{% endcapture %}
+    {% capture cap_link_banner_third_style %}link_banner_third_style_{{ i }}{% endcapture %}
+
+
+    {% capture cap_featured_product %}featured_product_{{ i }}{% endcapture %}
+    {% capture cap_title_featured_product %}title_featured_product_{{ i }}{% endcapture %}
+    {% capture cap_main_linklist %}main_linklist_{{ i }}{% endcapture %}
+
+    {% comment %}
+    For style 4
+    {% endcomment %}
+    {% capture cap_banner_four_style %}banner_four_style_{{ i }}{% endcapture %}
+
+
+
+    {% if block.settings[cap_megamenu_item] != blank %}
+    {% assign megamenu_item = block.settings[cap_megamenu_item] | handleize %}
+    {% if megamenu_item == cat %}
+    {% assign is_megamenu = true %}
+    {% assign block_style = block.type %}
+
+    {% assign banner_first_style = block.settings[cap_banner_first_style] %}
+    {% assign banner_second_style = block.settings[cap_banner_second_style] %}
+    {% assign banner_third_style = block.settings[cap_banner_third_style] %}
+
+
+    {% assign link_banner_first_style = block.settings[cap_link_banner_first_style] %}
+    {% assign link_banner_second_style = block.settings[cap_link_banner_second_style] %}
+    {% assign link_banner_third_style = block.settings[cap_link_banner_third_style] %}
+
+
+    {% assign featured_product = block.settings[cap_featured_product] %}
+    {% assign title_featured_product = block.settings[cap_title_featured_product] %}  			  
+    {%- assign product = all_products[featured_product] -%}
+
+    {% comment %}
+    For style 4
+    {% endcomment %}
+    {% assign banner_four_style = block.settings[cap_banner_four_style] %}	     			    
+    {% assign main_linklist = block.settings[cap_main_linklist] %}
+
+
+    {% endif %}
+    {% endif %}
+
+    {% case block.settings.width %}
+    {% when 'small' %}
+    {%- assign width_product = '120x160' -%}
+    {% when 'medium' %}
+    {%- assign width_product = '180x220' -%}
+    {% when 'large' %}
+    {%- assign width_product = '500x260' -%}
+    {% endcase %}
+
+
+    {% endfor %}
+    {% endfor %}
+
+    {% endif %}  
+    {% assign link_child = link.handle %} 
+
+    <li class=" {% if is_megamenu %}dropdown  mega-menu {% else %}{% if linklists[link.handle] != empty %} dropdown dropdown-1{% endif %}{% endif %}">
+      <a class="link-action-1 {%if linklists[link.handle] != empty %}menu__moblie {% endif %} {% if link.active %}current{% endif %} {% cycle 'color1', 'color2', 'color3','color4', 'color5', 'color6','color7', 'color8', 'color9','color10', %}" href="{{ link.url }}">
+        <span>         
+          {{ link.title }}  {% if linklists[link.handle] != empty %}{% endif %}   
+        </span>
+      </a> 	
+      {% if linklists[link.handle] != empty %}<i class="fa fa-caret-right"></i>{% endif %}
+
+      {% if section.settings.display_megamenu %}  
+
+      {% if is_megamenu %}          
+      {% include 'mega-menu' with link_child %}                     
+      {% else %}
+      {% if linklists[link.handle] != empty %}
+      {% include 'dropdown-menu' with link_child %}
+      {% endif %}
+      {% endif %}
+
+
+      {% else %}
+      {% if linklists[link.handle] != empty %}
+      {% include 'dropdown-menu' with link_child %}
+      {% endif %}
+      {% endif %}
+
+    </li>
+    {% endfor %}
+  </ul> 
+
+</div>
+
+<style>
+  #shopify-section-header-01 .Menu-hamburger {
+    cursor: pointer;
+  }
+  .new-menu-tool {
+    max-width: 360px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-top: 30px;
+    z-index: 999;
+    width: 100%;
+    -webkit-transform: translate(-360px, 0px);
+    -moz-transform: translate(-360px, 0px);
+    -o-transform: translate(-360px, 0px);
+    -ms-transform: translate(-360px, 0px);
+    transform: translate(-360px, 0px);
+
+  }
+  .new-menu-tool.open {
+    -webkit-transform: translate(0%, 0px);
+    -moz-transform: translate(0%, 0px);
+    -o-transform: translate(0%, 0px);
+    -ms-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .new-menu-tool .menu-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-size: 22px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #f5f5f5;
+    font-weight: 300;
+  }
+  .new-menu-tool .site-nav-dropdown,
+  .new-menu-tool .site-nav-dropdown-2 {
+    display: none;
+  }
+  .new-menu-tool .new-site-nav,
+  .new-menu-tool .new-site-nav ul {
+    list-style: none;
+  }
+  .new-menu-tool .new-site-nav li {
+    display: block;
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: left;
+  }
+  .new-menu-tool .new-site-nav > li a {
+    font-size: 16px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .new-menu-tool .new-site-nav > li a:hover {
+    color: #ff186e;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  /*   .new-menu-tool .new-site-nav > li:hover {
+  background-color: #f5f5f5;
+  } */
+
+  .new-menu-tool .new-site-nav > li.dropdown {
+    position: relative;
+  }
+  .new-menu-tool .new-site-nav > li.dropdown i.fa-caret-right {
+    cursor: pointer;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #000;
+    top: 0;
+    right: 15px;
+    font-size: 18px;
+  }
+  .new-menu-tool .new-site-nav > li.dropdown i.fa-caret-right:hover {
+    background-color: #f5f5f5;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .new-menu-tool .new-site-nav > li.dropdown i.fa-caret-right.active {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .new-menu-tool .site-nav-dropdown li:hover>a {
+    padding-left: 20px;
+  }
+  .new-menu-tool .new-site-nav > li.dropdown > .site-nav-dropdown .site-nav-dropdown-2 {
+    margin-left: 40px;
+    width: 100%;
+    background-color: #f5f5f5;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+  }
+  .new-menu-tool .new-site-nav > li.dropdown > .site-nav-dropdown .site-nav-dropdown-2 a {
+    font-size: 14px;
+  }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $('.dropdown .fa-caret-right').on("click", function(e){
+      $(this).next('ul').toggle();
+      $(this).toggleClass("active");
+
+    });
+
+
+    $(".Menu-hamburger").click(function(){
+      $(".new-menu-tool").addClass("open");
+    });
+    $(".menu-close").click(function(){
+      $(".new-menu-tool").removeClass("open");
+    });
+  });
+
+
+</script>

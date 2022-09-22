@@ -1,0 +1,156 @@
+<div data-section-id="{{ section.id }}"  data-section-type="home-featured-products-section">
+  {%- assign collection = collections[section.settings.collection] -%}
+  {%- assign limit = section.settings.grid | times: section.settings.rows -%}
+
+  <div class="container">
+    {%- assign tp = section.settings.total_products  -%}
+    <div class="home-featured-products">  
+      {% if section.settings.title != blank or section.settings.small_title  %}
+      <div class="section-main-heading section-header--small wow fadeInDown animated">     
+        {% if section.settings.title != blank %}
+        <h2 class="section-header__title" style="color:{{ section.settings.title_clr }};">    
+          {{ section.settings.title }}
+        </h2>
+        {% endif %}  
+        {% if section.settings.small_title != blank %}
+        <div class="short-desc"><p style="color:{{ section.settings.text_clr }};">{{ section.settings.small_title }}</p></div>
+        {% endif %}  
+        {% if section.settings.heading_image != blank %}
+        <img src="{{ section.settings.heading_image | img_url: '200X' }}" alt="title-img" />
+        {% endif%}          
+
+      </div>
+      {% endif %}      
+      {% case section.settings.grid %}
+      {% when '2' %}
+      {%- assign grid_item_width = 'extra-large--one-half post-large--one-half large--one-half medium--one-half small-grid__item' -%}
+      {% when '3' %}
+      {%- assign grid_item_width = 'extra-large--one-third post-large--one-third large--one-third medium--one-half small-grid__item' -%}
+      {% when '4' %}
+      {%- assign grid_item_width = 'extra-large--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item' -%}
+      {% when '5' %}
+      {%- assign grid_item_width = 'extra-large--one-fifth post-large--one-quarter large--one-third medium--one-half small-grid__item' -%}            
+      {% endcase %}  
+      <ul class="grid-uniform">
+        {% for product in collection.products limit:limit   %}
+        {% include 'product-grid-item', grid_item_width:grid_item_width %} 
+        {% else %}
+        {% include 'empty-row', grid_item_width:grid_item_width %} 
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+  <style>
+    {% if section.settings.heading_image_need %} .home-featured-products .border-title:after {  content:"";background-image:url({{ section.settings.heading_image | img_url: 'master' }});display:inline-block;background-repeat:no-repeat;width:135px;height:57px;} {% endif %}
+  </style>  
+</div>
+
+{% schema %}
+{
+"name": "Home featured products",
+"class": "index-section home-featured-products-section",
+"settings": [  
+
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "New arrivals"
+},    
+{
+"type": "color",
+"id": "title_clr",
+"label": "Title Color",
+"default":"#000"
+},
+
+{
+"type": "image_picker",
+"id": "heading_image",
+"label": "Image",
+"info": "Size: 153x30"
+},  
+{
+"type": "text",
+"id": "small_title",
+"label": "Small Heading"
+},    
+{
+"type": "color",
+"id": "text_clr",
+"label": "Text color",
+"default":"#000"
+},
+{
+"id": "collection",
+"type": "collection",
+"label": "Collection"
+},
+
+{
+"type": "select",
+"id": "grid",
+"label": "Products per row",
+"default": "3",
+"options": [
+{
+"value": "2",
+"label": "2"
+},
+{
+"value": "3",
+"label": "3"
+},
+{
+"value": "4",
+"label": "4"
+},
+{
+"value": "5",
+"label": "5"
+}
+]
+},
+{
+"type": "select",
+"id": "rows",
+"label": "Rows per page (grid only)",
+"default": "2",
+"options": [
+{
+"value": "1",
+"label": "1"
+},
+{
+"value": "2",
+"label": "2"
+},
+{
+"value": "3",
+"label": "3"
+},
+{
+"value": "4",
+"label": "4"
+},
+{
+"value": "5",
+"label": "5"
+}          
+]
+}
+
+],
+"presets": [
+{
+"name": "Home featured products",
+"category": "Collection"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+

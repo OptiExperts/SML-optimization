@@ -1,0 +1,107 @@
+{% if section.settings.show_best_products %}
+<aside  class="product-sidebar-bestsellers filter">  
+    <div class="widget widget_top_rated_products">
+      {% if collections[section.settings.bestseller].products.size > 0 %} 
+      {% if section.settings.title != blank %}
+      <h4><span>{{ section.settings.title }}</span></h4>  
+      {% endif %}
+      {% endif %}  
+       <div class="widget-content">
+      <ul class="no-bullets top-products">
+       {% for product in collections[section.settings.bestseller].products limit: section.settings.limit %}
+        <li class="products"> 
+          <span class="top_product_count">0{{ forloop.index }}</span>
+          <div class="top-products-detail product-detail">            
+            <a class="grid-link__title" href="{{ product.url | within: collection }}"> {{ product.title }} </a>            
+            <div class="top-product-prices grid-link__meta">
+              
+              <div class="product_price">
+                <div class="grid-link__org_price">
+                {{ product.price_min | money }}
+                  </div>
+              {% if product.compare_at_price_max > product.price %}
+              <del>{{ product.compare_at_price_max | money }}</del>
+              {% endif %}
+                 </div>
+            </div>
+                
+            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+   
+          </div>
+            {% comment %}
+            {% if product.compare_at_price > product.price %}
+            <span class="sale">{{ 'products.product.sale' | t }}</span>    
+            {% endif %}
+            {% endcomment %}
+           
+          
+          {% if product.images.size > 0 %}            
+          <a class="thumb grid__item grid-link" href="{{ product.url | within: collection }}">                  
+            <img alt="featured product" src="{{ product.featured_image | product_img_url: 'small' }}">                                              
+          </a>
+          {% endif %} 
+        </li>
+        
+       {% else %}
+         {% for i in (0..0) %}
+        <li>
+          <div class="products   wow fadeIn   animated" style="visibility: visible;">
+            <div class="product-container">
+              <a href="#" class="grid-link"> 
+                {% if forloop.index == 3 %}
+                <span class="badge badge--sale"> <span class="gift-tag badge__text">Sale</span> </span>
+                {% endif %}
+
+                <div class="reveal"> 
+                  {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                  {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }} 
+                </div>
+              </a>
+            
+            </div>
+            <br>
+            
+            <a href="#" class="grid-link__title" style="padding-top:10px;display:inline-block;text-align:center;    width: 100%;">Sample title {{ i }}</a>
+            <div class="product-detail"> 
+              <span class="spr-badge" id="spr_badge_6529189125" data-rating="0.0"> 
+                <span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty" style="color: #f05315;"></i><i class="spr-icon spr-icon-star-empty" style="color: #f05315;"></i><i class="spr-icon spr-icon-star-empty" style="color: #f05315;"></i><i class="spr-icon spr-icon-star-empty" style="color: #f05315;"></i><i class="spr-icon spr-icon-star-empty" style="color: #f05315;"></i></span> <span class="spr-badge-caption"> </span> </span>
+            
+          </div>
+        </li>
+        {% endfor %} 
+         {% endfor %}
+      </ul> 
+      </div>
+    </div>
+</aside>
+ {% endif %} 
+
+ {% schema %}
+  {
+    "name": "Sidebar Collection",    
+    "settings": [	
+      {
+        "type": "checkbox",
+        "id": "show_best_products",
+        "label": "Enable best sellers"
+      },
+	 {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "collection",
+        "id": "bestseller",
+        "label": "Collection"
+      },
+      {
+        "type": "text",
+        "id": "limit",
+        "label": "Product Limit",
+        "default": "4"
+      }
+	
+]
+  }
+{% endschema %}

@@ -1,0 +1,39 @@
+{% unless collection_item_width %}
+{% assign collection_item_width = 'small--grid__item medium--one-tenth  extra-large--one-tenth' %}
+{% endunless %}
+{% assign collection_item_img_size = 'master' %}
+<div class="grid__item {{collection_item_width}} text-center gradient-products wow fadeInUp animated">
+  {% capture collection_title %}{{ collections[featured].title | escape }}{% endcapture %}
+  <a href="{{ collections[featured].url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" class="gradient grid-link">
+    {% if collections[featured].image %}
+    {{ collections[featured].image.src | img_url: collection_item_img_size | img_tag: collection_title }}
+    {% else %}
+    {{ collections[featured].products.first.featured_image | img_url: collection_item_img_size | img_tag: collection_title }}
+    {% endif %}
+    <div class="ImageOverlayCa"></div>
+  </a>
+
+  <div class="collection-detail " >
+    <a href="{{ collections[featured].url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" class="grid-link {% cycle 'one-clr', 'two-clr', 'three-clr' %}">
+      <span class="grid-link__title">{{ collections[featured].title }}</span></a>
+    <p class="collection-count">{{ collection.all_products_count }} <span>{{ 'cart.general.items' | t }}</span></p>
+    <p class="collection-description">{{ collection.description | truncate:130 }}</p>
+    {% if settings.collection_btn_text != blank %}
+    <a href="{{ collections[featured].url }}" class="btn">{{ settings.collection_btn_text }}</a>
+    {% endif %}
+  </div>
+</div>
+
+
+
+{% unless collection_item_width %}
+{% assign collection_item_width = 'small--grid__item medium--one-tenth  extra-large---one-tenth' %}
+{% endunless %}
+
+
+{% assign collection_item_img_size = 'large' %}
+
+
+
+
+

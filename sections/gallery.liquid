@@ -1,0 +1,245 @@
+<div data-section-id="{{ section.id }}" data-section-type="jungle-gallery" class="jungle-gallery">  
+  <div class="grid-uniform">  
+   {% if section.settings.title != blank or section.settings.small_title  %}
+  <div class="section-main-heading section-header--small">     
+    {% if section.settings.title != blank %}
+    <h2 class="section-header__title" style="color:{{ section.settings.title_clr }};">    
+      {{ section.settings.title }}
+    </h2>
+    {% endif %}  
+    {% if section.settings.small_title != blank %}
+    <div class="short-desc"><p style="color:{{ section.settings.text_clr }};">{{ section.settings.small_title }}</p></div>
+    {% endif %}  
+    {% if section.settings.heading_image != blank %}
+    <img src="{{ section.settings.heading_image | img_url: 'small' }}" alt="{{section.settings.title}}" />
+    {% endif%}          
+  </div>
+  {% endif %}
+    <div class="banner-images">
+        {% if section.blocks.size > 0 %}      
+        {% for block in section.blocks %}
+        {% case section.blocks.size %}
+        {% when 1 %}
+        {%- assign block_width = 'one-whole text-center' -%}
+        {% when 2 %}
+        {%- assign block_width = 'extra-large--one-half post-large--one-half large--one-half medium--one-half small-grid__item' -%}
+        {% when 3 %}
+        {%- assign block_width = 'extra-large--one-third post-large--one-third large--one-third medium--one-half small-grid__item' -%}
+        {% when 4 %}
+        {%- assign block_width = 'extra-large--one-quarter post-large--one-quarter large--one-half medium--one-half small-grid__item' -%}
+        {% else %}
+        {%- assign block_width = 'extra-large--one-quarter post-large--one-quarter large--one-half medium--one-half small-grid__item' -%}
+        {% endcase %}
+
+        <div class="grid__item {{ block_width }} wow fadeInUp animated">
+          <div class="bg-effect-{{block.id }} gallery" style="position:relative;">
+            {% unless section.settings.use_overlay_icons %}
+            <a href="{% if block.settings.image != blank %}{{ block.settings.image | img_url: 'master' }}{% else %}//via.placeholder.com/420x420{% endif %}" data-fancybox="images" data-caption="{{block.settings.title}}">                
+              {% endunless %}
+
+              {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | img_url: '650x' }}" alt="{{ block.settings.title }}" />   
+              {% else %}
+              <img src="//via.placeholder.com/650x760" />
+              {% endif %}
+              <div class="overlay-cover"> 
+                {% if section.settings.use_overlay %}
+                <div class="image-overlay">  
+                  {% endif %}
+                  {% if section.settings.use_overlay_icons %}
+
+                  <div class="links">   
+                    <a href="{% if block.settings.image != blank %}{{ block.settings.image | img_url: 'master' }}{% else %}//via.placeholder.com/420x420{% endif %}" data-fancybox="images" data-caption="{{block.settings.title}}"><i class="fa fa-search"></i></a>                
+
+
+                    <a href="{{ block.settings.gallery_link }}" class="link"><i class="fa fa-link"></i></a>
+                  </div>
+                  {% endif %}
+                  {% if block.settings.gallery_title != blank or block.settings.category != blank %}
+                  <div class="image-overlay-details">
+                    {% if block.settings.gallery_title != blank %} <h4><a href="{{ block.settings.gallery_link }}">{{ block.settings.gallery_title }}</a></h4>{% endif %}
+                    {% if block.settings.category != blank %} <p>{{ block.settings.category }}</p>{% endif %}
+                  </div>
+                  {% endif %}
+                  {% if section.settings.use_overlay %}        
+                </div>
+                {% endif %}    
+              </div>
+
+              {% unless section.settings.use_overlay_icons %}
+            </a>
+            {% endunless %}   
+          </div>
+        </div>   
+
+        {% endfor %}
+        {% endif %}
+      </div>
+  </div>
+
+</div>
+
+
+
+<style>
+  {% if section.settings.use_overlay %}
+  {% assign hex2rgb_hex = section.settings.img_overlay %}
+  .jungle-gallery .gallery .image-overlay { background:{{section.settings.img_overlay | color_modify: 'alpha', 0.7 }} }
+  {% endif %}
+  .jungle-gallery .gallery:hover .image-overlay {    opacity: 1;}
+  .jungle-gallery .gallery .links a { border:2px solid {{ section.settings.img_overlay_icon }};color:{{ section.settings.img_overlay_icon_txt }}; }
+  .jungle-gallery .gallery .links a:hover { border-color:{{ section.settings.img_overlay_icon_bg }};background:{{ section.settings.img_overlay_icon_bg }};color:{{ section.settings.img_overlay_icon_hover_txt }}; }
+  .jungle-gallery .gallery .image-overlay-details h4 a { color:{{ section.settings.img_overlay_title }}; }
+  .jungle-gallery .gallery .image-overlay-details p { color:{{ section.settings.img_overlay_catgry }}; }
+
+  .jungle-gallery .grid__item .gallery .image-overlay-details { background:{{section.settings.texthover_bg_color | color_modify: 'alpha', 0.7 }}!important;}
+
+  .jungle-gallery .grid__item:hover h2 {background:{{section.settings.texthover_bg_color | color_modify: 'alpha', 0.7 }}!important;color:{{section.settings.texthover_txt_color}}!important;}
+
+  .jungle-gallery .grid__item:hover h2 a{color:{{section.settings.texthover_txt_color}}!important;}
+</style>
+
+
+
+{% schema %}
+{
+"name": "Portfolio",
+
+"max_blocks":100,
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Showcase your Galleries"
+},    
+{
+"type": "color",
+"id": "title_clr",
+"label": "Title Color",
+"default":"#fff"
+},
+{
+"type": "image_picker",
+"id": "heading_image",
+"label": "Image",
+"info": "Size: 57x15"
+},  
+{
+"type": "text",
+"id": "small_title",
+"label": "Small Heading",
+"default": "Short description"
+},    
+{
+"type": "color",
+"id": "text_clr",
+"label": "Text color",
+"default":"#fff"
+}, 
+{
+"type": "checkbox",
+"id": "use_overlay",
+"label": "Use Overlay"
+},
+{
+"type": "color",
+"id": "img_overlay",
+"label": "Image Overlay",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "img_overlay_title",
+"label": "Overlay Title",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "img_overlay_catgry",
+"label": "Overlay Category",
+"default": "#000"
+},
+{
+"type": "checkbox",
+"id": "use_overlay_icons",
+"label": "Use Overlay Icons"
+},
+{
+"type": "color",
+"id": "img_overlay_icon",
+"label": "Overlay Icon Border",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "img_overlay_icon_txt",
+"label": "Overlay Icon Text",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "img_overlay_icon_bg",
+"label": "Overlay Icon Hover Bg",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "img_overlay_icon_hover_txt",
+"label": "Overlay Icon Hover Text",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "texthover_bg_color",
+"label": "Text Hover Bg Color",
+"default":"#000"	
+},
+{
+"type": "color",
+"id": "texthover_txt_color",
+"label": "Text Hover Text Color",
+"default":"#000"	
+}
+],
+"blocks": [
+{
+"type": "Image",
+"name": "support block",
+"settings": [ 
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image",
+"info": "Size: 800x800"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Alt Text",
+"default": "Collection Name"	
+},
+{
+"type": "text",
+"id": "gallery_title",
+"label": "Title" 		  
+},  
+{
+"type": "text",
+"id": "category",
+"label": "Category" 		  
+},   
+{
+"type": "url",
+"id": "gallery_link",
+"label": "Link"          
+}
+
+
+
+]
+}
+]
+
+}
+{% endschema %}

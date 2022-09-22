@@ -1,0 +1,141 @@
+
+{%- assign img_url = block.settings.image | img_url: '2000x' -%}
+
+{% if  block.settings.link != blank %} <a href="{{ block.settings.link }}"> {% endif %}
+{% if  block.settings.image != blank %}
+
+<img data-src="{{ block.settings.image.src | img_url: '1200x' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }} slide-img medium-down--hide"
+                 alt="{{ block.settings.image.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ block.settings.image | img_url }}"
+                 data-srcset="{{ block.settings.image | img_url: '2048x' }} 2048w,
+                              {{ block.settings.image | img_url: '1200x' }} 1200w,
+                              {{ block.settings.image | img_url: '1000x' }} 1000w,
+                              {{ block.settings.image | img_url: '800x' }} 800w,
+                              {{ block.settings.image | img_url: '600x' }} 600w,
+                              {{ block.settings.image | img_url: '400x' }} 400w"
+                 />
+{% else %}
+<img src="//via.placeholder.com/1920x940"   class="slide-img medium-down--hide" alt="{{ block.settings.image.alt }}">
+{% endif %}
+
+{% if block.settings.mobile_image != blank %}
+<img data-src="{{ block.settings.mobile_image.src | img_url: '600' }}"
+                 class="lazy2 lazyload {{ settings.image_loading_style }} slide-img extra-large--hide post-large--hide large--hide"
+                 alt="{{ block.settings.mobile_image.alt }}"
+                 data-sizes="auto"
+                 data-src="{{ block.settings.mobile_image | img_url }}"
+                 data-srcset="
+                              {{ block.settings.mobile_image | img_url: '600x' }} 600w,
+                              {{ block.settings.mobile_image | img_url: '400x' }} 400w"
+                 />
+{% else %}
+<img src="//via.placeholder.com/767x750"  class="slide-img extra-large--hide post-large--hide large--hide" alt="{{ block.settings.image.alt }}">
+{% endif %}
+
+{% if  block.settings.link != blank %} </a> {% endif %}
+
+
+
+
+<div class="slider-content slider-content-bg--{{ block.id }}" style="">
+  <div class="slide_left" style="">
+
+    {% if block.settings.subheading != blank %}
+    <h5 class="slide-text animated "
+        style="display:inline-block;
+               {% if block.settings.subheading_size != blank %}
+               font-size: {{ block.settings.subheading_size }}px;
+               {% endif %}
+               {% if block.settings.subheading_color != blank %}
+               color:{{ block.settings.subheading_color }};
+               {% endif %} 
+               ">
+      {{  block.settings.subheading }}
+    </h5>
+    {% endif %}
+
+    {% if block.settings.title != blank %}
+    <h2 class="slide-heading animated "
+        style=" {% if block.settings.heading_size != blank %}
+               font-size: {{ block.settings.heading_size }}px;
+               {% endif %}
+               {% if block.settings.heading_color != blank %}
+               color:{{ block.settings.heading_color }};
+               {% endif %}">
+      {{ block.settings.title  }}                   
+    </h2>
+    {% endif %}
+    {% if block.settings.title_2 != blank %}
+    <h4 class=" slide-sub-heading-2 animated "
+        style="{% if block.settings.sub_vertical_size != blank %}
+               font-size: {{ block.settings.sub_vertical_size }}px;
+               {% endif %}
+               {% if block.settings.title_2_clr != blank %}
+               color:{{ block.settings.title_2_clr }};
+               {% endif %}">
+      {{ block.settings.title_2  }}                   
+    </h4>
+    {% endif %}
+ 
+
+  {% if block.settings.vertical_text != blank %}
+  <div class="slide_middle" style="";>
+    <h6 class="slide-offer animated "
+        style="{% if block.settings.vertical_size != blank %}
+               font-size: {{ block.settings.vertical_size }}px;
+               {% endif %}
+               {% if block.settings.vertical_color != blank %}
+               color:{{ block.settings.vertical_color }};
+               {% endif %} ">
+      {{  block.settings.vertical_text }}
+    </h6>
+  </div>
+  {% endif %}
+  
+  <div class="slide_right" style="";>
+    {% if block.settings.offer != blank %}
+    <span class="slide-offer animated "
+          style="{% if block.settings.offer_size != blank %}
+                 font-size: {{ block.settings.offer_size }}px;line-height:1;margin-bottom:5px;
+                 {% endif %}
+                 {% if block.settings.offer_color != blank %}
+                 color:{{ block.settings.offer_color }};
+                 {% endif %} ">
+      {{  block.settings.offer }}
+    </span>
+    {% endif %}
+
+    {% if block.settings.offer_text != blank %}
+    <h4 class="slide-offer-text animated "
+        style="{% if block.settings.offer_text_size != blank %}
+               font-size: {{ block.settings.offer_text_size }}px;
+               {% endif %}
+               {% if block.settings.offer_text_color != blank %}
+               color:{{ block.settings.offer_text_color }};
+               {% endif %} ">
+      {{  block.settings.offer_text }}
+    </h4>
+    {% endif %}
+
+    {% if block.settings.offer_desc != blank %}
+    <p class="slide-offer animated "
+       style="{% if block.settings.offer_desc_size != blank %}
+              font-size: {{ block.settings.offer_desc_size }}px;
+              {% endif %}
+              {% if block.settings.offer_desc_color != blank %}
+              color:{{ block.settings.offer_desc_color }};
+              {% endif %} ">
+      {{  block.settings.offer_desc }}
+    </p>
+    {% endif %}
+  </div>
+  {% if block.settings.button != blank %}
+  <a href="{{ block.settings.link }}" class="slide-button animated btn " style="background:{{block.settings.btn_bg_color}};color:{{block.settings.btn_txt_color}};">                    
+    {{  block.settings.button }}                
+  </a>
+  {% endif %}
+     </div>
+</div>
+

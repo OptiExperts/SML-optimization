@@ -1,0 +1,45 @@
+{% if settings.preloader_enable %}<div class="se-pre-con"></div> {% endif %}
+<div id="PageContainer"></div>   
+<div class="quick-view"></div>   
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+  <div class="gf-menu-device-wrapper">
+    <div class="close-menu">x</div>
+    <div class="gf-menu-device-container">
+      {% include 'dropdown-menu' with link_child %}
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper-container custom-header">	
+  <div class="theme-header">     
+    <header>
+
+      {% comment %}
+      <div class="navigation-bar-sticky navigation-bar-sticky-section">
+
+        <div class="grid--full header-wrapper">
+          {% section 'navigation-sticky' %}  
+        </div>
+
+      </div>
+      {% endcomment %}
+
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          <div class="grid--full header-wrapper"> 
+            <div class="wrapper header-top">
+              {% section 'header-01' %}
+            </div>
+            {%comment%}
+            <div class="navigation-bar-section placement">
+              <div class="default-device"> 
+                {% section 'navigation' %}  
+              </div>
+            </div>  
+            {%endcomment%}
+          </div>
+        </div>
+      </div>
+    </header>  
+  </div>
+</div>
