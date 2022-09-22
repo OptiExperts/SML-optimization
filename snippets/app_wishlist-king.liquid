@@ -141,7 +141,6 @@
   );
 
   // Wishlist button on product page
-  /*
   WishlistKing.observe(
     {
       selector: "form[action='{{ routes.cart_add_url }}']",
@@ -155,14 +154,11 @@
       );
     }
   );
-  */
 
   // Wishlist button on collection page
-  /*
   WishlistKing.observe(
     {
-      selector: "[data-product-id]",
-      template: "collection",
+      selector: ".grid__item[data-product-id]",
     },
     (target) => {
       target.append(
@@ -172,7 +168,6 @@
       );
     }
   );
-  */
 
   // Wishlist page
   /*
