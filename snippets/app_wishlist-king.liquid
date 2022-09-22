@@ -164,7 +164,7 @@
       selector: ".grid__item[data-product-id]",
     },
     (target) => {
-      target.append(
+      target.find(".product-container").append(
         WishlistKing.createComponent("wishlist-button-floating", {
           id: target.container.getAttribute("data-product-id"),
         })
