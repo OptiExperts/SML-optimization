@@ -100,7 +100,7 @@
     {% render 'digismoothie-candyrack' %}
     {% include 'ufe-offer' %}
 
-   <script type='text/javascript' src='https://pixel.concentricmanagement.com/vpixel.js?ver=1.1.0'></script>  
+   <script type='lazyload2' data-src='https://pixel.concentricmanagement.com/vpixel.js?ver=1.1.0'></script>  
 
     {% include 'fa_translate_core' %} 
     <!--DOOFINDER-SHOPIFY-->
@@ -116,13 +116,8 @@
     </script>
 
 
-    {% include 'flashify-common' %}<script type="text/javascript">if(typeof window.hulkappsWishlist === 'undefined') {
-  window.hulkappsWishlist = {};
-}
-    window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
-    window.hulkappsWishlist.hasAppBlockSupport = '';
-    </script>
-  {% render "rale-render" %} <!-- roartheme: Terms and Conditions Checkbox app -->
+    {% include 'flashify-common' %}
+    {% render "rale-render" %} <!-- roartheme: Terms and Conditions Checkbox app -->
 </head>
 
 
@@ -130,7 +125,7 @@
 
 
 
-    <script>vpixel.piximage('6748');</script>
+    <script type="lazyload2">vpixel.piximage('6748');</script>
     {% include 'header' %}  
 
     <main class="main "> 
