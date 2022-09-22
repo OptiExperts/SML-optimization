@@ -28,7 +28,7 @@
 {% assign sold_out = false %}
 {% endif %}
 {% assign img_size='large' %}
-<li class="item-row  {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}">
+<li data-product-id="{{ product.id }}" class="item-row  {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}">
   
   <div class="products product-hover-1">
   <div class="product-container">  
