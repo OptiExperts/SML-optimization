@@ -136,7 +136,9 @@
       selector: ".header_cart",
     },
     (target) => {
-      target.prepend(WishlistKing.createComponent("wishlist-link"));
+      target.insertBefore(
+        WishlistKing.createElement("li", {className: "header-bar__module"}, WishlistKing.createComponent("wishlist-link"))
+      );
     }
   );
 
