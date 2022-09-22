@@ -18,7 +18,7 @@
 {% assign sold_out = false %}
 {% endif %}
 {% assign img_size='large' %}
-<li class="grid__item item-row  {{grid_item_width}} {% if settings.product_row_mob == 'single' %} medium--grid__item small-grid__item {% else %} medium--one-half small--one-half {% endif %} {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}" {% if section.settings.collection_infinite_scrolling %}{% if forloop.index > section.settings.total_products_load %} style="display:none"  data-wow-duration="1{{ forloop.index }}" {% endif %}{% endif %}>
+<li data-product-id="{{ product.id }}" class="grid__item item-row  {{grid_item_width}} {% if settings.product_row_mob == 'single' %} medium--grid__item small-grid__item {% else %} medium--one-half small--one-half {% endif %} {% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}" id="product-{{ product.id }}" {% if section.settings.collection_infinite_scrolling %}{% if forloop.index > section.settings.total_products_load %} style="display:none"  data-wow-duration="1{{ forloop.index }}" {% endif %}{% endif %}>
   <div class="products wow fadeInUp animated">
     <div class="product-container">  
       {% if settings.count_down_enable and settings.count_down_collections %}
