@@ -954,6 +954,14 @@
               "time_ago": "20 minutes ago"
             }
           },
+          "3a229b85-201b-4b29-8852-eabc4f3e51cb": {
+            "type": "image",
+            "settings": {
+              "product": "bianca-the-boss-plus-size-merlot-babydoll",
+              "from_ago": "from Albany NY, US",
+              "time_ago": "5 hours 35 minutes ago"
+            }
+          },
           "b5a6fce9-c165-40aa-9a8f-6167072f23e6": {
             "type": "image",
             "settings": {
@@ -976,6 +984,14 @@
               "product": "a-play-shaker-rechargeable-silicone-anal-plug-with-remote",
               "from_ago": "from Springfield AR, US",
               "time_ago": "17 minutes ago"
+            }
+          },
+          "bb3c31f2-1abe-4055-a594-4ec5d4b75076": {
+            "type": "image",
+            "settings": {
+              "product": "2pc-playboy-racecar-driver",
+              "from_ago": "from Laporte IN, US",
+              "time_ago": "3 hours 55 minutes ago"
             }
           },
           "7aaa55e3-f3e6-4d98-b377-2b30733a92f2": {
@@ -1077,7 +1093,7 @@
           "62ae4f7b-f2d1-4ac8-b759-5038f7aa7c52": {
             "type": "image",
             "settings": {
-              "product": "too-fine-for-your-ass-size-one-size-fits-most-plus",
+              "product": "pre-order-eta-mid-august",
               "from_ago": "from Hickory NC, US",
               "time_ago": "6 hours ago"
             }
@@ -1146,14 +1162,6 @@
               "time_ago": "9 hours ago"
             }
           },
-          "bb3c31f2-1abe-4055-a594-4ec5d4b75076": {
-            "type": "image",
-            "settings": {
-              "product": "2pc-playboy-racecar-driver",
-              "from_ago": "from Laporte IN, US",
-              "time_ago": "3 hours 55 minutes ago"
-            }
-          },
           "40e93376-ac17-4028-b401-1a9f51ee5368": {
             "type": "image",
             "settings": {
@@ -1161,23 +1169,17 @@
               "from_ago": "from Scranton PA, US",
               "time_ago": "7 hours 10 minutes ago"
             }
-          },
-          "3a229b85-201b-4b29-8852-eabc4f3e51cb": {
-            "type": "image",
-            "settings": {
-              "product": "bianca-the-boss-plus-size-merlot-babydoll",
-              "from_ago": "from Albany NY, US",
-              "time_ago": "5 hours 35 minutes ago"
-            }
           }
         },
         "block_order": [
           "51edde04-1213-429a-97b9-7965d0ffe8dc",
           "6613202c-2fd6-4963-807b-e333a05057d5",
           "e13080bd-f83a-46b0-ba84-659c809b4ea3",
+          "3a229b85-201b-4b29-8852-eabc4f3e51cb",
           "b5a6fce9-c165-40aa-9a8f-6167072f23e6",
           "1565890174880",
           "1555932188446",
+          "bb3c31f2-1abe-4055-a594-4ec5d4b75076",
           "7aaa55e3-f3e6-4d98-b377-2b30733a92f2",
           "1555932203743",
           "242c9d94-1030-42d4-b501-fe3b529caef8",
@@ -1199,9 +1201,7 @@
           "c2477187-2a06-4fc1-a00a-5e516a98ccd9",
           "564d6137-efec-4885-adc5-ea4da36defc3",
           "762f35ba-2e5f-4259-bc34-af68e9222049",
-          "bb3c31f2-1abe-4055-a594-4ec5d4b75076",
-          "40e93376-ac17-4028-b401-1a9f51ee5368",
-          "3a229b85-201b-4b29-8852-eabc4f3e51cb"
+          "40e93376-ac17-4028-b401-1a9f51ee5368"
         ],
         "settings": {
           "display_someone-purchased": true,
