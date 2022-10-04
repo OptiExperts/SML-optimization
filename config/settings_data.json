@@ -930,6 +930,14 @@
       "someone-purchased": {
         "type": "someone-purchased",
         "blocks": {
+          "51edde04-1213-429a-97b9-7965d0ffe8dc": {
+            "type": "image",
+            "settings": {
+              "product": "hell-bent-cheerleader-eta-late-july",
+              "from_ago": "from Tulsa, OK, US",
+              "time_ago": "5 hours ago"
+            }
+          },
           "6613202c-2fd6-4963-807b-e333a05057d5": {
             "type": "image",
             "settings": {
@@ -1106,14 +1114,6 @@
               "time_ago": "2 hours ago"
             }
           },
-          "51edde04-1213-429a-97b9-7965d0ffe8dc": {
-            "type": "image",
-            "settings": {
-              "product": "hell-bent-cheerleader-eta-late-july",
-              "from_ago": "from Tulsa, OK, US",
-              "time_ago": "5 hours ago"
-            }
-          },
           "eeafffc6-573f-419b-94b9-7dbdc2c6ee8c": {
             "type": "image",
             "settings": {
@@ -1149,7 +1149,7 @@
           "bb3c31f2-1abe-4055-a594-4ec5d4b75076": {
             "type": "image",
             "settings": {
-              "product": "sexy-beach-dress-avail-in-black-or-coral",
+              "product": "2pc-playboy-racecar-driver",
               "from_ago": "from Laporte IN, US",
               "time_ago": "3 hours 55 minutes ago"
             }
@@ -1172,6 +1172,7 @@
           }
         },
         "block_order": [
+          "51edde04-1213-429a-97b9-7965d0ffe8dc",
           "6613202c-2fd6-4963-807b-e333a05057d5",
           "e13080bd-f83a-46b0-ba84-659c809b4ea3",
           "b5a6fce9-c165-40aa-9a8f-6167072f23e6",
@@ -1194,7 +1195,6 @@
           "a429fb76-3b7c-448f-993e-d335623ac718",
           "5b9b2a1a-b43a-4d06-a86f-fd216f392c61",
           "c152ddac-142f-4bd9-9446-65b7e06adae0",
-          "51edde04-1213-429a-97b9-7965d0ffe8dc",
           "eeafffc6-573f-419b-94b9-7dbdc2c6ee8c",
           "c2477187-2a06-4fc1-a00a-5e516a98ccd9",
           "564d6137-efec-4885-adc5-ea4da36defc3",
