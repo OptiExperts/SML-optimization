@@ -2476,7 +2476,7 @@
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/7447X-Black-Front_1.jpg",
+              "image": "shopify:\/\/shop_images\/7466X-BlackPrint-Front_1.jpg",
               "links": "shopify:\/\/collections\/loungewear",
               "title_1": "LOUNGEWEAR"
             }
@@ -2681,12 +2681,6 @@
           "margin-bottom": 10,
           "width": 70,
           "alignment": "center"
-        }
-      },
-      "11360718970158082676": {
-        "type": "shopify:\/\/apps\/cross-sell-pro\/blocks\/crosssell\/a1de75bd-abc2-408f-b8be-5bce11f6a502",
-        "disabled": false,
-        "settings": {
         }
       }
     }
