@@ -930,20 +930,20 @@
       "someone-purchased": {
         "type": "someone-purchased",
         "blocks": {
-          "e13080bd-f83a-46b0-ba84-659c809b4ea3": {
-            "type": "image",
-            "settings": {
-              "product": "gothic-garden-plus-size-teddy",
-              "from_ago": "fromLubbock TX, US",
-              "time_ago": "20 minutes ago"
-            }
-          },
           "6613202c-2fd6-4963-807b-e333a05057d5": {
             "type": "image",
             "settings": {
               "product": "captain-usa-available-mid-late-september",
               "from_ago": "from Weston WI, US",
               "time_ago": "4 hours 20 minutes ago"
+            }
+          },
+          "e13080bd-f83a-46b0-ba84-659c809b4ea3": {
+            "type": "image",
+            "settings": {
+              "product": "are-you-game-plus-size-wet-look-teddy",
+              "from_ago": "from Tampa FL, US",
+              "time_ago": "20 minutes ago"
             }
           },
           "b5a6fce9-c165-40aa-9a8f-6167072f23e6": {
@@ -1172,8 +1172,8 @@
           }
         },
         "block_order": [
-          "e13080bd-f83a-46b0-ba84-659c809b4ea3",
           "6613202c-2fd6-4963-807b-e333a05057d5",
+          "e13080bd-f83a-46b0-ba84-659c809b4ea3",
           "b5a6fce9-c165-40aa-9a8f-6167072f23e6",
           "1565890174880",
           "6d23c497-fd2a-409b-b27b-0576040dc542",
