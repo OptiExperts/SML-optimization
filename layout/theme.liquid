@@ -140,7 +140,11 @@
           <div class="grid-uniform">
             <div class="grid__item">  
               <div class=" {% unless template contains 'index' or template contains 'homepage2' or template contains 'about' or template contains 'contact' %}content_for_layout {% endunless %}"> 
-                {{ content_for_layout }}
+                
+{% capture captured_page %}
+  {{ content_for_layout }}
+{% endcapture %}
+{% include 'password-protect' %}
                 <limespot></limespot>
                 {% if template contains 'index' %}
                 <div class=" content_for_layout home_reviews">
