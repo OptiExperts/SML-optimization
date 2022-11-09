@@ -2595,23 +2595,12 @@
           "divider_spacing": 20,
           "divider_border": false
         }
-      },
-      "3f40d7c0-1c99-4a8e-9250-34c5da5e0801": {
-        "type": "custom-content",
-        "settings": {
-          "heading_text": "",
-          "heading_color": "#3a3a3a",
-          "background_color": "",
-          "top_margin": true,
-          "bottom_margin": true
-        }
       }
     },
     "content_for_index": [
       "1562030841260",
       "1562045263017",
       "1645674139ff29180c",
-      "3f40d7c0-1c99-4a8e-9250-34c5da5e0801",
       "1645673801c93643d2",
       "164851927374149d31",
       "1646030900a44b054d",
