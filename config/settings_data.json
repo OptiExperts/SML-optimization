@@ -2596,39 +2596,38 @@
           "divider_border": false
         }
       },
-      "cfe15082-17a6-41ff-a5d8-4a6b5098dc3a": {
+      "3f40d7c0-1c99-4a8e-9250-34c5da5e0801": {
         "type": "custom-content",
         "blocks": {
-          "cfe15082-17a6-41ff-a5d8-4a6b5098dc3a-166802833034726ec4-0": {
+          "3f40d7c0-1c99-4a8e-9250-34c5da5e0801-166802833034726ec4-0": {
             "type": "text",
             "settings": {
-              "heading_text": "On sale TODAY ONLY",
+              "heading_text": "\"A BAD MAMA JAMA\"",
               "heading_color": "#ffffff",
               "heading_style": "h3",
-              "paragraph_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-              "paragraph_color": "#4a4a4a",
+              "paragraph_text": "<p>On Sale TODAY only! <\/p><p><\/p>",
+              "paragraph_color": "#ffffff",
               "paragraph_size": "1",
               "width": "50%",
               "alignment": "center",
               "align_text": "left"
             }
           },
-          "cfe15082-17a6-41ff-a5d8-4a6b5098dc3a-166802833034726ec4-1": {
+          "3f40d7c0-1c99-4a8e-9250-34c5da5e0801-166802833034726ec4-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/mapale-wet-look-bodysuit-harness-lingerie-plus-size-13417045491758_5000x_1.jpg",
               "width": "50%",
               "alignment": "center"
             }
           }
         },
         "block_order": [
-          "cfe15082-17a6-41ff-a5d8-4a6b5098dc3a-166802833034726ec4-0",
-          "cfe15082-17a6-41ff-a5d8-4a6b5098dc3a-166802833034726ec4-1"
+          "3f40d7c0-1c99-4a8e-9250-34c5da5e0801-166802833034726ec4-0",
+          "3f40d7c0-1c99-4a8e-9250-34c5da5e0801-166802833034726ec4-1"
         ],
         "settings": {
-          "heading_text": "BEST SELLING, \"A BAD MAMAJAMA\"",
-          "heading_color": "#ffb6c1",
+          "heading_text": "",
+          "heading_color": "#3a3a3a",
           "background_color": "",
           "top_margin": true,
           "bottom_margin": true
@@ -2656,7 +2655,7 @@
       "1573708181964",
       "1652464910be35b479",
       "1561997079024",
-      "cfe15082-17a6-41ff-a5d8-4a6b5098dc3a"
+      "3f40d7c0-1c99-4a8e-9250-34c5da5e0801"
     ],
     "blocks": {
       "7420477900589326039": {
