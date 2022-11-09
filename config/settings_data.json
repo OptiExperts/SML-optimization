@@ -2595,6 +2595,28 @@
           "divider_spacing": 20,
           "divider_border": false
         }
+      },
+      "dc9522f2-8b75-42f3-9a11-a1a790bb45a6": {
+        "type": "custom-content",
+        "blocks": {
+          "dc9522f2-8b75-42f3-9a11-a1a790bb45a6-166802987352bf9008-1": {
+            "type": "image",
+            "settings": {
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "dc9522f2-8b75-42f3-9a11-a1a790bb45a6-166802987352bf9008-1"
+        ],
+        "settings": {
+          "heading_text": "\"A BAD MAMA JAMA\"",
+          "heading_color": "#ffb6c1",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
       }
     },
     "content_for_index": [
@@ -2617,7 +2639,8 @@
       "1646932764e2d26aa8",
       "1573708181964",
       "1652464910be35b479",
-      "1561997079024"
+      "1561997079024",
+      "dc9522f2-8b75-42f3-9a11-a1a790bb45a6"
     ],
     "blocks": {
       "7420477900589326039": {
