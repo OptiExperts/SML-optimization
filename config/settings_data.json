@@ -2449,12 +2449,36 @@
               "title_1": "SASSY BLACK FRIDAY"
             }
           },
+          "b45946a4-aec9-404e-9003-122b5bf2c337": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Edito-6472XAB.jpg",
+              "links": "shopify:\/\/collections\/bedroom-costumes",
+              "title_1": "BEDROOM COSTUMES"
+            }
+          },
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/STP_-_Black___Pink_Stripes_Front_1.jpg",
+              "links": "shopify:\/\/collections\/thunda-thighs-socks",
+              "title_1": "THUNDA THIGHS"
+            }
+          },
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d": {
             "type": "item",
             "settings": {
               "image": "shopify:\/\/shop_images\/2631X-Black-Front_500x749_4e37f973-1c93-4666-ad16-3caceaf32780.jpg",
               "links": "shopify:\/\/collections\/bra-sets",
               "title_1": "BRA SETS"
+            }
+          },
+          "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/7470X-RedPlaid-Front_4c2ea6a3-3f6c-4d42-9ca5-b4dc4be47580.jpg",
+              "links": "shopify:\/\/collections\/loungewear",
+              "title_1": "LOUNGEWEAR"
             }
           },
           "7486423f-d102-4c77-91a2-16a3fd1f217a": {
@@ -2473,22 +2497,6 @@
               "title_1": "WET LOOK"
             }
           },
-          "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/7470X-RedPlaid-Front_4c2ea6a3-3f6c-4d42-9ca5-b4dc4be47580.jpg",
-              "links": "shopify:\/\/collections\/loungewear",
-              "title_1": "LOUNGEWEAR"
-            }
-          },
-          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/STP_-_Black___Pink_Stripes_Front_1.jpg",
-              "links": "shopify:\/\/collections\/thunda-thighs-socks",
-              "title_1": "THUNDA THIGHS"
-            }
-          },
           "29658277-42ba-4865-8e99-53beebc97e55": {
             "type": "item",
             "settings": {
@@ -2496,25 +2504,17 @@
               "links": "shopify:\/\/collections\/25-dolla-make-you-holla-sale",
               "title_1": "$25 DOLLA MAKE YOU HOLLA"
             }
-          },
-          "b45946a4-aec9-404e-9003-122b5bf2c337": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Edito-6472XAB.jpg",
-              "links": "shopify:\/\/collections\/bedroom-costumes",
-              "title_1": "BEDROOM COSTUMES"
-            }
           }
         },
         "block_order": [
           "847f3460-f1b7-42fd-9b6b-00fef3579156",
+          "b45946a4-aec9-404e-9003-122b5bf2c337",
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
+          "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
           "7486423f-d102-4c77-91a2-16a3fd1f217a",
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb",
-          "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
-          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
-          "29658277-42ba-4865-8e99-53beebc97e55",
-          "b45946a4-aec9-404e-9003-122b5bf2c337"
+          "29658277-42ba-4865-8e99-53beebc97e55"
         ],
         "settings": {
           "title": "FEATURED  Styles <span><\/span>"
