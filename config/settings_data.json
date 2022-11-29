@@ -2441,20 +2441,20 @@
       "164851927374149d31": {
         "type": "featured-custom",
         "blocks": {
-          "847f3460-f1b7-42fd-9b6b-00fef3579156": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/7108x-R-fv.jpg",
-              "links": "shopify:\/\/collections\/sassy-black-friday",
-              "title_1": "SASSY BLACK FRIDAY"
-            }
-          },
           "b45946a4-aec9-404e-9003-122b5bf2c337": {
             "type": "item",
             "settings": {
               "image": "shopify:\/\/shop_images\/Edito-6472XAB.jpg",
               "links": "shopify:\/\/collections\/sassy-christmas",
               "title_1": "SASSY CHRISTMAS"
+            }
+          },
+          "847f3460-f1b7-42fd-9b6b-00fef3579156": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/7108x-R-fv.jpg",
+              "links": "shopify:\/\/collections\/sassy-black-friday",
+              "title_1": "SASSY BLACK FRIDAY"
             }
           },
           "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
@@ -2507,8 +2507,8 @@
           }
         },
         "block_order": [
-          "847f3460-f1b7-42fd-9b6b-00fef3579156",
           "b45946a4-aec9-404e-9003-122b5bf2c337",
+          "847f3460-f1b7-42fd-9b6b-00fef3579156",
           "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
