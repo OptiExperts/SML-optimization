@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://f624058c3f5c8edb775a-dea6612566ec344afdf376d2faa6c82f.ssl.cf5.rackcdn.com/card.css" media="screen, projection" />
     <link rel="stylesheet" href="https://f624058c3f5c8edb775a-dea6612566ec344afdf376d2faa6c82f.ssl.cf5.rackcdn.com/print.css" media="print" />
     
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://f624058c3f5c8edb775a-dea6612566ec344afdf376d2faa6c82f.ssl.cf5.rackcdn.com/qr-code.js"></script>
 	<script type="text/javascript">
@@ -19,7 +18,7 @@
 		var data = {
 					to: "{% assign property_size = gift_card.properties | size %}{% if property_size > 0 %}{% for p in gift_card.properties %}{% if p.first == 'To' %}{% unless p.last == blank %}{{ p.last }}{% endunless %}{% endif %}{% endfor %}{% endif %}",
 					from: "{% assign property_size = gift_card.properties | size %}{% if property_size > 0 %}{% for p in gift_card.properties %}{% if p.first == '_From' %}{% unless p.last == blank %}{{ p.last }}{% endunless %}{% endif %}{% endfor %}{% endif %}",
-					msg: "{% assign property_size = gift_card.properties | size %}{% if property_size > 0 %}{% for p in gift_card.properties %}{% if p.first == '_Msg' %}{% unless p.last == blank %}{{ p.last }}{% endunless %}{% endif %}{% endfor %}{% endif %}",
+					msg: `{% assign property_size = gift_card.properties | size %}{% if property_size > 0 %}{% for p in gift_card.properties %}{% if p.first == '_Msg' %}{% unless p.last == blank %}{{ p.last }}{% endunless %}{% endif %}{% endfor %}{% endif %}`,
 					sd: "{{shop.permanent_domain}}",
 					sn: "{{shop.name}}",
 					balance: "{{gift_card.balance}}",
@@ -35,7 +34,7 @@
 	    
 		$(document).ready(function(){
 			var req = $.ajax({
-                url: 'https://branded-gift-cards.shopkeepertools.com/gift-card-view/',
+                url: 'http://gc.shopkeepertools.com/gift-card-view/',
                 data: data,
                 type: 'get',
                 dataType: 'jsonp',
