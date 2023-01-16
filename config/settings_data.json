@@ -2457,6 +2457,22 @@
               "title_1": "$25 DOLLA MAKE YOU HOLLA"
             }
           },
+          "7486423f-d102-4c77-91a2-16a3fd1f217a": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8705X-BlackPrint-Front_1.jpg",
+              "links": "shopify:\/\/collections\/teddies",
+              "title_1": "TEDDIES"
+            }
+          },
+          "0a88dbc4-e8b3-42f8-b340-c15cf690f91d": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2631X-Black-Front_500x749_4e37f973-1c93-4666-ad16-3caceaf32780.jpg",
+              "links": "shopify:\/\/collections\/bra-sets",
+              "title_1": "BRA SETS"
+            }
+          },
           "847f3460-f1b7-42fd-9b6b-00fef3579156": {
             "type": "item",
             "settings": {
@@ -2473,28 +2489,12 @@
               "title_1": "THUNDA THIGHS"
             }
           },
-          "0a88dbc4-e8b3-42f8-b340-c15cf690f91d": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/2631X-Black-Front_500x749_4e37f973-1c93-4666-ad16-3caceaf32780.jpg",
-              "links": "shopify:\/\/collections\/bra-sets",
-              "title_1": "BRA SETS"
-            }
-          },
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
             "type": "item",
             "settings": {
               "image": "shopify:\/\/shop_images\/7474X-Red-Front_9afa476f-4eeb-40b0-bba6-4c925a411847.jpg",
               "links": "shopify:\/\/collections\/loungewear",
               "title_1": "LOUNGEWEAR"
-            }
-          },
-          "7486423f-d102-4c77-91a2-16a3fd1f217a": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/8705X-BlackPrint-Front_1.jpg",
-              "links": "shopify:\/\/collections\/teddies",
-              "title_1": "TEDDIES"
             }
           },
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb": {
@@ -2509,11 +2509,11 @@
         "block_order": [
           "b45946a4-aec9-404e-9003-122b5bf2c337",
           "29658277-42ba-4865-8e99-53beebc97e55",
+          "7486423f-d102-4c77-91a2-16a3fd1f217a",
+          "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
           "847f3460-f1b7-42fd-9b6b-00fef3579156",
           "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
-          "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
-          "7486423f-d102-4c77-91a2-16a3fd1f217a",
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb"
         ],
         "settings": {
