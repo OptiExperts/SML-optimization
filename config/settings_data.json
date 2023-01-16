@@ -2449,6 +2449,14 @@
               "title_1": "VALENTINE'S DAY"
             }
           },
+          "29658277-42ba-4865-8e99-53beebc97e55": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SF976-plus-ProductImages01-web.jpg",
+              "links": "shopify:\/\/collections\/25-dolla-make-you-holla-sale",
+              "title_1": "$25 DOLLA MAKE YOU HOLLA"
+            }
+          },
           "847f3460-f1b7-42fd-9b6b-00fef3579156": {
             "type": "item",
             "settings": {
@@ -2496,25 +2504,17 @@
               "links": "shopify:\/\/collections\/wet-look-lingerie",
               "title_1": "WET LOOK"
             }
-          },
-          "29658277-42ba-4865-8e99-53beebc97e55": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/SF976-plus-ProductImages01-web.jpg",
-              "links": "shopify:\/\/collections\/25-dolla-make-you-holla-sale",
-              "title_1": "$25 DOLLA MAKE YOU HOLLA"
-            }
           }
         },
         "block_order": [
           "b45946a4-aec9-404e-9003-122b5bf2c337",
+          "29658277-42ba-4865-8e99-53beebc97e55",
           "847f3460-f1b7-42fd-9b6b-00fef3579156",
           "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
           "7486423f-d102-4c77-91a2-16a3fd1f217a",
-          "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb",
-          "29658277-42ba-4865-8e99-53beebc97e55"
+          "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb"
         ],
         "settings": {
           "title": "FEATURED  Styles <span><\/span>"
