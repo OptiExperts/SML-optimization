@@ -2473,6 +2473,14 @@
               "title_1": "BRA SETS"
             }
           },
+          "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/X31475-BB2022-BABYDOLL-PRP-2022-A_1.jpg",
+              "links": "shopify:\/\/collections\/clearance-sale",
+              "title_1": "CLEARANCE SALE"
+            }
+          },
           "847f3460-f1b7-42fd-9b6b-00fef3579156": {
             "type": "item",
             "settings": {
@@ -2489,14 +2497,6 @@
               "title_1": "THUNDA THIGHS"
             }
           },
-          "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/X31475-BB2022-BABYDOLL-PRP-2022-A_1.jpg",
-              "links": "shopify:\/\/collections\/clearance-sale",
-              "title_1": "CLEARANCE SALE"
-            }
-          },
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb": {
             "type": "item",
             "settings": {
@@ -2511,9 +2511,9 @@
           "7486423f-d102-4c77-91a2-16a3fd1f217a",
           "29658277-42ba-4865-8e99-53beebc97e55",
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
+          "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
           "847f3460-f1b7-42fd-9b6b-00fef3579156",
           "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
-          "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb"
         ],
         "settings": {
