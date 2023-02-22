@@ -2449,6 +2449,14 @@
               "title_1": "PRIDE & FESTIVAL"
             }
           },
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/products-unspecified-_18-607676.jpg",
+              "links": "shopify:\/\/collections\/babydolls",
+              "title_1": "BABYDOLLS"
+            }
+          },
           "7486423f-d102-4c77-91a2-16a3fd1f217a": {
             "type": "item",
             "settings": {
@@ -2489,14 +2497,6 @@
               "title_1": "BEDROOM COSTUMES"
             }
           },
-          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/products-unspecified-_18-607676.jpg",
-              "links": "shopify:\/\/collections\/babydolls",
-              "title_1": "BABYDOLLS"
-            }
-          },
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb": {
             "type": "item",
             "settings": {
@@ -2508,12 +2508,12 @@
         },
         "block_order": [
           "b45946a4-aec9-404e-9003-122b5bf2c337",
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "7486423f-d102-4c77-91a2-16a3fd1f217a",
           "29658277-42ba-4865-8e99-53beebc97e55",
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
           "847f3460-f1b7-42fd-9b6b-00fef3579156",
-          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb"
         ],
         "settings": {
