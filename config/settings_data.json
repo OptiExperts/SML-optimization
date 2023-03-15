@@ -1090,6 +1090,14 @@
               "time_ago": "35 minutes ago"
             }
           },
+          "40e93376-ac17-4028-b401-1a9f51ee5368": {
+            "type": "image",
+            "settings": {
+              "product": "tempt-this-plus-size-bra-set",
+              "from_ago": "from Scranton PA, US",
+              "time_ago": "7 hours 10 minutes ago"
+            }
+          },
           "71bdfdd4-3d69-4d91-b6d2-79ae7db7e19b": {
             "type": "image",
             "settings": {
@@ -1161,14 +1169,6 @@
               "from_ago": "from Glendale AZ, US",
               "time_ago": "9 hours ago"
             }
-          },
-          "40e93376-ac17-4028-b401-1a9f51ee5368": {
-            "type": "image",
-            "settings": {
-              "product": "tempt-this-plus-size-bra-set",
-              "from_ago": "from Scranton PA, US",
-              "time_ago": "7 hours 10 minutes ago"
-            }
           }
         },
         "block_order": [
@@ -1192,6 +1192,7 @@
           "010cce93-1de8-41e4-ad66-e9b59ca49cd0",
           "e02ed28d-1f86-4646-acb8-abbd6230d973",
           "81ebe598-bf3c-422b-a574-5cb1c2edbec0",
+          "40e93376-ac17-4028-b401-1a9f51ee5368",
           "71bdfdd4-3d69-4d91-b6d2-79ae7db7e19b",
           "d468cf93-a795-450d-8754-bd74b454ced5",
           "62ae4f7b-f2d1-4ac8-b759-5038f7aa7c52",
@@ -1200,8 +1201,7 @@
           "5b9b2a1a-b43a-4d06-a86f-fd216f392c61",
           "c152ddac-142f-4bd9-9446-65b7e06adae0",
           "eeafffc6-573f-419b-94b9-7dbdc2c6ee8c",
-          "762f35ba-2e5f-4259-bc34-af68e9222049",
-          "40e93376-ac17-4028-b401-1a9f51ee5368"
+          "762f35ba-2e5f-4259-bc34-af68e9222049"
         ],
         "settings": {
           "display_someone-purchased": true,
