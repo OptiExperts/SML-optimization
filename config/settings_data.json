@@ -930,6 +930,14 @@
       "someone-purchased": {
         "type": "someone-purchased",
         "blocks": {
+          "51edde04-1213-429a-97b9-7965d0ffe8dc": {
+            "type": "image",
+            "settings": {
+              "product": "waiting-at-home-plus-size-babydoll",
+              "from_ago": "from Tulsa, OK, US",
+              "time_ago": "5 hours ago"
+            }
+          },
           "564d6137-efec-4885-adc5-ea4da36defc3": {
             "type": "image",
             "settings": {
@@ -960,14 +968,6 @@
               "product": "be-different-plus-size-bodystocking-set",
               "from_ago": "from New Chicago IL, US",
               "time_ago": "14 minutes ago"
-            }
-          },
-          "51edde04-1213-429a-97b9-7965d0ffe8dc": {
-            "type": "image",
-            "settings": {
-              "product": "waiting-at-home-plus-size-babydoll",
-              "from_ago": "from Tulsa, OK, US",
-              "time_ago": "5 hours ago"
             }
           },
           "bb3c31f2-1abe-4055-a594-4ec5d4b75076": {
@@ -1029,7 +1029,7 @@
           "7aaa55e3-f3e6-4d98-b377-2b30733a92f2": {
             "type": "image",
             "settings": {
-              "product": "badly-behaved-assitant-wet-look-sheer-teddy-costume",
+              "product": "creepin-it-real-2pc-strappy-mesh-bralette-panty-set",
               "from_ago": "from Los Angeles CA, US",
               "time_ago": "1 hour ago"
             }
@@ -1172,11 +1172,11 @@
           }
         },
         "block_order": [
+          "51edde04-1213-429a-97b9-7965d0ffe8dc",
           "564d6137-efec-4885-adc5-ea4da36defc3",
           "adeebf0a-21db-43ad-8b09-90654c58cd26",
           "1565890174880",
           "1555932203743",
-          "51edde04-1213-429a-97b9-7965d0ffe8dc",
           "bb3c31f2-1abe-4055-a594-4ec5d4b75076",
           "6613202c-2fd6-4963-807b-e333a05057d5",
           "242c9d94-1030-42d4-b501-fe3b529caef8",
