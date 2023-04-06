@@ -1,6 +1,6 @@
 {%- if content_for_header contains "haloroar-legal.min.js" -%}
-  <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0184/4255/1360/files/legal.v5.scss.css?v=1654848652" media="print" onload="this.media='all'">
-  <script>
+  <link rel="stylesheet" data-href="https://cdn.shopify.com/s/files/1/0184/4255/1360/files/legal.v5.scss.css?v=1654848652" media="print" onload="this.media='all'">
+  <script type="lazyload2">
     (function() {
       const metafields = {
         "shop": {{ shop.permanent_domain | json }},
