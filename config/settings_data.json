@@ -1554,8 +1554,8 @@
           "9e02f54d-0288-4d25-bfce-6e7bbba7d5f0": {
             "type": "style_1",
             "settings": {
-              "image": "shopify:\/\/shop_images\/kw8KdtGo.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/kw8KdtGo.jpg",
+              "image": "shopify:\/\/shop_images\/8753X-Black-Back_2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/8753X-Black-Back_2.jpg",
               "show_mobile_bg_overlay": false,
               "mobile_bg_clr": "#000000",
               "subheading": "",
@@ -2444,7 +2444,7 @@
           "b45946a4-aec9-404e-9003-122b5bf2c337": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/AF969-plus-ProductImages01-web.jpg",
+              "image": "shopify:\/\/shop_images\/AF970-plus-ProductImages01-web.jpg",
               "links": "shopify:\/\/collections\/pride-festival",
               "title_1": "PRIDE & FESTIVAL"
             }
@@ -2452,31 +2452,31 @@
           "7486423f-d102-4c77-91a2-16a3fd1f217a": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2637X-Black-Front_1_30f6b538-ea0b-4ea5-aaea-1da719f25876.jpg",
+              "image": "shopify:\/\/shop_images\/2727X-Black-Front_422196b2-2538-4f00-9799-255c00285c15.jpg",
               "links": "shopify:\/\/collections\/teddies",
               "title_1": "TEDDIES"
-            }
-          },
-          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/products-unspecified-_18-607676.jpg",
-              "links": "shopify:\/\/collections\/babydolls",
-              "title_1": "BABYDOLLS"
             }
           },
           "29658277-42ba-4865-8e99-53beebc97e55": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/QFDzWdsw.jpg",
+              "image": "shopify:\/\/shop_images\/thumbnail_IMG_4582_1.jpg",
               "links": "shopify:\/\/collections\/25-dolla-make-you-holla-sale",
               "title_1": "$25 DOLLA MAKE YOU HOLLA"
+            }
+          },
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac": {
+            "type": "item",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/thumbnail_42592X_VIVID_BLUE_FS.jpg",
+              "links": "shopify:\/\/collections\/babydolls",
+              "title_1": "BABYDOLLS"
             }
           },
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download_8_1.png",
+              "image": "shopify:\/\/shop_images\/B675Q-ProductImages01-web.jpg",
               "links": "shopify:\/\/collections\/bra-sets",
               "title_1": "BRA SETS"
             }
@@ -2484,7 +2484,7 @@
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/7392X-Grey-Front_1_5c6909aa-02f0-4236-964c-429b36c1cda1.jpg",
+              "image": "shopify:\/\/shop_images\/w6ZStSvE.jpg",
               "links": "shopify:\/\/collections\/clearance-sale",
               "title_1": "CLEARANCE SALE"
             }
@@ -2492,7 +2492,7 @@
           "847f3460-f1b7-42fd-9b6b-00fef3579156": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/PL2007-plus-FrontProductImages-Web_e4c46de4-0334-4577-a86d-a93d36622016.jpg",
+              "image": "shopify:\/\/shop_images\/PL2205-plus-ProductImages01-web.jpg",
               "links": "shopify:\/\/collections\/bedroom-costumes",
               "title_1": "BEDROOM COSTUMES"
             }
@@ -2500,7 +2500,7 @@
           "e4e7874c-c2f2-4553-89c3-1f23d6bd83bb": {
             "type": "item",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download_5.png",
+              "image": "shopify:\/\/shop_images\/M326BLK_QS_Full_Length_1_sg.jpg",
               "links": "shopify:\/\/collections\/wet-look-lingerie",
               "title_1": "WET LOOK"
             }
@@ -2509,8 +2509,8 @@
         "block_order": [
           "b45946a4-aec9-404e-9003-122b5bf2c337",
           "7486423f-d102-4c77-91a2-16a3fd1f217a",
-          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "29658277-42ba-4865-8e99-53beebc97e55",
+          "79a0a843-3762-4b10-bd33-81fdb8bac9ac",
           "0a88dbc4-e8b3-42f8-b340-c15cf690f91d",
           "875eb7ba-4bd8-41cd-97df-db07affcc8f7",
           "847f3460-f1b7-42fd-9b6b-00fef3579156",
